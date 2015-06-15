@@ -48,9 +48,29 @@ public class CookAppTest {
      */
     @Test
     public void testGetServletInfo() {
- 
+        GetRecipeCategories recipeCats = new GetRecipeCategories();
+        recipeCats.setIBrandID(1);
+        recipeCats.setILangID(1);
+        KraftX0020RecipeX0020WebX0020Service webService = new KraftX0020RecipeX0020WebX0020Service();
+        KraftX0020RecipeX0020WebX0020ServiceSoap soapService = webService.getKraftX0020RecipeX0020WebX0020ServiceSoap();
+        GetRecipeCategoryResponse recResp =                 soapService.getRecipeCategories(1, 1);
+        int getCount = 0;
+              // recResp.recipeCategories.getRecipeCategory().get(0).categoryName;
+        ArrayOfRecipeClassification tests = new ArrayOfRecipeClassification();
+                   while(recResp.getTotalCount()!=getCount){
+                int currentCatId = recResp.recipeCategories.getRecipeCategory().get(getCount).categoryID;
+                GetRecipeSubCategoryResponse getSubs = soapService.getRecipeSubCategories(currentCatId);
+                       System.out.println(currentCatId);
+                System.out.print("<p>"+recResp.recipeCategories.getRecipeCategory().get(getCount).categoryName+ " " +
+                recResp.recipeCategories.getRecipeCategory().get(getCount).getSubCategoryID()+"</p>");
+                System.out.println("COUNT" + getSubs.getTotalCount());
+                ArrayOfRecipeCategory ar = getSubs.getRecipeSubCategories();
+                System.out.println(recResp.getRecipeCategories());
      
-       
+//recResp.getRecipeCategories().recipeCategory.
+                //out.println("    [RECIPE TITLE ] :  " + summaryResponse.title);
+                getCount ++;
+            }
       //String[] ks = new String[rc.size()];
         System.out.println("LENGTH OF ARRAY "                );// ft.recipeCategories.getRecipeCategory().get(0).categoryName);
        // System.out.println(rc.isEmpty());
