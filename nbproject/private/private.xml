@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/src/java/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/WEB-INF/jsp/index.jsp</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/src/java/com/kraftfoods/ws/RecipeWS.asmx.wsdl</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/src/java/com/kraftfoods/ws/ArrayOfRecipeSubCategoryWPT.java</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/index.jsp</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/WEB-INF/dispatcher-servlet.xml</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/src/java/com/kraftfoods/ws/AddRecipesToRecipeBoxResponse.java</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/redirect.jsp</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/WEB-INF/applicationContext.xml</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/WEB-INF/struts-config.xml</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/welcomeStruts.jsp</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/src/java/com/kraftfoods/ws/AddItemToShoppingListResponse.java</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/src/java/com/myapp/struts/ApplicationResource.properties</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/index.xhtml</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/src/java/com/kraftfoods/ws/CookApp.java</file>
+            <file>file:/C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/test/com/kraftfoods/ws/CookAppTest.java</file>
+        </group>
+    </open-files>
+</project-private>
