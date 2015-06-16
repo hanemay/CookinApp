@@ -32,11 +32,8 @@ public class CookApp extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+         throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        GetRecipeCategories recipeCats = new GetRecipeCategories();
-        recipeCats.setIBrandID(1);
-        recipeCats.setILangID(1);
         Categories recResp = new Categories();
         int getCount = 0;
               // recResp.recipeCategories.getRecipeCategory().get(0).categoryName;
@@ -52,24 +49,23 @@ public class CookApp extends HttpServlet {
             out.println("<title>Servlet CookApp</title>" );            
             out.println("</head>");
             out.println("<body>");
-                            String[] test = recResp.returnCats();
-
+            String[] test = recResp.returnCats();
+           
             while(recResp.amountOfCategories != getCount){
-                
                 //int currentCatId = recResp.recipeCategories.getRecipeCategory().get(getCount).categoryID;
                 out.print("<p> [CATEGORY]"+test[getCount]+"</p>");
-                 //RecipeSummariesResponse recSumResp = soapService.getRecipesByCategory(currentCatId, 0, null, null, true, false, true, 1, 1, 0, 1000, true);
-                /*   for(int recNames = 0; recNames< recSumResp.totalCount ;recNames++) {
+                 Recipes reccResp = new Recipes(recResp);
+                 RecipeSummariesResponse  recSumResp = reccResp.results();
+                   for(int recNames = 0; recNames< recSumResp.totalCount ;recNames++) {
                        out.println("<p>[RECIPE]" +  recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).recipeName+"</p>");
                        out.println("<img src="+recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).photoURL + ">");
                        out.println("<p>Number of ingrediens needed for this recipe : "+recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getNumberOfIngredients()+"</p>");
-                       RecipeDetailResponse rec = soapService.getRecipeByRecipeID(recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getRecipeID(), true, 1, 1);
+                       
+                       /*RecipeDetailResponse rec = soapService.getRecipeByRecipeID(recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getRecipeID(), true, 1, 1);
                        for(int ingredientCounter = 0; ingredientCounter < Integer.parseInt(recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getNumberOfIngredients()) -1 ; ingredientCounter++ ){
                        out.print("<p>[INGREDIENT]: " + rec.recipeDetail.ingredientDetails.getIngredientDetail().get(ingredientCounter).ingredientName + " amount : "+ rec.recipeDetail.ingredientDetails.getIngredientDetail().get(ingredientCounter).quantityNum+"</p>");
-                       }
-                   }*/          
-//recResp.getRecipeCategories().recipeCategory. + 
-                //out.println("    [RECIPE TITLE ] :  " + summaryResponse.title);
+                       }*/
+                   }         
                 getCount ++;
             }
             
