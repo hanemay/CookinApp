@@ -33,11 +33,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetCookingVideosSubCategory")
 public class GetCookingVideosSubCategory {
 
+    /**
+     *
+     */
     protected int iCatID;
 
     /**
      * Gets the value of the iCatID property.
      * 
+     * @return 
      */
     public int getICatID() {
         return iCatID;
@@ -46,6 +50,7 @@ public class GetCookingVideosSubCategory {
     /**
      * Sets the value of the iCatID property.
      * 
+     * @param value
      */
     public void setICatID(int value) {
         this.iCatID = value;

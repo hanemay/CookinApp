@@ -37,13 +37,25 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetPollsByRelationID")
 public class GetPollsByRelationID {
 
+    /**
+     *
+     */
     protected int iSiteId;
+
+    /**
+     *
+     */
     protected int iRelationId;
+
+    /**
+     *
+     */
     protected int iLangID;
 
     /**
      * Gets the value of the iSiteId property.
      * 
+     * @return 
      */
     public int getISiteId() {
         return iSiteId;
@@ -52,6 +64,7 @@ public class GetPollsByRelationID {
     /**
      * Sets the value of the iSiteId property.
      * 
+     * @param value
      */
     public void setISiteId(int value) {
         this.iSiteId = value;
@@ -60,6 +73,7 @@ public class GetPollsByRelationID {
     /**
      * Gets the value of the iRelationId property.
      * 
+     * @return 
      */
     public int getIRelationId() {
         return iRelationId;
@@ -68,6 +82,7 @@ public class GetPollsByRelationID {
     /**
      * Sets the value of the iRelationId property.
      * 
+     * @param value
      */
     public void setIRelationId(int value) {
         this.iRelationId = value;
@@ -76,6 +91,7 @@ public class GetPollsByRelationID {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -84,6 +100,7 @@ public class GetPollsByRelationID {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;

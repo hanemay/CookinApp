@@ -46,20 +46,51 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class BrandRecipeSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "PointToType")
     protected String pointToType;
+
+    /**
+     *
+     */
     @XmlElement(name = "BrandId")
     protected String brandId;
+
+    /**
+     *
+     */
     @XmlElement(name = "Aisleid")
     protected String aisleid;
+
+    /**
+     *
+     */
     @XmlElement(name = "SpecialCatId")
     protected String specialCatId;
+
+    /**
+     *
+     */
     @XmlElement(name = "Name")
     protected String name;
+
+    /**
+     *
+     */
     @XmlElement(name = "MainImageUrl")
     protected String mainImageUrl;
+
+    /**
+     *
+     */
     @XmlElement(name = "ThumbImageUrl")
     protected String thumbImageUrl;
+
+    /**
+     *
+     */
     @XmlElement(name = "ThumbImgUrlDesc")
     protected String thumbImgUrlDesc;
 

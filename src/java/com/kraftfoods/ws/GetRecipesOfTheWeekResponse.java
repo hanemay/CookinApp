@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipesOfTheWeekResponse")
 public class GetRecipesOfTheWeekResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetRecipesOfTheWeekResult")
     protected ROTDSummariesResponse getRecipesOfTheWeekResult;
 

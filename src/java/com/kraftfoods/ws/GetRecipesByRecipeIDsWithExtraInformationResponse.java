@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipesByRecipeIDsWithExtraInformationResponse")
 public class GetRecipesByRecipeIDsWithExtraInformationResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetRecipesByRecipeIDsWithExtraInformationResult")
     protected RecipeSummariesResponse getRecipesByRecipeIDsWithExtraInformationResult;
 

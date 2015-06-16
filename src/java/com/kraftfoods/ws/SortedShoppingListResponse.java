@@ -34,6 +34,9 @@ public class SortedShoppingListResponse
     extends StatusResponse
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "ShoppingListItems")
     protected ArrayOfShoppingListItem shoppingListItems;
 

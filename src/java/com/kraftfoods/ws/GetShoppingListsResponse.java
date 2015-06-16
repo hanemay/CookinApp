@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetShoppingListsResponse")
 public class GetShoppingListsResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetShoppingListsResult")
     protected ShoppingListsResponse getShoppingListsResult;
 

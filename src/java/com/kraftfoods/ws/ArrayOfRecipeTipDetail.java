@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfRecipeTipDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeTipDetail", nillable = true)
     protected List<RecipeTipDetail> recipeTipDetail;
 
@@ -58,6 +61,7 @@ public class ArrayOfRecipeTipDetail {
      * {@link RecipeTipDetail }
      * 
      * 
+     * @return 
      */
     public List<RecipeTipDetail> getRecipeTipDetail() {
         if (recipeTipDetail == null) {

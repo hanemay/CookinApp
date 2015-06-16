@@ -32,6 +32,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class AddItemToShoppingListResult {
 
+    /**
+     *
+     */
     @XmlElement(name = "ItemListID")
     protected String itemListID;
 

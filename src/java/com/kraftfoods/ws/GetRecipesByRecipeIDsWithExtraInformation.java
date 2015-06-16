@@ -39,9 +39,24 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipesByRecipeIDsWithExtraInformation")
 public class GetRecipesByRecipeIDsWithExtraInformation {
 
+    /**
+     *
+     */
     protected String sRecipeIDs;
+
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected boolean bIncludeExtraInformation;
 
     /**
@@ -71,6 +86,7 @@ public class GetRecipesByRecipeIDsWithExtraInformation {
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -79,6 +95,7 @@ public class GetRecipesByRecipeIDsWithExtraInformation {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -87,6 +104,7 @@ public class GetRecipesByRecipeIDsWithExtraInformation {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -95,6 +113,7 @@ public class GetRecipesByRecipeIDsWithExtraInformation {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -103,6 +122,7 @@ public class GetRecipesByRecipeIDsWithExtraInformation {
     /**
      * Gets the value of the bIncludeExtraInformation property.
      * 
+     * @return 
      */
     public boolean isBIncludeExtraInformation() {
         return bIncludeExtraInformation;
@@ -111,6 +131,7 @@ public class GetRecipesByRecipeIDsWithExtraInformation {
     /**
      * Sets the value of the bIncludeExtraInformation property.
      * 
+     * @param value
      */
     public void setBIncludeExtraInformation(boolean value) {
         this.bIncludeExtraInformation = value;

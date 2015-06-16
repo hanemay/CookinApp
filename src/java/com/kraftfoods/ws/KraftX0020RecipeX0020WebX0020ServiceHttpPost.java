@@ -18,6 +18,20 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 @SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE)
 public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
 
+    /**
+     *
+     * @param sIngredient1
+     * @param sIngredient2
+     * @param sIngredient3
+     * @param bIsRecipePhotoRequired
+     * @param sSortField
+     * @param sSortDirection
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByIngredients")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getRecipesByIngredients(
@@ -43,6 +57,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iEndRow
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeClassifications")
     @WebResult(name = "GetRecipeClassificationResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public GetRecipeClassificationResponse getRecipeClassifications(
@@ -52,6 +72,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param sRecipeBoxRecipeIDs
+     * @return
+     */
     @WebMethod(operationName = "DeleteRecipesFromRecipeBox")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse deleteRecipesFromRecipeBox(
@@ -59,6 +84,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sRecipeBoxRecipeIDs
     );
 
+    /**
+     *
+     * @param sPollIds
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetPollsByPollIDs")
     @WebResult(name = "PollDetailsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public PollDetailsResponse getPollsByPollIDs(
@@ -68,6 +99,26 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param sFirstName
+     * @param sLastName
+     * @param sEmail
+     * @param iRegistrationActivityID
+     * @param sRegistrationSource
+     * @param bIsRegistrationComplete
+     * @param bAddOptIn
+     * @param iOptInID
+     * @param iSiteID
+     * @param iLangID
+     * @param sBirthDate
+     * @param sPostalCode
+     * @param iGenderID
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "UpdateUserProfile")
     @WebResult(name = "LoginResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public LoginResponse updateUserProfile(
@@ -105,6 +156,23 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iSiteUserID
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param iSiteUserID
+     * @param iBrandID
+     * @param iLangID
+     * @param bDisplayName
+     * @param iRating
+     * @param iRateItemTypeID
+     * @param sComments
+     * @param bActive
+     * @param bTryItem
+     * @param bGetAgain
+     * @param bApprovedFoulLang
+     * @param bApprovedCompetitor
+     * @return
+     */
     @WebMethod(operationName = "RateRecipe")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse rateRecipe(
@@ -136,6 +204,27 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bApprovedCompetitor
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iLanguageID
+     * @param sSearchTerm
+     * @param sScopes
+     * @param sClassifications
+     * @param sCategories
+     * @param sSubCategories
+     * @param iPrepStartTime
+     * @param iPrepEndTime
+     * @param iTotalStartTime
+     * @param iTotalEndTime
+     * @param iPageNumber
+     * @param iPageSize
+     * @param sSortColumn
+     * @param sSortDirection
+     * @param sIgnoreWords
+     * @param bPhoto
+     * @return
+     */
     @WebMethod(operationName = "ExecuteRecipeSearch")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse executeRecipeSearch(
@@ -175,6 +264,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bPhoto
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param bIsLowBandwidth
+     * @param iSiteID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetCookingVideoForRecipeID")
     @WebResult(name = "RecipeVideosResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeVideosResponse getCookingVideoForRecipeID(
@@ -188,6 +285,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeOfTheDay")
     @WebResult(name = "ROTDSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public ROTDSummariesResponse getRecipeOfTheDay(
@@ -199,6 +303,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param iSiteID
+     * @return
+     */
     @WebMethod(operationName = "LoginUser")
     @WebResult(name = "LoginResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public LoginResponse loginUser(
@@ -210,6 +321,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iSiteID
     );
 
+    /**
+     *
+     * @param sMessageFrom
+     * @param sMessageTo
+     * @param sMessageSubject
+     * @param sMessageBody
+     * @param bIsMessageTypeHTML
+     * @return
+     */
     @WebMethod(operationName = "SendEmail")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse sendEmail(
@@ -225,6 +345,17 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bIsMessageTypeHTML
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iLangID
+     * @param iRecipeID
+     * @param senderEmail
+     * @param recipientEmail
+     * @param recipientName
+     * @param deviceType
+     * @return
+     */
     @WebMethod(operationName = "SendRecipeToEmail")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse sendRecipeToEmail(
@@ -244,6 +375,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String deviceType
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sEncryptedPassword
+     * @param iSiteID
+     * @param bRememberMe
+     * @param sOptInIDs
+     * @return
+     */
     @WebMethod(operationName = "LoginUserAndReturnCookieWithEncryptedPassword")
     @WebResult(name = "LoginResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public LoginResponse loginUserAndReturnCookieWithEncryptedPassword(
@@ -259,6 +399,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sOptInIDs
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesOfTheWeek")
     @WebResult(name = "ROTDSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public ROTDSummariesResponse getRecipesOfTheWeek(
@@ -270,6 +417,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetTopTenRecipes")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getTopTenRecipes(
@@ -279,6 +432,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param siteUserID
+     * @param recipeID
+     * @return
+     */
     @WebMethod(operationName = "IsRecipeInRecipeBox")
     @WebResult(name = "RecipeInRecipeBoxResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeInRecipeBoxResponse isRecipeInRecipeBox(
@@ -288,6 +447,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String recipeID
     );
 
+    /**
+     *
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "DeleteShoppingList")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse deleteShoppingList(
@@ -295,6 +459,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iShoppingListID
     );
 
+    /**
+     *
+     * @param iCatID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeSubCategories")
     @WebResult(name = "GetRecipeSubCategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public GetRecipeSubCategoryResponse getRecipeSubCategories(
@@ -304,6 +473,10 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
 
     /**
      * Adds the specified recipe to a user's recipe box and specified shopping list. If the user does not have a recipe box, one will be created automatically.
+     * @param iSiteUserID
+     * @param iRecipeID
+     * @param iShoppingListID
+     * @return 
      */
     @WebMethod(operationName = "AddRecipeToRecipeBoxShoppingList")
     @WebResult(name = "RecipeBoxShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
@@ -316,6 +489,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iShoppingListID
     );
 
+    /**
+     *
+     * @param sRecipeName
+     * @param sRecipeURL
+     * @param sSenderEmail
+     * @param sDestPhoneNumber
+     * @return
+     */
     @WebMethod(operationName = "SendSMSMessage")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse sendSMSMessage(
@@ -329,6 +510,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sDestPhoneNumber
     );
 
+    /**
+     *
+     * @param sRecipeIDs
+     * @param iBrandID
+     * @param iLangID
+     * @param bIncludeExtraInformation
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByRecipeIDsWithExtraInformation")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getRecipesByRecipeIDsWithExtraInformation(
@@ -342,6 +531,21 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bIncludeExtraInformation
     );
 
+    /**
+     *
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param bOnlyHealthyRecipes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @param bIncludeExtraInformation
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesBySubcategoryWithExtraInformation")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getRecipesBySubcategoryWithExtraInformation(
@@ -369,6 +573,16 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bIncludeExtraInformation
     );
 
+    /**
+     *
+     * @param iSiteUserId
+     * @param iQuestionID
+     * @param sAnswer
+     * @param iLanguageID
+     * @param iChoiceID
+     * @param iAnswerActivityID
+     * @return
+     */
     @WebMethod(operationName = "UserAnswerUpdate")
     @WebResult(name = "UpadteUserAnswerResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public UpadteUserAnswerResponse userAnswerUpdate(
@@ -386,6 +600,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iAnswerActivityID
     );
 
+    /**
+     *
+     * @param iCatID
+     * @return
+     */
     @WebMethod(operationName = "GetCookingVideosSubCategory")
     @WebResult(name = "RecipeSubCategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSubCategoryResponse getCookingVideosSubCategory(
@@ -393,6 +612,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iCatID
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @param iCatGroupID
+     * @param sIsHealthyLiving
+     * @param sFilterDays
+     * @return
+     */
     @WebMethod(operationName = "GetTopTenRecipesByCategory")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getTopTenRecipesByCategory(
@@ -408,6 +636,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sFilterDays
     );
 
+    /**
+     *
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "GetDefaultShoppingList")
     @WebResult(name = "ShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public ShoppingListResponse getDefaultShoppingList(
@@ -415,6 +648,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iSiteUserID
     );
 
+    /**
+     *
+     * @param iSiteId
+     * @param iRelationId
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetPollsByRelationID")
     @WebResult(name = "PollDetailsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public PollDetailsResponse getPollsByRelationID(
@@ -426,6 +666,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param iShoppingListItemID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "DeleteItemFromShoppingList")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse deleteItemFromShoppingList(
@@ -435,6 +681,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iShoppingListID
     );
 
+    /**
+     *
+     * @param iShoppingListId
+     * @param iSiteUserID
+     * @param sShoppingListName
+     * @return
+     */
     @WebMethod(operationName = "EditShoppingList")
     @WebResult(name = "ShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public ShoppingListResponse editShoppingList(
@@ -446,6 +699,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sShoppingListName
     );
 
+    /**
+     *
+     * @param bIsRecipePhotoRequired
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetHealthyLivingRecipes")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getHealthyLivingRecipes(
@@ -461,6 +723,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iEndRow
     );
 
+    /**
+     *
+     * @param sItemName
+     * @param sQuantity
+     * @param iAisleID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "AddItemToShoppingList")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse addItemToShoppingList(
@@ -474,6 +744,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iShoppingListID
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetDinnerTonight")
     @WebResult(name = "DTSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public DTSummariesResponse getDinnerTonight(
@@ -483,6 +759,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param sEmail
+     * @param iSiteID
+     * @param iLangId
+     * @return
+     */
     @WebMethod(operationName = "ForgotPasswordByLangID")
     @WebResult(name = "ForgotPasswordCallResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public ForgotPasswordCallResponse forgotPasswordByLangID(
@@ -494,6 +777,25 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangId
     );
 
+    /**
+     *
+     * @param sKeyword1
+     * @param sKeyword2
+     * @param sKeyword3
+     * @param sKeyword4
+     * @param sKeyword5
+     * @param sKeyword6
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByKeywordsAndSubcategory")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getRecipesByKeywordsAndSubcategory(
@@ -529,6 +831,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iEndRow
     );
 
+    /**
+     *
+     * @param sRecipeIDs
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByRecipeIDs")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getRecipesByRecipeIDs(
@@ -540,6 +849,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param parmeter1
+     * @param parmeter2
+     * @return
+     */
     @WebMethod(operationName = "TestJSON")
     @WebResult(name = "string", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public java.lang.String testJSON(
@@ -549,6 +864,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String parmeter2
     );
 
+    /**
+     *
+     * @param iSiteUserID
+     * @param iSiteAccountID
+     * @param iIncreaseCountBy
+     * @param bIncreaseCount
+     * @return
+     */
     @WebMethod(operationName = "GetSiteUserAcctPointsLeft")
     @WebResult(name = "SiteUserAcctPointsLeftResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public SiteUserAcctPointsLeftResponse getSiteUserAcctPointsLeft(
@@ -562,6 +885,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bIncreaseCount
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param iPageNumber
+     * @param iPageSize
+     * @return
+     */
     @WebMethod(operationName = "GetRatingsPaged")
     @WebResult(name = "RatingsPagedResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RatingsPagedResponse getRatingsPaged(
@@ -573,6 +903,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iPageSize
     );
 
+    /**
+     *
+     * @param strRecipeIDs
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "AddRecipesToRecipeBox")
     @WebResult(name = "RecipeBoxResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeBoxResponse addRecipesToRecipeBox(
@@ -582,6 +918,24 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iSiteUserID
     );
 
+    /**
+     *
+     * @param sKeyword1
+     * @param sKeyword2
+     * @param sKeyword3
+     * @param sKeyword4
+     * @param sKeyword5
+     * @param sKeyword6
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param sSortField
+     * @param sSortDirection
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByKeywords")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getRecipesByKeywords(
@@ -615,6 +969,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iEndRow
     );
 
+    /**
+     *
+     * @param iRecipeBoxRecipeID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "AddRecipeToShoppingList")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse addRecipeToShoppingList(
@@ -624,6 +984,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iShoppingListID
     );
 
+    /**
+     *
+     * @param iCatID
+     * @return
+     */
     @WebMethod(operationName = "GetWYDRecipeSubCategory")
     @WebResult(name = "RecipeSubCategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSubCategoryResponse getWYDRecipeSubCategory(
@@ -633,6 +998,10 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
 
     /**
      * Adds the specified recipes to a user's recipe box and specified shopping list. If the user does not have a recipe box, one will be created automatically.
+     * @param iSiteUserID
+     * @param sRecipeIDs
+     * @param iShoppingListID
+     * @return 
      */
     @WebMethod(operationName = "AddRecipesToShoppingList")
     @WebResult(name = "RecipeBoxShoppingListResponses", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
@@ -645,6 +1014,22 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iShoppingListID
     );
 
+    /**
+     *
+     * @param isSiteID
+     * @param isLangID
+     * @param sSectionType
+     * @param bsIsLowBandwidth
+     * @param bsIsRecipePhotoRequired
+     * @param bsIsReadyIn30Mins
+     * @param bsIsOnlyHealthyRecipe
+     * @param sSortField
+     * @param sSortDirection
+     * @param sCategoryList
+     * @param isStartRow
+     * @param isEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetNodesByCategoryList")
     @WebResult(name = "anyType", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public java.lang.Object getNodesByCategoryList(
@@ -674,6 +1059,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String isEndRow
     );
 
+    /**
+     *
+     * @param sItemName
+     * @param sQuantity
+     * @param iAisleID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "AddItemToShoppingListReturnItemListId")
     @WebResult(name = "AddItemToShoppingListResponseNew", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public AddItemToShoppingListResponseNew addItemToShoppingListReturnItemListId(
@@ -689,6 +1082,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
 
     /**
      * iSessionType can be 7 (NewVisitorNewSession), 3 (ExistingVisitorNewSession) or 1 (ExistingVisitorExistingSession).
+     * @param sVisitorID
+     * @param iTagID
+     * @param sSessionID
+     * @param iSessionType
+     * @param sPageID
+     * @param sCategoryID
+     * @param bIsTestData
+     * @return 
      */
     @WebMethod(operationName = "SendTrackingData")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
@@ -709,10 +1110,22 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bIsTestData
     );
 
+    /**
+     *
+     * @return
+     */
     @WebMethod(operationName = "GetCoremetricsVisitorID")
     @WebResult(name = "CoremetricsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public CoremetricsResponse getCoremetricsVisitorID();
 
+    /**
+     *
+     * @param iRecipeID
+     * @param bStripHTML
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeByRecipeID")
     @WebResult(name = "RecipeDetailResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeDetailResponse getRecipeByRecipeID(
@@ -726,6 +1139,25 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param sFirstName
+     * @param sLastName
+     * @param sEmail
+     * @param iRegistrationActivityID
+     * @param sRegistrationSource
+     * @param bIsRegistrationComplete
+     * @param bAddOptIn
+     * @param iOptInID
+     * @param iSiteID
+     * @param iLangID
+     * @param sBirthDate
+     * @param sPostalCode
+     * @param iGenderID
+     * @return
+     */
     @WebMethod(operationName = "RegisterNewUserWithExtraUserInfo")
     @WebResult(name = "LoginResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public LoginResponse registerNewUserWithExtraUserInfo(
@@ -761,6 +1193,20 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iGenderID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param sEmail
+     * @param iRegistrationActivityID
+     * @param sRegistrationSource
+     * @param bIsRegistrationComplete
+     * @param bAddOptIn
+     * @param iOptInID
+     * @param iSiteID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "RegisterNewUser")
     @WebResult(name = "LoginResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public LoginResponse registerNewUser(
@@ -786,6 +1232,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param iSiteID
+     * @param bRememberMe
+     * @param sOptInIDs
+     * @return
+     */
     @WebMethod(operationName = "LoginUserAndReturnCookie")
     @WebResult(name = "LoginResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public LoginResponse loginUserAndReturnCookie(
@@ -801,6 +1256,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sOptInIDs
     );
 
+    /**
+     *
+     * @param sItemName
+     * @param sQuantity
+     * @param sAisleID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "AddItemsToShoppingListReturnItemListIds")
     @WebResult(name = "AddItemToShoppingListResponseNew", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public AddItemToShoppingListResponseNew addItemsToShoppingListReturnItemListIds(
@@ -814,6 +1277,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iShoppingListID
     );
 
+    /**
+     *
+     * @param sExternalIdentifier
+     * @param iRatingItemTypeID
+     * @param iPageNumber
+     * @param iPageSize
+     * @return
+     */
     @WebMethod(operationName = "GetRatingsPagedByRatingType")
     @WebResult(name = "RatingsPagedResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RatingsPagedResponse getRatingsPagedByRatingType(
@@ -827,6 +1298,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iPageSize
     );
 
+    /**
+     *
+     * @param iRecipeBoxRecipeID
+     * @return
+     */
     @WebMethod(operationName = "DeleteRecipeFromRecipeBox")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse deleteRecipeFromRecipeBox(
@@ -834,6 +1310,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iRecipeBoxRecipeID
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @param dStartDate
+     * @param dEndDate
+     * @param bStripHTML
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByDates")
     @WebResult(name = "RecipeSummaryDetailsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummaryDetailsResponse getRecipesByDates(
@@ -849,6 +1334,25 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bStripHTML
     );
 
+    /**
+     *
+     * @param sKeyword1
+     * @param sKeyword2
+     * @param sKeyword3
+     * @param sKeyword4
+     * @param sKeyword5
+     * @param sKeyword6
+     * @param iCatGroupID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByKeywordsAndCategoryGroup")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getRecipesByKeywordsAndCategoryGroup(
@@ -884,6 +1388,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iEndRow
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeCategories")
     @WebResult(name = "GetRecipeCategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public GetRecipeCategoryResponse getRecipeCategories(
@@ -895,6 +1405,9 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
 
     /**
      * Creates the specified shopping list on behalf of the specified user. If specified shopping list already exists, does not recreate it and returns existing list's ID. If user already has 2 or more shopping lists, does not create specified shopping list and returns status of "error" and ErrorCode of 1. Under all other circumstances, ErrorCode is returned as 0.
+     * @param iSiteUserID
+     * @param sShoppingListName
+     * @return 
      */
     @WebMethod(operationName = "AddShoppingList")
     @WebResult(name = "ShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
@@ -905,6 +1418,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sShoppingListName
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetDinnerTonightForWeek")
     @WebResult(name = "DTSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public DTSummariesResponse getDinnerTonightForWeek(
@@ -914,6 +1433,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param iUserRecipeID
+     * @return
+     */
     @WebMethod(operationName = "GetUserRecipeByUserRecipeID")
     @WebResult(name = "MemberRecipeDetailResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public MemberRecipeDetailResponse getUserRecipeByUserRecipeID(
@@ -921,6 +1445,18 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iUserRecipeID
     );
 
+    /**
+     *
+     * @param iCatID
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetWYDRecipes")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getWYDRecipes(
@@ -944,6 +1480,17 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
 
     /**
      * iActionType can be 1 (Initiation) or 2 (Completion). Set dConversionPoints to zero if not in use. iSessionType can be 7 (NewVisitorNewSession), 3 (ExistingVisitorNewSession) or 1 (ExistingVisitorExistingSession).
+     * @param sEventID
+     * @param iActionType
+     * @param sOptionalCategoryID
+     * @param iSessionType
+     * @param dConversionPoints
+     * @param iTagID
+     * @param sCustomData
+     * @param sSessionID
+     * @param sVisitorID
+     * @param bIsTestData
+     * @return 
      */
     @WebMethod(operationName = "SendConversionEventTrackingData")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
@@ -970,6 +1517,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bIsTestData
     );
 
+    /**
+     *
+     * @param iPollID
+     * @param iPollResultID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "AnswerPoll")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse answerPoll(
@@ -981,6 +1535,20 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param bOnlyHealthyRecipes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesBySubcategory")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getRecipesBySubcategory(
@@ -1008,6 +1576,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
 
     /**
      * iSessionType can be 7 (NewVisitorNewSession), 3 (ExistingVisitorNewSession) or 1 (ExistingVisitorExistingSession).
+     * @param sVisitorID
+     * @param bIsTestData
+     * @param sSessionID
+     * @param iSessionType
+     * @param sSearchString
+     * @param sURL
+     * @param sCategoryID
+     * @param sPageID
+     * @return 
      */
     @WebMethod(operationName = "SendPageViewTrackingData")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
@@ -1030,6 +1607,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bIsTestData
     );
 
+    /**
+     *
+     * @param iRecipeId
+     * @param iMax
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeVideos")
     @WebResult(name = "RecipeVideosResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeVideosResponse getRecipeVideos(
@@ -1039,6 +1622,16 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iMax
     );
 
+    /**
+     *
+     * @param iSiteId
+     * @param iSiteUserId
+     * @param sOptinIds
+     * @param sOptOutIds
+     * @param iLanguageID
+     * @param sOptinSource
+     * @return
+     */
     @WebMethod(operationName = "UserOptinUpdate")
     @WebResult(name = "OptinSummaryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public OptinSummaryResponse userOptinUpdate(
@@ -1056,6 +1649,19 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sOptinSource
     );
 
+    /**
+     *
+     * @param iAppID
+     * @param dLatitude
+     * @param dLongitude
+     * @param iRadius
+     * @param iRadiusType
+     * @param iLangID
+     * @param iCountryID
+     * @param iPageNum
+     * @param iPageSize
+     * @return
+     */
     @WebMethod(operationName = "GetStoresByLatAndLong")
     @WebResult(name = "StoreSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StoreSummariesResponse getStoresByLatAndLong(
@@ -1079,6 +1685,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iPageSize
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "AddRecipeToRecipeBox")
     @WebResult(name = "RecipeBoxResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeBoxResponse addRecipeToRecipeBox(
@@ -1088,6 +1700,24 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iSiteUserID
     );
 
+    /**
+     *
+     * @param sExternalIdentifier
+     * @param iSiteUserID
+     * @param sSiteUser
+     * @param iBrandID
+     * @param iLangID
+     * @param bDisplayName
+     * @param iRating
+     * @param iRateItemTypeID
+     * @param sComments
+     * @param bActive
+     * @param bTryItem
+     * @param bGetAgain
+     * @param bApprovedFoulLang
+     * @param bApprovedCompetitor
+     * @return
+     */
     @WebMethod(operationName = "RateItem")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public StatusResponse rateItem(
@@ -1121,6 +1751,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bApprovedCompetitor
     );
 
+    /**
+     *
+     * @param iListItemId
+     * @param sQuantity
+     * @param iAisleID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "EditShoppingListItem")
     @WebResult(name = "EditShoppingListItemResponseNew", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public EditShoppingListItemResponseNew editShoppingListItem(
@@ -1134,6 +1772,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iShoppingListID
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param bStripHTML
+     * @param iBrandID
+     * @param iLangID
+     * @param bIncludeExtraInformation
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeByRecipeIDWithExtraInformation")
     @WebResult(name = "RecipeDetailResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeDetailResponse getRecipeByRecipeIDWithExtraInformation(
@@ -1149,6 +1796,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bIncludeExtraInformation
     );
 
+    /**
+     *
+     * @param sEmail
+     * @param iSiteID
+     * @return
+     */
     @WebMethod(operationName = "ForgotPassword")
     @WebResult(name = "ForgotPasswordCallResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public ForgotPasswordCallResponse forgotPassword(
@@ -1158,6 +1811,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iSiteID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param iSiteID
+     * @param bRememberMe
+     * @param sOptInIDs
+     * @return
+     */
     @WebMethod(operationName = "LoginUserAndReturnCookieWithExtraUserInfo")
     @WebResult(name = "LoginResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public LoginResponse loginUserAndReturnCookieWithExtraUserInfo(
@@ -1173,6 +1835,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sOptInIDs
     );
 
+    /**
+     *
+     * @param bThirdPartyLogout
+     * @param iLang
+     * @return
+     */
     @WebMethod(operationName = "LogoutUserAndReturnCookie")
     @WebResult(name = "LogoutResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public LogoutResponse logoutUserAndReturnCookie(
@@ -1182,6 +1850,17 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iLang
     );
 
+    /**
+     *
+     * @param iSiteUserID
+     * @param iRecipeTypes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @param bSortAscending
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesFromRecipeBox")
     @WebResult(name = "RecipeBoxRecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeBoxRecipeSummariesResponse getRecipesFromRecipeBox(
@@ -1203,6 +1882,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
 
     /**
      * sSortField can be either of aisle_name, aisle_id or recipe_name
+     * @param iSiteUserID
+     * @param iShoppingListID
+     * @param sSortField
+     * @param bSortAscending
+     * @return 
      */
     @WebMethod(operationName = "GetShoppingListSorted")
     @WebResult(name = "SortedShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
@@ -1217,6 +1901,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bSortAscending
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @param dStartDate
+     * @param dEndDate
+     * @param bStripHTML
+     * @return
+     */
     @WebMethod(operationName = "GetTraditionalRecipesByDates")
     @WebResult(name = "RecipeDetailResponses", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeDetailResponses getTraditionalRecipesByDates(
@@ -1232,6 +1925,19 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bStripHTML
     );
 
+    /**
+     *
+     * @param iSiteUserID
+     * @param iRecipeTypes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @param bSortAscending
+     * @param iCategoryID
+     * @param sSubCategories
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesFromRecipeBoxByCategory")
     @WebResult(name = "RecipeBoxRecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeBoxRecipeSummariesResponse getRecipesFromRecipeBoxByCategory(
@@ -1255,10 +1961,19 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sSubCategories
     );
 
+    /**
+     *
+     * @return
+     */
     @WebMethod(operationName = "GetCoremetricsSessionID")
     @WebResult(name = "CoremetricsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public CoremetricsResponse getCoremetricsSessionID();
 
+    /**
+     *
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "GetShoppingLists")
     @WebResult(name = "ShoppingListsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public ShoppingListsResponse getShoppingLists(
@@ -1266,6 +1981,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String iSiteUserID
     );
 
+    /**
+     *
+     * @param iSiteId
+     * @param iUserId
+     * @param iLanguageId
+     * @return
+     */
     @WebMethod(operationName = "UserOptin")
     @WebResult(name = "OptinSummaryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public OptinSummaryResponse userOptin(
@@ -1279,6 +2001,9 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
 
     /**
      * Specify sShoppingListItemIDs as a comma-separated list of shopping list item IDs.
+     * @param iShoppingListID
+     * @param sShoppingListItemIDs
+     * @return 
      */
     @WebMethod(operationName = "DeleteItemsFromShoppingList")
     @WebResult(name = "StatusResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
@@ -1289,6 +2014,22 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String sShoppingListItemIDs
     );
 
+    /**
+     *
+     * @param iCatID
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param bOnlyHealthyRecipes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @param bIncludeExtraInformation
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByCategory")
     @WebResult(name = "RecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public RecipeSummariesResponse getRecipesByCategory(
@@ -1318,6 +2059,19 @@ public interface KraftX0020RecipeX0020WebX0020ServiceHttpPost {
         java.lang.String bIncludeExtraInformation
     );
 
+    /**
+     *
+     * @param iCatID
+     * @param iSubCatID
+     * @param bIsLowBandwidth
+     * @param sSortField
+     * @param sSortDirection
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetCookingVideos")
     @WebResult(name = "VideoRecipeSummariesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", partName = "Body")
     public VideoRecipeSummariesResponse getCookingVideos(

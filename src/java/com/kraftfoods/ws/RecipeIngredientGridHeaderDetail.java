@@ -34,8 +34,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeIngredientGridHeaderDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "GridColumnHeadingText")
     protected String gridColumnHeadingText;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeIngredientGridDetails")
     protected ArrayOfRecipeIngredientGridDetail recipeIngredientGridDetails;
 

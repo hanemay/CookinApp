@@ -76,42 +76,117 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "CarbChoices")
     protected String carbChoices;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeType")
     protected int recipeType;
+
+    /**
+     *
+     */
     @XmlElement(name = "LanguageID")
     protected int languageID;
+
+    /**
+     *
+     */
     @XmlElement(name = "PreparationPretext")
     protected String preparationPretext;
+
+    /**
+     *
+     */
     @XmlElement(name = "PointToType")
     protected String pointToType;
+
+    /**
+     *
+     */
     @XmlElement(name = "WebPageName")
     protected String webPageName;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeID")
     protected int recipeID;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeName")
     protected String recipeName;
+
+    /**
+     *
+     */
     @XmlElement(name = "PrepTime")
     protected String prepTime;
+
+    /**
+     *
+     */
     @XmlElement(name = "TotalTime")
     protected String totalTime;
+
+    /**
+     *
+     */
     @XmlElement(name = "NumberOfServings")
     protected String numberOfServings;
+
+    /**
+     *
+     */
     @XmlElement(name = "NumberOfIngredients")
     protected String numberOfIngredients;
+
+    /**
+     *
+     */
     @XmlElement(name = "AvgRating")
     protected String avgRating;
+
+    /**
+     *
+     */
     @XmlElement(name = "NumberOfRatings")
     protected String numberOfRatings;
+
+    /**
+     *
+     */
     @XmlElement(name = "IsHealthy")
     protected boolean isHealthy;
+
+    /**
+     *
+     */
     @XmlElement(name = "PhotoURL")
     protected String photoURL;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeClassifications")
     protected ArrayOfRecipeClassification recipeClassifications;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeCategories")
     protected ArrayOfRecipeCategory recipeCategories;
+
+    /**
+     *
+     */
     @XmlElement(name = "DisplayDate")
     protected String displayDate;
 
@@ -142,6 +217,7 @@ public class RecipeSummary {
     /**
      * Gets the value of the recipeType property.
      * 
+     * @return 
      */
     public int getRecipeType() {
         return recipeType;
@@ -150,6 +226,7 @@ public class RecipeSummary {
     /**
      * Sets the value of the recipeType property.
      * 
+     * @param value
      */
     public void setRecipeType(int value) {
         this.recipeType = value;
@@ -158,6 +235,7 @@ public class RecipeSummary {
     /**
      * Gets the value of the languageID property.
      * 
+     * @return 
      */
     public int getLanguageID() {
         return languageID;
@@ -166,6 +244,7 @@ public class RecipeSummary {
     /**
      * Sets the value of the languageID property.
      * 
+     * @param value
      */
     public void setLanguageID(int value) {
         this.languageID = value;
@@ -246,6 +325,7 @@ public class RecipeSummary {
     /**
      * Gets the value of the recipeID property.
      * 
+     * @return 
      */
     public int getRecipeID() {
         return recipeID;
@@ -254,6 +334,7 @@ public class RecipeSummary {
     /**
      * Sets the value of the recipeID property.
      * 
+     * @param value
      */
     public void setRecipeID(int value) {
         this.recipeID = value;
@@ -430,6 +511,7 @@ public class RecipeSummary {
     /**
      * Gets the value of the isHealthy property.
      * 
+     * @return 
      */
     public boolean isIsHealthy() {
         return isHealthy;
@@ -438,6 +520,7 @@ public class RecipeSummary {
     /**
      * Sets the value of the isHealthy property.
      * 
+     * @param value
      */
     public void setIsHealthy(boolean value) {
         this.isHealthy = value;

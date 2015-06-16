@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "AddItemToShoppingListReturnItemListIdResponse")
 public class AddItemToShoppingListReturnItemListIdResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "AddItemToShoppingListReturnItemListIdResult")
     protected AddItemToShoppingListResponseNew addItemToShoppingListReturnItemListIdResult;
 

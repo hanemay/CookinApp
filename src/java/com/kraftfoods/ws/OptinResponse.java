@@ -40,20 +40,40 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class OptinResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "OptInID")
     protected int optInID;
+
+    /**
+     *
+     */
     @XmlElement(name = "OptInTypeID")
     protected int optInTypeID;
+
+    /**
+     *
+     */
     @XmlElement(name = "Name")
     protected String name;
+
+    /**
+     *
+     */
     @XmlElement(name = "Description")
     protected String description;
+
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected int status;
 
     /**
      * Gets the value of the optInID property.
      * 
+     * @return 
      */
     public int getOptInID() {
         return optInID;
@@ -62,6 +82,7 @@ public class OptinResponse {
     /**
      * Sets the value of the optInID property.
      * 
+     * @param value
      */
     public void setOptInID(int value) {
         this.optInID = value;
@@ -70,6 +91,7 @@ public class OptinResponse {
     /**
      * Gets the value of the optInTypeID property.
      * 
+     * @return 
      */
     public int getOptInTypeID() {
         return optInTypeID;
@@ -78,6 +100,7 @@ public class OptinResponse {
     /**
      * Sets the value of the optInTypeID property.
      * 
+     * @param value
      */
     public void setOptInTypeID(int value) {
         this.optInTypeID = value;
@@ -134,6 +157,7 @@ public class OptinResponse {
     /**
      * Gets the value of the status property.
      * 
+     * @return 
      */
     public int getStatus() {
         return status;
@@ -142,6 +166,7 @@ public class OptinResponse {
     /**
      * Sets the value of the status property.
      * 
+     * @param value
      */
     public void setStatus(int value) {
         this.status = value;

@@ -36,10 +36,21 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class TextResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "TotalCount")
     protected int totalCount;
+
+    /**
+     *
+     */
     @XmlElement(name = "TextSummary")
     protected ArrayOfTextSummary textSummary;
 
@@ -70,6 +81,7 @@ public class TextResponse {
     /**
      * Gets the value of the totalCount property.
      * 
+     * @return 
      */
     public int getTotalCount() {
         return totalCount;
@@ -78,6 +90,7 @@ public class TextResponse {
     /**
      * Sets the value of the totalCount property.
      * 
+     * @param value
      */
     public void setTotalCount(int value) {
         this.totalCount = value;

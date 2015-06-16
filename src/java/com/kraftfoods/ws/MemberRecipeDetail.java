@@ -34,6 +34,9 @@ public class MemberRecipeDetail
     extends MemberRecipeSummary
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "RatingDetails")
     protected ArrayOfRatingDetail ratingDetails;
 

@@ -33,11 +33,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetUserRecipeByUserRecipeID")
 public class GetUserRecipeByUserRecipeID {
 
+    /**
+     *
+     */
     protected int iUserRecipeID;
 
     /**
      * Gets the value of the iUserRecipeID property.
      * 
+     * @return 
      */
     public int getIUserRecipeID() {
         return iUserRecipeID;
@@ -46,6 +50,7 @@ public class GetUserRecipeByUserRecipeID {
     /**
      * Sets the value of the iUserRecipeID property.
      * 
+     * @param value
      */
     public void setIUserRecipeID(int value) {
         this.iUserRecipeID = value;

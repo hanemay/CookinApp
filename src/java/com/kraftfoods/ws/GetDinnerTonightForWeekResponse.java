@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetDinnerTonightForWeekResponse")
 public class GetDinnerTonightForWeekResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetDinnerTonightForWeekResult")
     protected DTSummariesResponse getDinnerTonightForWeekResult;
 

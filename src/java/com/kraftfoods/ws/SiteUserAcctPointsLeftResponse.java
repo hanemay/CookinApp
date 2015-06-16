@@ -34,8 +34,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class SiteUserAcctPointsLeftResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "Count")
     protected int count;
 
@@ -66,6 +73,7 @@ public class SiteUserAcctPointsLeftResponse {
     /**
      * Gets the value of the count property.
      * 
+     * @return 
      */
     public int getCount() {
         return count;
@@ -74,6 +82,7 @@ public class SiteUserAcctPointsLeftResponse {
     /**
      * Sets the value of the count property.
      * 
+     * @param value
      */
     public void setCount(int value) {
         this.count = value;

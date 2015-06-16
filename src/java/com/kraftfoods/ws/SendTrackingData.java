@@ -47,14 +47,41 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SendTrackingData")
 public class SendTrackingData {
 
+    /**
+     *
+     */
     protected String sVisitorID;
+
+    /**
+     *
+     */
     protected String sSessionID;
+
+    /**
+     *
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
     protected SessionType iSessionType;
+
+    /**
+     *
+     */
     protected int iTagID;
+
+    /**
+     *
+     */
     protected String sPageID;
+
+    /**
+     *
+     */
     protected String sCategoryID;
+
+    /**
+     *
+     */
     protected boolean bIsTestData;
 
     /**
@@ -132,6 +159,7 @@ public class SendTrackingData {
     /**
      * Gets the value of the iTagID property.
      * 
+     * @return 
      */
     public int getITagID() {
         return iTagID;
@@ -140,6 +168,7 @@ public class SendTrackingData {
     /**
      * Sets the value of the iTagID property.
      * 
+     * @param value
      */
     public void setITagID(int value) {
         this.iTagID = value;
@@ -196,6 +225,7 @@ public class SendTrackingData {
     /**
      * Gets the value of the bIsTestData property.
      * 
+     * @return 
      */
     public boolean isBIsTestData() {
         return bIsTestData;
@@ -204,6 +234,7 @@ public class SendTrackingData {
     /**
      * Sets the value of the bIsTestData property.
      * 
+     * @param value
      */
     public void setBIsTestData(boolean value) {
         this.bIsTestData = value;

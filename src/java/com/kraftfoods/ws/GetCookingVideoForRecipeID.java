@@ -39,9 +39,24 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetCookingVideoForRecipeID")
 public class GetCookingVideoForRecipeID {
 
+    /**
+     *
+     */
     protected String iRecipeID;
+
+    /**
+     *
+     */
     protected boolean bIsLowBandwidth;
+
+    /**
+     *
+     */
     protected String iSiteID;
+
+    /**
+     *
+     */
     protected String iLangID;
 
     /**
@@ -71,6 +86,7 @@ public class GetCookingVideoForRecipeID {
     /**
      * Gets the value of the bIsLowBandwidth property.
      * 
+     * @return 
      */
     public boolean isBIsLowBandwidth() {
         return bIsLowBandwidth;
@@ -79,6 +95,7 @@ public class GetCookingVideoForRecipeID {
     /**
      * Sets the value of the bIsLowBandwidth property.
      * 
+     * @param value
      */
     public void setBIsLowBandwidth(boolean value) {
         this.bIsLowBandwidth = value;

@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfRecipeBoxShoppingListResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeBoxShoppingListResponse", nillable = true)
     protected List<RecipeBoxShoppingListResponse> recipeBoxShoppingListResponse;
 
@@ -58,6 +61,7 @@ public class ArrayOfRecipeBoxShoppingListResponse {
      * {@link RecipeBoxShoppingListResponse }
      * 
      * 
+     * @return 
      */
     public List<RecipeBoxShoppingListResponse> getRecipeBoxShoppingListResponse() {
         if (recipeBoxShoppingListResponse == null) {

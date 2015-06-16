@@ -50,24 +50,59 @@ import javax.xml.datatype.XMLGregorianCalendar;
 })
 public class RecipeSummaryDetailsResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "Message")
     protected String message;
+
+    /**
+     *
+     */
     @XmlElement(name = "BrandId")
     protected int brandId;
+
+    /**
+     *
+     */
     @XmlElement(name = "LangID")
     protected int langID;
+
+    /**
+     *
+     */
     @XmlElement(name = "StartDate", required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar startDate;
+
+    /**
+     *
+     */
     @XmlElement(name = "EndDate", required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar endDate;
+
+    /**
+     *
+     */
     @XmlElement(name = "Title")
     protected String title;
+
+    /**
+     *
+     */
     @XmlElement(name = "TotalCount")
     protected int totalCount;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeSummariesDetails")
     protected ArrayOfRecipeSummaryDetails recipeSummariesDetails;
 
@@ -122,6 +157,7 @@ public class RecipeSummaryDetailsResponse {
     /**
      * Gets the value of the brandId property.
      * 
+     * @return 
      */
     public int getBrandId() {
         return brandId;
@@ -130,6 +166,7 @@ public class RecipeSummaryDetailsResponse {
     /**
      * Sets the value of the brandId property.
      * 
+     * @param value
      */
     public void setBrandId(int value) {
         this.brandId = value;
@@ -138,6 +175,7 @@ public class RecipeSummaryDetailsResponse {
     /**
      * Gets the value of the langID property.
      * 
+     * @return 
      */
     public int getLangID() {
         return langID;
@@ -146,6 +184,7 @@ public class RecipeSummaryDetailsResponse {
     /**
      * Sets the value of the langID property.
      * 
+     * @param value
      */
     public void setLangID(int value) {
         this.langID = value;
@@ -226,6 +265,7 @@ public class RecipeSummaryDetailsResponse {
     /**
      * Gets the value of the totalCount property.
      * 
+     * @return 
      */
     public int getTotalCount() {
         return totalCount;
@@ -234,6 +274,7 @@ public class RecipeSummaryDetailsResponse {
     /**
      * Sets the value of the totalCount property.
      * 
+     * @param value
      */
     public void setTotalCount(int value) {
         this.totalCount = value;

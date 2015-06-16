@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "UserAnswerUpdateResponse")
 public class UserAnswerUpdateResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "UserAnswerUpdateResult")
     protected UpadteUserAnswerResponse userAnswerUpdateResult;
 

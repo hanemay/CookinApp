@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SendTrackingDataResponse")
 public class SendTrackingDataResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "SendTrackingDataResult")
     protected StatusResponse sendTrackingDataResult;
 

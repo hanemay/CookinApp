@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfString {
 
+    /**
+     *
+     */
     @XmlElement(nillable = true)
     protected List<String> string;
 
@@ -58,6 +61,7 @@ public class ArrayOfString {
      * {@link String }
      * 
      * 
+     * @return 
      */
     public List<String> getString() {
         if (string == null) {

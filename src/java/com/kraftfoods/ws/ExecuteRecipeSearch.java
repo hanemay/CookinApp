@@ -65,27 +65,95 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "ExecuteRecipeSearch")
 public class ExecuteRecipeSearch {
 
+    /**
+     *
+     */
     protected int iSiteID;
+
+    /**
+     *
+     */
     protected int iLanguageID;
+
+    /**
+     *
+     */
     protected String sSearchTerm;
+
+    /**
+     *
+     */
     protected String sScopes;
+
+    /**
+     *
+     */
     protected String sClassifications;
+
+    /**
+     *
+     */
     protected String sCategories;
+
+    /**
+     *
+     */
     protected String sSubCategories;
+
+    /**
+     *
+     */
     protected int iPrepStartTime;
+
+    /**
+     *
+     */
     protected int iPrepEndTime;
+
+    /**
+     *
+     */
     protected int iTotalStartTime;
+
+    /**
+     *
+     */
     protected int iTotalEndTime;
+
+    /**
+     *
+     */
     protected int iPageNumber;
+
+    /**
+     *
+     */
     protected int iPageSize;
+
+    /**
+     *
+     */
     protected String sSortColumn;
+
+    /**
+     *
+     */
     protected String sSortDirection;
+
+    /**
+     *
+     */
     protected String sIgnoreWords;
+
+    /**
+     *
+     */
     protected String bPhoto;
 
     /**
      * Gets the value of the iSiteID property.
      * 
+     * @return 
      */
     public int getISiteID() {
         return iSiteID;
@@ -94,6 +162,7 @@ public class ExecuteRecipeSearch {
     /**
      * Sets the value of the iSiteID property.
      * 
+     * @param value
      */
     public void setISiteID(int value) {
         this.iSiteID = value;
@@ -102,6 +171,7 @@ public class ExecuteRecipeSearch {
     /**
      * Gets the value of the iLanguageID property.
      * 
+     * @return 
      */
     public int getILanguageID() {
         return iLanguageID;
@@ -110,6 +180,7 @@ public class ExecuteRecipeSearch {
     /**
      * Sets the value of the iLanguageID property.
      * 
+     * @param value
      */
     public void setILanguageID(int value) {
         this.iLanguageID = value;
@@ -238,6 +309,7 @@ public class ExecuteRecipeSearch {
     /**
      * Gets the value of the iPrepStartTime property.
      * 
+     * @return 
      */
     public int getIPrepStartTime() {
         return iPrepStartTime;
@@ -246,6 +318,7 @@ public class ExecuteRecipeSearch {
     /**
      * Sets the value of the iPrepStartTime property.
      * 
+     * @param value
      */
     public void setIPrepStartTime(int value) {
         this.iPrepStartTime = value;
@@ -254,6 +327,7 @@ public class ExecuteRecipeSearch {
     /**
      * Gets the value of the iPrepEndTime property.
      * 
+     * @return 
      */
     public int getIPrepEndTime() {
         return iPrepEndTime;
@@ -262,6 +336,7 @@ public class ExecuteRecipeSearch {
     /**
      * Sets the value of the iPrepEndTime property.
      * 
+     * @param value
      */
     public void setIPrepEndTime(int value) {
         this.iPrepEndTime = value;
@@ -270,6 +345,7 @@ public class ExecuteRecipeSearch {
     /**
      * Gets the value of the iTotalStartTime property.
      * 
+     * @return 
      */
     public int getITotalStartTime() {
         return iTotalStartTime;
@@ -278,6 +354,7 @@ public class ExecuteRecipeSearch {
     /**
      * Sets the value of the iTotalStartTime property.
      * 
+     * @param value
      */
     public void setITotalStartTime(int value) {
         this.iTotalStartTime = value;
@@ -286,6 +363,7 @@ public class ExecuteRecipeSearch {
     /**
      * Gets the value of the iTotalEndTime property.
      * 
+     * @return 
      */
     public int getITotalEndTime() {
         return iTotalEndTime;
@@ -294,6 +372,7 @@ public class ExecuteRecipeSearch {
     /**
      * Sets the value of the iTotalEndTime property.
      * 
+     * @param value
      */
     public void setITotalEndTime(int value) {
         this.iTotalEndTime = value;
@@ -302,6 +381,7 @@ public class ExecuteRecipeSearch {
     /**
      * Gets the value of the iPageNumber property.
      * 
+     * @return 
      */
     public int getIPageNumber() {
         return iPageNumber;
@@ -310,6 +390,7 @@ public class ExecuteRecipeSearch {
     /**
      * Sets the value of the iPageNumber property.
      * 
+     * @param value
      */
     public void setIPageNumber(int value) {
         this.iPageNumber = value;
@@ -318,6 +399,7 @@ public class ExecuteRecipeSearch {
     /**
      * Gets the value of the iPageSize property.
      * 
+     * @return 
      */
     public int getIPageSize() {
         return iPageSize;
@@ -326,6 +408,7 @@ public class ExecuteRecipeSearch {
     /**
      * Sets the value of the iPageSize property.
      * 
+     * @param value
      */
     public void setIPageSize(int value) {
         this.iPageSize = value;

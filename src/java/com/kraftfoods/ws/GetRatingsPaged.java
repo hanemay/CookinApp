@@ -37,13 +37,25 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRatingsPaged")
 public class GetRatingsPaged {
 
+    /**
+     *
+     */
     protected int iRecipeID;
+
+    /**
+     *
+     */
     protected int iPageNumber;
+
+    /**
+     *
+     */
     protected int iPageSize;
 
     /**
      * Gets the value of the iRecipeID property.
      * 
+     * @return 
      */
     public int getIRecipeID() {
         return iRecipeID;
@@ -52,6 +64,7 @@ public class GetRatingsPaged {
     /**
      * Sets the value of the iRecipeID property.
      * 
+     * @param value
      */
     public void setIRecipeID(int value) {
         this.iRecipeID = value;
@@ -60,6 +73,7 @@ public class GetRatingsPaged {
     /**
      * Gets the value of the iPageNumber property.
      * 
+     * @return 
      */
     public int getIPageNumber() {
         return iPageNumber;
@@ -68,6 +82,7 @@ public class GetRatingsPaged {
     /**
      * Sets the value of the iPageNumber property.
      * 
+     * @param value
      */
     public void setIPageNumber(int value) {
         this.iPageNumber = value;
@@ -76,6 +91,7 @@ public class GetRatingsPaged {
     /**
      * Gets the value of the iPageSize property.
      * 
+     * @return 
      */
     public int getIPageSize() {
         return iPageSize;
@@ -84,6 +100,7 @@ public class GetRatingsPaged {
     /**
      * Sets the value of the iPageSize property.
      * 
+     * @param value
      */
     public void setIPageSize(int value) {
         this.iPageSize = value;

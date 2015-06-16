@@ -45,17 +45,45 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipesFromRecipeBox")
 public class GetRecipesFromRecipeBox {
 
+    /**
+     *
+     */
     protected int iSiteUserID;
+
+    /**
+     *
+     */
     protected int iRecipeTypes;
+
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected int iStartRow;
+
+    /**
+     *
+     */
     protected int iEndRow;
+
+    /**
+     *
+     */
     protected boolean bSortAscending;
 
     /**
      * Gets the value of the iSiteUserID property.
      * 
+     * @return 
      */
     public int getISiteUserID() {
         return iSiteUserID;
@@ -64,6 +92,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Sets the value of the iSiteUserID property.
      * 
+     * @param value
      */
     public void setISiteUserID(int value) {
         this.iSiteUserID = value;
@@ -72,6 +101,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Gets the value of the iRecipeTypes property.
      * 
+     * @return 
      */
     public int getIRecipeTypes() {
         return iRecipeTypes;
@@ -80,6 +110,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Sets the value of the iRecipeTypes property.
      * 
+     * @param value
      */
     public void setIRecipeTypes(int value) {
         this.iRecipeTypes = value;
@@ -88,6 +119,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -96,6 +128,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -104,6 +137,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -112,6 +146,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -120,6 +155,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Gets the value of the iStartRow property.
      * 
+     * @return 
      */
     public int getIStartRow() {
         return iStartRow;
@@ -128,6 +164,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Sets the value of the iStartRow property.
      * 
+     * @param value
      */
     public void setIStartRow(int value) {
         this.iStartRow = value;
@@ -136,6 +173,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Gets the value of the iEndRow property.
      * 
+     * @return 
      */
     public int getIEndRow() {
         return iEndRow;
@@ -144,6 +182,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Sets the value of the iEndRow property.
      * 
+     * @param value
      */
     public void setIEndRow(int value) {
         this.iEndRow = value;
@@ -152,6 +191,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Gets the value of the bSortAscending property.
      * 
+     * @return 
      */
     public boolean isBSortAscending() {
         return bSortAscending;
@@ -160,6 +200,7 @@ public class GetRecipesFromRecipeBox {
     /**
      * Sets the value of the bSortAscending property.
      * 
+     * @param value
      */
     public void setBSortAscending(boolean value) {
         this.bSortAscending = value;

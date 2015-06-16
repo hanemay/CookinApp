@@ -34,8 +34,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class PreparationDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "Description")
     protected String description;
+
+    /**
+     *
+     */
     @XmlElement(name = "Sequence")
     protected String sequence;
 

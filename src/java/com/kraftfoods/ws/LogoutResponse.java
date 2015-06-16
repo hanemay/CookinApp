@@ -44,18 +44,45 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class LogoutResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "IsSuccessful")
     protected boolean isSuccessful;
+
+    /**
+     *
+     */
     @XmlElement(name = "ErrorCode")
     protected int errorCode;
+
+    /**
+     *
+     */
     @XmlElement(name = "ErrorMessage")
     protected String errorMessage;
+
+    /**
+     *
+     */
     @XmlElement(name = "SiteUserID")
     protected int siteUserID;
+
+    /**
+     *
+     */
     @XmlElement(name = "Email")
     protected String email;
+
+    /**
+     *
+     */
     @XmlElement(name = "CookieResponse")
     protected CookieResponseEntity cookieResponse;
 
@@ -86,6 +113,7 @@ public class LogoutResponse {
     /**
      * Gets the value of the isSuccessful property.
      * 
+     * @return 
      */
     public boolean isIsSuccessful() {
         return isSuccessful;
@@ -94,6 +122,7 @@ public class LogoutResponse {
     /**
      * Sets the value of the isSuccessful property.
      * 
+     * @param value
      */
     public void setIsSuccessful(boolean value) {
         this.isSuccessful = value;
@@ -102,6 +131,7 @@ public class LogoutResponse {
     /**
      * Gets the value of the errorCode property.
      * 
+     * @return 
      */
     public int getErrorCode() {
         return errorCode;
@@ -110,6 +140,7 @@ public class LogoutResponse {
     /**
      * Sets the value of the errorCode property.
      * 
+     * @param value
      */
     public void setErrorCode(int value) {
         this.errorCode = value;
@@ -142,6 +173,7 @@ public class LogoutResponse {
     /**
      * Gets the value of the siteUserID property.
      * 
+     * @return 
      */
     public int getSiteUserID() {
         return siteUserID;
@@ -150,6 +182,7 @@ public class LogoutResponse {
     /**
      * Sets the value of the siteUserID property.
      * 
+     * @param value
      */
     public void setSiteUserID(int value) {
         this.siteUserID = value;

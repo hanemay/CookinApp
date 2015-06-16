@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfShoppingListItem {
 
+    /**
+     *
+     */
     @XmlElement(name = "ShoppingListItem", nillable = true)
     protected List<ShoppingListItem> shoppingListItem;
 
@@ -58,6 +61,7 @@ public class ArrayOfShoppingListItem {
      * {@link ShoppingListItem }
      * 
      * 
+     * @return 
      */
     public List<ShoppingListItem> getShoppingListItem() {
         if (shoppingListItem == null) {

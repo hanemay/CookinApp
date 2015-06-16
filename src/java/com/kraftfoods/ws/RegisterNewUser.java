@@ -51,15 +51,54 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "RegisterNewUser")
 public class RegisterNewUser {
 
+    /**
+     *
+     */
     protected String sUserName;
+
+    /**
+     *
+     */
     protected String sPassword;
+
+    /**
+     *
+     */
     protected String sEmail;
+
+    /**
+     *
+     */
     protected int iRegistrationActivityID;
+
+    /**
+     *
+     */
     protected String sRegistrationSource;
+
+    /**
+     *
+     */
     protected boolean bIsRegistrationComplete;
+
+    /**
+     *
+     */
     protected boolean bAddOptIn;
+
+    /**
+     *
+     */
     protected int iOptInID;
+
+    /**
+     *
+     */
     protected int iSiteID;
+
+    /**
+     *
+     */
     protected int iLangID;
 
     /**
@@ -137,6 +176,7 @@ public class RegisterNewUser {
     /**
      * Gets the value of the iRegistrationActivityID property.
      * 
+     * @return 
      */
     public int getIRegistrationActivityID() {
         return iRegistrationActivityID;
@@ -145,6 +185,7 @@ public class RegisterNewUser {
     /**
      * Sets the value of the iRegistrationActivityID property.
      * 
+     * @param value
      */
     public void setIRegistrationActivityID(int value) {
         this.iRegistrationActivityID = value;
@@ -177,6 +218,7 @@ public class RegisterNewUser {
     /**
      * Gets the value of the bIsRegistrationComplete property.
      * 
+     * @return 
      */
     public boolean isBIsRegistrationComplete() {
         return bIsRegistrationComplete;
@@ -185,6 +227,7 @@ public class RegisterNewUser {
     /**
      * Sets the value of the bIsRegistrationComplete property.
      * 
+     * @param value
      */
     public void setBIsRegistrationComplete(boolean value) {
         this.bIsRegistrationComplete = value;
@@ -193,6 +236,7 @@ public class RegisterNewUser {
     /**
      * Gets the value of the bAddOptIn property.
      * 
+     * @return 
      */
     public boolean isBAddOptIn() {
         return bAddOptIn;
@@ -201,6 +245,7 @@ public class RegisterNewUser {
     /**
      * Sets the value of the bAddOptIn property.
      * 
+     * @param value
      */
     public void setBAddOptIn(boolean value) {
         this.bAddOptIn = value;
@@ -209,6 +254,7 @@ public class RegisterNewUser {
     /**
      * Gets the value of the iOptInID property.
      * 
+     * @return 
      */
     public int getIOptInID() {
         return iOptInID;
@@ -217,6 +263,7 @@ public class RegisterNewUser {
     /**
      * Sets the value of the iOptInID property.
      * 
+     * @param value
      */
     public void setIOptInID(int value) {
         this.iOptInID = value;
@@ -225,6 +272,7 @@ public class RegisterNewUser {
     /**
      * Gets the value of the iSiteID property.
      * 
+     * @return 
      */
     public int getISiteID() {
         return iSiteID;
@@ -233,6 +281,7 @@ public class RegisterNewUser {
     /**
      * Sets the value of the iSiteID property.
      * 
+     * @param value
      */
     public void setISiteID(int value) {
         this.iSiteID = value;
@@ -241,6 +290,7 @@ public class RegisterNewUser {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -249,6 +299,7 @@ public class RegisterNewUser {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;

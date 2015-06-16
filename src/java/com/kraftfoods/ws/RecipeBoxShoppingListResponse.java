@@ -38,16 +38,28 @@ public class RecipeBoxShoppingListResponse
     extends StatusResponse
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeBoxRecipeId")
     protected int recipeBoxRecipeId;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeBoxStatus")
     protected String recipeBoxStatus;
+
+    /**
+     *
+     */
     @XmlElement(name = "ShoppingListStatus")
     protected String shoppingListStatus;
 
     /**
      * Gets the value of the recipeBoxRecipeId property.
      * 
+     * @return 
      */
     public int getRecipeBoxRecipeId() {
         return recipeBoxRecipeId;
@@ -56,6 +68,7 @@ public class RecipeBoxShoppingListResponse
     /**
      * Sets the value of the recipeBoxRecipeId property.
      * 
+     * @param value
      */
     public void setRecipeBoxRecipeId(int value) {
         this.recipeBoxRecipeId = value;

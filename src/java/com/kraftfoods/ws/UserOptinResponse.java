@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "UserOptinResponse")
 public class UserOptinResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "UserOptinResult")
     protected OptinSummaryResponse userOptinResult;
 

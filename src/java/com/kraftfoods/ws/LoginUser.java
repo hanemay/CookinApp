@@ -37,8 +37,19 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "LoginUser")
 public class LoginUser {
 
+    /**
+     *
+     */
     protected String sUserName;
+
+    /**
+     *
+     */
     protected String sPassword;
+
+    /**
+     *
+     */
     protected int iSiteID;
 
     /**
@@ -92,6 +103,7 @@ public class LoginUser {
     /**
      * Gets the value of the iSiteID property.
      * 
+     * @return 
      */
     public int getISiteID() {
         return iSiteID;
@@ -100,6 +112,7 @@ public class LoginUser {
     /**
      * Sets the value of the iSiteID property.
      * 
+     * @param value
      */
     public void setISiteID(int value) {
         this.iSiteID = value;

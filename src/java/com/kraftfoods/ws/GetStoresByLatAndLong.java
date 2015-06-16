@@ -49,19 +49,55 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetStoresByLatAndLong")
 public class GetStoresByLatAndLong {
 
+    /**
+     *
+     */
     protected int iAppID;
+
+    /**
+     *
+     */
     protected double dLatitude;
+
+    /**
+     *
+     */
     protected double dLongitude;
+
+    /**
+     *
+     */
     protected int iRadius;
+
+    /**
+     *
+     */
     protected int iRadiusType;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected int iCountryID;
+
+    /**
+     *
+     */
     protected int iPageNum;
+
+    /**
+     *
+     */
     protected int iPageSize;
 
     /**
      * Gets the value of the iAppID property.
      * 
+     * @return 
      */
     public int getIAppID() {
         return iAppID;
@@ -70,6 +106,7 @@ public class GetStoresByLatAndLong {
     /**
      * Sets the value of the iAppID property.
      * 
+     * @param value
      */
     public void setIAppID(int value) {
         this.iAppID = value;
@@ -78,6 +115,7 @@ public class GetStoresByLatAndLong {
     /**
      * Gets the value of the dLatitude property.
      * 
+     * @return 
      */
     public double getDLatitude() {
         return dLatitude;
@@ -86,6 +124,7 @@ public class GetStoresByLatAndLong {
     /**
      * Sets the value of the dLatitude property.
      * 
+     * @param value
      */
     public void setDLatitude(double value) {
         this.dLatitude = value;
@@ -94,6 +133,7 @@ public class GetStoresByLatAndLong {
     /**
      * Gets the value of the dLongitude property.
      * 
+     * @return 
      */
     public double getDLongitude() {
         return dLongitude;
@@ -102,6 +142,7 @@ public class GetStoresByLatAndLong {
     /**
      * Sets the value of the dLongitude property.
      * 
+     * @param value
      */
     public void setDLongitude(double value) {
         this.dLongitude = value;
@@ -110,6 +151,7 @@ public class GetStoresByLatAndLong {
     /**
      * Gets the value of the iRadius property.
      * 
+     * @return 
      */
     public int getIRadius() {
         return iRadius;
@@ -118,6 +160,7 @@ public class GetStoresByLatAndLong {
     /**
      * Sets the value of the iRadius property.
      * 
+     * @param value
      */
     public void setIRadius(int value) {
         this.iRadius = value;
@@ -126,6 +169,7 @@ public class GetStoresByLatAndLong {
     /**
      * Gets the value of the iRadiusType property.
      * 
+     * @return 
      */
     public int getIRadiusType() {
         return iRadiusType;
@@ -134,6 +178,7 @@ public class GetStoresByLatAndLong {
     /**
      * Sets the value of the iRadiusType property.
      * 
+     * @param value
      */
     public void setIRadiusType(int value) {
         this.iRadiusType = value;
@@ -142,6 +187,7 @@ public class GetStoresByLatAndLong {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -150,6 +196,7 @@ public class GetStoresByLatAndLong {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -158,6 +205,7 @@ public class GetStoresByLatAndLong {
     /**
      * Gets the value of the iCountryID property.
      * 
+     * @return 
      */
     public int getICountryID() {
         return iCountryID;
@@ -166,6 +214,7 @@ public class GetStoresByLatAndLong {
     /**
      * Sets the value of the iCountryID property.
      * 
+     * @param value
      */
     public void setICountryID(int value) {
         this.iCountryID = value;
@@ -174,6 +223,7 @@ public class GetStoresByLatAndLong {
     /**
      * Gets the value of the iPageNum property.
      * 
+     * @return 
      */
     public int getIPageNum() {
         return iPageNum;
@@ -182,6 +232,7 @@ public class GetStoresByLatAndLong {
     /**
      * Sets the value of the iPageNum property.
      * 
+     * @param value
      */
     public void setIPageNum(int value) {
         this.iPageNum = value;
@@ -190,6 +241,7 @@ public class GetStoresByLatAndLong {
     /**
      * Gets the value of the iPageSize property.
      * 
+     * @return 
      */
     public int getIPageSize() {
         return iPageSize;
@@ -198,6 +250,7 @@ public class GetStoresByLatAndLong {
     /**
      * Sets the value of the iPageSize property.
      * 
+     * @param value
      */
     public void setIPageSize(int value) {
         this.iPageSize = value;

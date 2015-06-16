@@ -34,8 +34,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeInRecipeBoxResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "ReturnValue")
     protected boolean returnValue;
 
@@ -66,6 +73,7 @@ public class RecipeInRecipeBoxResponse {
     /**
      * Gets the value of the returnValue property.
      * 
+     * @return 
      */
     public boolean isReturnValue() {
         return returnValue;
@@ -74,6 +82,7 @@ public class RecipeInRecipeBoxResponse {
     /**
      * Sets the value of the returnValue property.
      * 
+     * @param value
      */
     public void setReturnValue(boolean value) {
         this.returnValue = value;

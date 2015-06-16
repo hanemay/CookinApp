@@ -46,18 +46,45 @@ public class RecipeDetail
     extends RecipeSummary
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "IngredientDetails")
     protected ArrayOfIngredientDetail ingredientDetails;
+
+    /**
+     *
+     */
     @XmlElement(name = "PreparationDetails")
     protected ArrayOfPreparationDetail preparationDetails;
+
+    /**
+     *
+     */
     @XmlElement(name = "NutritionItemDetails")
     protected ArrayOfNutritionItemDetail nutritionItemDetails;
+
+    /**
+     *
+     */
     @XmlElement(name = "NutritionGridItemDetails")
     protected ArrayOfNutritionGridItemDetail nutritionGridItemDetails;
+
+    /**
+     *
+     */
     @XmlElement(name = "RatingDetails")
     protected ArrayOfRatingDetail ratingDetails;
+
+    /**
+     *
+     */
     @XmlElement(name = "ComplimentaryRecipes")
     protected ArrayOfRecipeSummary complimentaryRecipes;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeTipDetails")
     protected ArrayOfRecipeTipDetail recipeTipDetails;
 

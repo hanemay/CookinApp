@@ -36,16 +36,28 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ShoppingList {
 
+    /**
+     *
+     */
     @XmlElement(name = "ShoppingListID")
     protected int shoppingListID;
+
+    /**
+     *
+     */
     @XmlElement(name = "ShoppingListName")
     protected String shoppingListName;
+
+    /**
+     *
+     */
     @XmlElement(name = "ShoppingListItems")
     protected ArrayOfShoppingListItem shoppingListItems;
 
     /**
      * Gets the value of the shoppingListID property.
      * 
+     * @return 
      */
     public int getShoppingListID() {
         return shoppingListID;
@@ -54,6 +66,7 @@ public class ShoppingList {
     /**
      * Sets the value of the shoppingListID property.
      * 
+     * @param value
      */
     public void setShoppingListID(int value) {
         this.shoppingListID = value;

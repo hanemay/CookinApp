@@ -51,20 +51,60 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipesBySubcategory")
 public class GetRecipesBySubcategory {
 
+    /**
+     *
+     */
     protected int iSubCatID;
+
+    /**
+     *
+     */
     protected String sSortField;
+
+    /**
+     *
+     */
     protected String sSortDirection;
+
+    /**
+     *
+     */
     protected boolean bIsRecipePhotoRequired;
+
+    /**
+     *
+     */
     protected boolean bIsReadyIn30Mins;
+
+    /**
+     *
+     */
     protected boolean bOnlyHealthyRecipes;
+
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected int iStartRow;
+
+    /**
+     *
+     */
     protected int iEndRow;
 
     /**
      * Gets the value of the iSubCatID property.
      * 
+     * @return 
      */
     public int getISubCatID() {
         return iSubCatID;
@@ -73,6 +113,7 @@ public class GetRecipesBySubcategory {
     /**
      * Sets the value of the iSubCatID property.
      * 
+     * @param value
      */
     public void setISubCatID(int value) {
         this.iSubCatID = value;
@@ -129,6 +170,7 @@ public class GetRecipesBySubcategory {
     /**
      * Gets the value of the bIsRecipePhotoRequired property.
      * 
+     * @return 
      */
     public boolean isBIsRecipePhotoRequired() {
         return bIsRecipePhotoRequired;
@@ -137,6 +179,7 @@ public class GetRecipesBySubcategory {
     /**
      * Sets the value of the bIsRecipePhotoRequired property.
      * 
+     * @param value
      */
     public void setBIsRecipePhotoRequired(boolean value) {
         this.bIsRecipePhotoRequired = value;
@@ -145,6 +188,7 @@ public class GetRecipesBySubcategory {
     /**
      * Gets the value of the bIsReadyIn30Mins property.
      * 
+     * @return 
      */
     public boolean isBIsReadyIn30Mins() {
         return bIsReadyIn30Mins;
@@ -153,6 +197,7 @@ public class GetRecipesBySubcategory {
     /**
      * Sets the value of the bIsReadyIn30Mins property.
      * 
+     * @param value
      */
     public void setBIsReadyIn30Mins(boolean value) {
         this.bIsReadyIn30Mins = value;
@@ -161,6 +206,7 @@ public class GetRecipesBySubcategory {
     /**
      * Gets the value of the bOnlyHealthyRecipes property.
      * 
+     * @return 
      */
     public boolean isBOnlyHealthyRecipes() {
         return bOnlyHealthyRecipes;
@@ -169,6 +215,7 @@ public class GetRecipesBySubcategory {
     /**
      * Sets the value of the bOnlyHealthyRecipes property.
      * 
+     * @param value
      */
     public void setBOnlyHealthyRecipes(boolean value) {
         this.bOnlyHealthyRecipes = value;
@@ -177,6 +224,7 @@ public class GetRecipesBySubcategory {
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -185,6 +233,7 @@ public class GetRecipesBySubcategory {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -193,6 +242,7 @@ public class GetRecipesBySubcategory {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -201,6 +251,7 @@ public class GetRecipesBySubcategory {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -209,6 +260,7 @@ public class GetRecipesBySubcategory {
     /**
      * Gets the value of the iStartRow property.
      * 
+     * @return 
      */
     public int getIStartRow() {
         return iStartRow;
@@ -217,6 +269,7 @@ public class GetRecipesBySubcategory {
     /**
      * Sets the value of the iStartRow property.
      * 
+     * @param value
      */
     public void setIStartRow(int value) {
         this.iStartRow = value;
@@ -225,6 +278,7 @@ public class GetRecipesBySubcategory {
     /**
      * Gets the value of the iEndRow property.
      * 
+     * @return 
      */
     public int getIEndRow() {
         return iEndRow;
@@ -233,6 +287,7 @@ public class GetRecipesBySubcategory {
     /**
      * Sets the value of the iEndRow property.
      * 
+     * @param value
      */
     public void setIEndRow(int value) {
         this.iEndRow = value;

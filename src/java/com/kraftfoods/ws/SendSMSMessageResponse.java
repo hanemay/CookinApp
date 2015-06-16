@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SendSMSMessageResponse")
 public class SendSMSMessageResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "SendSMSMessageResult")
     protected StatusResponse sendSMSMessageResult;
 

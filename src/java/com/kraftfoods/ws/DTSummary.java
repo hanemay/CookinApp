@@ -34,6 +34,9 @@ public class DTSummary
     extends RecipeSummary
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "DisplayDateJS")
     protected String displayDateJS;
 

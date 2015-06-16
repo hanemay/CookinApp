@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "ForgotPasswordByLangIDResponse")
 public class ForgotPasswordByLangIDResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "ForgotPasswordByLangIDResult")
     protected ForgotPasswordCallResponse forgotPasswordByLangIDResult;
 

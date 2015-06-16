@@ -43,16 +43,40 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "UserAnswerUpdate")
 public class UserAnswerUpdate {
 
+    /**
+     *
+     */
     protected int iSiteUserId;
+
+    /**
+     *
+     */
     protected int iQuestionID;
+
+    /**
+     *
+     */
     protected String sAnswer;
+
+    /**
+     *
+     */
     protected int iLanguageID;
+
+    /**
+     *
+     */
     protected int iChoiceID;
+
+    /**
+     *
+     */
     protected int iAnswerActivityID;
 
     /**
      * Gets the value of the iSiteUserId property.
      * 
+     * @return 
      */
     public int getISiteUserId() {
         return iSiteUserId;
@@ -61,6 +85,7 @@ public class UserAnswerUpdate {
     /**
      * Sets the value of the iSiteUserId property.
      * 
+     * @param value
      */
     public void setISiteUserId(int value) {
         this.iSiteUserId = value;
@@ -69,6 +94,7 @@ public class UserAnswerUpdate {
     /**
      * Gets the value of the iQuestionID property.
      * 
+     * @return 
      */
     public int getIQuestionID() {
         return iQuestionID;
@@ -77,6 +103,7 @@ public class UserAnswerUpdate {
     /**
      * Sets the value of the iQuestionID property.
      * 
+     * @param value
      */
     public void setIQuestionID(int value) {
         this.iQuestionID = value;
@@ -109,6 +136,7 @@ public class UserAnswerUpdate {
     /**
      * Gets the value of the iLanguageID property.
      * 
+     * @return 
      */
     public int getILanguageID() {
         return iLanguageID;
@@ -117,6 +145,7 @@ public class UserAnswerUpdate {
     /**
      * Sets the value of the iLanguageID property.
      * 
+     * @param value
      */
     public void setILanguageID(int value) {
         this.iLanguageID = value;
@@ -125,6 +154,7 @@ public class UserAnswerUpdate {
     /**
      * Gets the value of the iChoiceID property.
      * 
+     * @return 
      */
     public int getIChoiceID() {
         return iChoiceID;
@@ -133,6 +163,7 @@ public class UserAnswerUpdate {
     /**
      * Sets the value of the iChoiceID property.
      * 
+     * @param value
      */
     public void setIChoiceID(int value) {
         this.iChoiceID = value;
@@ -141,6 +172,7 @@ public class UserAnswerUpdate {
     /**
      * Gets the value of the iAnswerActivityID property.
      * 
+     * @return 
      */
     public int getIAnswerActivityID() {
         return iAnswerActivityID;
@@ -149,6 +181,7 @@ public class UserAnswerUpdate {
     /**
      * Sets the value of the iAnswerActivityID property.
      * 
+     * @param value
      */
     public void setIAnswerActivityID(int value) {
         this.iAnswerActivityID = value;

@@ -45,17 +45,45 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SendRecipeToEmail")
 public class SendRecipeToEmail {
 
+    /**
+     *
+     */
     protected int iSiteID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected int iRecipeID;
+
+    /**
+     *
+     */
     protected String senderEmail;
+
+    /**
+     *
+     */
     protected String recipientEmail;
+
+    /**
+     *
+     */
     protected String recipientName;
+
+    /**
+     *
+     */
     protected int deviceType;
 
     /**
      * Gets the value of the iSiteID property.
      * 
+     * @return 
      */
     public int getISiteID() {
         return iSiteID;
@@ -64,6 +92,7 @@ public class SendRecipeToEmail {
     /**
      * Sets the value of the iSiteID property.
      * 
+     * @param value
      */
     public void setISiteID(int value) {
         this.iSiteID = value;
@@ -72,6 +101,7 @@ public class SendRecipeToEmail {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -80,6 +110,7 @@ public class SendRecipeToEmail {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -88,6 +119,7 @@ public class SendRecipeToEmail {
     /**
      * Gets the value of the iRecipeID property.
      * 
+     * @return 
      */
     public int getIRecipeID() {
         return iRecipeID;
@@ -96,6 +128,7 @@ public class SendRecipeToEmail {
     /**
      * Sets the value of the iRecipeID property.
      * 
+     * @param value
      */
     public void setIRecipeID(int value) {
         this.iRecipeID = value;
@@ -176,6 +209,7 @@ public class SendRecipeToEmail {
     /**
      * Gets the value of the deviceType property.
      * 
+     * @return 
      */
     public int getDeviceType() {
         return deviceType;
@@ -184,6 +218,7 @@ public class SendRecipeToEmail {
     /**
      * Sets the value of the deviceType property.
      * 
+     * @param value
      */
     public void setDeviceType(int value) {
         this.deviceType = value;

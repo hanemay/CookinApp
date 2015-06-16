@@ -35,12 +35,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipeVideos")
 public class GetRecipeVideos {
 
+    /**
+     *
+     */
     protected int iRecipeId;
+
+    /**
+     *
+     */
     protected int iMax;
 
     /**
      * Gets the value of the iRecipeId property.
      * 
+     * @return 
      */
     public int getIRecipeId() {
         return iRecipeId;
@@ -49,6 +57,7 @@ public class GetRecipeVideos {
     /**
      * Sets the value of the iRecipeId property.
      * 
+     * @param value
      */
     public void setIRecipeId(int value) {
         this.iRecipeId = value;
@@ -57,6 +66,7 @@ public class GetRecipeVideos {
     /**
      * Gets the value of the iMax property.
      * 
+     * @return 
      */
     public int getIMax() {
         return iMax;
@@ -65,6 +75,7 @@ public class GetRecipeVideos {
     /**
      * Sets the value of the iMax property.
      * 
+     * @param value
      */
     public void setIMax(int value) {
         this.iMax = value;

@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRatingsPagedResponse")
 public class GetRatingsPagedResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetRatingsPagedResult")
     protected RatingsPagedResponse getRatingsPagedResult;
 

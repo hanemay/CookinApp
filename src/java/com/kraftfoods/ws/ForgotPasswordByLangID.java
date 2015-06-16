@@ -37,8 +37,19 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "ForgotPasswordByLangID")
 public class ForgotPasswordByLangID {
 
+    /**
+     *
+     */
     protected String sEmail;
+
+    /**
+     *
+     */
     protected int iSiteID;
+
+    /**
+     *
+     */
     protected int iLangId;
 
     /**
@@ -68,6 +79,7 @@ public class ForgotPasswordByLangID {
     /**
      * Gets the value of the iSiteID property.
      * 
+     * @return 
      */
     public int getISiteID() {
         return iSiteID;
@@ -76,6 +88,7 @@ public class ForgotPasswordByLangID {
     /**
      * Sets the value of the iSiteID property.
      * 
+     * @param value
      */
     public void setISiteID(int value) {
         this.iSiteID = value;
@@ -84,6 +97,7 @@ public class ForgotPasswordByLangID {
     /**
      * Gets the value of the iLangId property.
      * 
+     * @return 
      */
     public int getILangId() {
         return iLangId;
@@ -92,6 +106,7 @@ public class ForgotPasswordByLangID {
     /**
      * Sets the value of the iLangId property.
      * 
+     * @param value
      */
     public void setILangId(int value) {
         this.iLangId = value;

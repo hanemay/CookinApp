@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfCookingVideoAd {
 
+    /**
+     *
+     */
     @XmlElement(name = "CookingVideoAd", nillable = true)
     protected List<CookingVideoAd> cookingVideoAd;
 
@@ -58,6 +61,7 @@ public class ArrayOfCookingVideoAd {
      * {@link CookingVideoAd }
      * 
      * 
+     * @return 
      */
     public List<CookingVideoAd> getCookingVideoAd() {
         if (cookingVideoAd == null) {

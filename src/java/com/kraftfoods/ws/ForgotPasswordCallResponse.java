@@ -38,12 +38,27 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ForgotPasswordCallResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "IsSuccessful")
     protected boolean isSuccessful;
+
+    /**
+     *
+     */
     @XmlElement(name = "ErrorCode")
     protected int errorCode;
+
+    /**
+     *
+     */
     @XmlElement(name = "ErrorMessage")
     protected String errorMessage;
 
@@ -74,6 +89,7 @@ public class ForgotPasswordCallResponse {
     /**
      * Gets the value of the isSuccessful property.
      * 
+     * @return 
      */
     public boolean isIsSuccessful() {
         return isSuccessful;
@@ -82,6 +98,7 @@ public class ForgotPasswordCallResponse {
     /**
      * Sets the value of the isSuccessful property.
      * 
+     * @param value
      */
     public void setIsSuccessful(boolean value) {
         this.isSuccessful = value;
@@ -90,6 +107,7 @@ public class ForgotPasswordCallResponse {
     /**
      * Gets the value of the errorCode property.
      * 
+     * @return 
      */
     public int getErrorCode() {
         return errorCode;
@@ -98,6 +116,7 @@ public class ForgotPasswordCallResponse {
     /**
      * Sets the value of the errorCode property.
      * 
+     * @param value
      */
     public void setErrorCode(int value) {
         this.errorCode = value;

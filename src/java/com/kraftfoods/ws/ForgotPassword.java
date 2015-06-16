@@ -35,7 +35,14 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "ForgotPassword")
 public class ForgotPassword {
 
+    /**
+     *
+     */
     protected String sEmail;
+
+    /**
+     *
+     */
     protected int iSiteID;
 
     /**
@@ -65,6 +72,7 @@ public class ForgotPassword {
     /**
      * Gets the value of the iSiteID property.
      * 
+     * @return 
      */
     public int getISiteID() {
         return iSiteID;
@@ -73,6 +81,7 @@ public class ForgotPassword {
     /**
      * Sets the value of the iSiteID property.
      * 
+     * @param value
      */
     public void setISiteID(int value) {
         this.iSiteID = value;

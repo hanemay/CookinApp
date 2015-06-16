@@ -47,18 +47,50 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetWYDRecipes")
 public class GetWYDRecipes {
 
+    /**
+     *
+     */
     protected int iCatID;
+
+    /**
+     *
+     */
     protected int iSubCatID;
+
+    /**
+     *
+     */
     protected String sSortField;
+
+    /**
+     *
+     */
     protected String sSortDirection;
+
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected int iStartRow;
+
+    /**
+     *
+     */
     protected int iEndRow;
 
     /**
      * Gets the value of the iCatID property.
      * 
+     * @return 
      */
     public int getICatID() {
         return iCatID;
@@ -67,6 +99,7 @@ public class GetWYDRecipes {
     /**
      * Sets the value of the iCatID property.
      * 
+     * @param value
      */
     public void setICatID(int value) {
         this.iCatID = value;
@@ -75,6 +108,7 @@ public class GetWYDRecipes {
     /**
      * Gets the value of the iSubCatID property.
      * 
+     * @return 
      */
     public int getISubCatID() {
         return iSubCatID;
@@ -83,6 +117,7 @@ public class GetWYDRecipes {
     /**
      * Sets the value of the iSubCatID property.
      * 
+     * @param value
      */
     public void setISubCatID(int value) {
         this.iSubCatID = value;
@@ -139,6 +174,7 @@ public class GetWYDRecipes {
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -147,6 +183,7 @@ public class GetWYDRecipes {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -155,6 +192,7 @@ public class GetWYDRecipes {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -163,6 +201,7 @@ public class GetWYDRecipes {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -171,6 +210,7 @@ public class GetWYDRecipes {
     /**
      * Gets the value of the iStartRow property.
      * 
+     * @return 
      */
     public int getIStartRow() {
         return iStartRow;
@@ -179,6 +219,7 @@ public class GetWYDRecipes {
     /**
      * Sets the value of the iStartRow property.
      * 
+     * @param value
      */
     public void setIStartRow(int value) {
         this.iStartRow = value;
@@ -187,6 +228,7 @@ public class GetWYDRecipes {
     /**
      * Gets the value of the iEndRow property.
      * 
+     * @return 
      */
     public int getIEndRow() {
         return iEndRow;
@@ -195,6 +237,7 @@ public class GetWYDRecipes {
     /**
      * Sets the value of the iEndRow property.
      * 
+     * @param value
      */
     public void setIEndRow(int value) {
         this.iEndRow = value;

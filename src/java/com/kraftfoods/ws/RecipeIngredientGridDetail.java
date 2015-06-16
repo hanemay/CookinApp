@@ -32,6 +32,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeIngredientGridDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "IngredientName")
     protected String ingredientName;
 

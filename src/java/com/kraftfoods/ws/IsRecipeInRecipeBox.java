@@ -36,14 +36,22 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "IsRecipeInRecipeBox")
 public class IsRecipeInRecipeBox {
 
+    /**
+     *
+     */
     @XmlElement(name = "SiteUserID")
     protected int siteUserID;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeID")
     protected int recipeID;
 
     /**
      * Gets the value of the siteUserID property.
      * 
+     * @return 
      */
     public int getSiteUserID() {
         return siteUserID;
@@ -52,6 +60,7 @@ public class IsRecipeInRecipeBox {
     /**
      * Sets the value of the siteUserID property.
      * 
+     * @param value
      */
     public void setSiteUserID(int value) {
         this.siteUserID = value;
@@ -60,6 +69,7 @@ public class IsRecipeInRecipeBox {
     /**
      * Gets the value of the recipeID property.
      * 
+     * @return 
      */
     public int getRecipeID() {
         return recipeID;
@@ -68,6 +78,7 @@ public class IsRecipeInRecipeBox {
     /**
      * Sets the value of the recipeID property.
      * 
+     * @param value
      */
     public void setRecipeID(int value) {
         this.recipeID = value;

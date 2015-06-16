@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfPollDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "PollDetail", nillable = true)
     protected List<PollDetail> pollDetail;
 
@@ -58,6 +61,7 @@ public class ArrayOfPollDetail {
      * {@link PollDetail }
      * 
      * 
+     * @return 
      */
     public List<PollDetail> getPollDetail() {
         if (pollDetail == null) {

@@ -40,20 +40,40 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class NutritionItemDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "NutritionItemID")
     protected int nutritionItemID;
+
+    /**
+     *
+     */
     @XmlElement(name = "NutritionItemName")
     protected String nutritionItemName;
+
+    /**
+     *
+     */
     @XmlElement(name = "Quantity")
     protected String quantity;
+
+    /**
+     *
+     */
     @XmlElement(name = "Unit")
     protected String unit;
+
+    /**
+     *
+     */
     @XmlElement(name = "DisplayOrder")
     protected int displayOrder;
 
     /**
      * Gets the value of the nutritionItemID property.
      * 
+     * @return 
      */
     public int getNutritionItemID() {
         return nutritionItemID;
@@ -62,6 +82,7 @@ public class NutritionItemDetail {
     /**
      * Sets the value of the nutritionItemID property.
      * 
+     * @param value
      */
     public void setNutritionItemID(int value) {
         this.nutritionItemID = value;
@@ -142,6 +163,7 @@ public class NutritionItemDetail {
     /**
      * Gets the value of the displayOrder property.
      * 
+     * @return 
      */
     public int getDisplayOrder() {
         return displayOrder;
@@ -150,6 +172,7 @@ public class NutritionItemDetail {
     /**
      * Sets the value of the displayOrder property.
      * 
+     * @param value
      */
     public void setDisplayOrder(int value) {
         this.displayOrder = value;

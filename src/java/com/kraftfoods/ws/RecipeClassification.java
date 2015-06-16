@@ -34,14 +34,22 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeClassification {
 
+    /**
+     *
+     */
     @XmlElement(name = "ClassificationID")
     protected int classificationID;
+
+    /**
+     *
+     */
     @XmlElement(name = "ClassificationName")
     protected String classificationName;
 
     /**
      * Gets the value of the classificationID property.
      * 
+     * @return 
      */
     public int getClassificationID() {
         return classificationID;
@@ -50,6 +58,7 @@ public class RecipeClassification {
     /**
      * Sets the value of the classificationID property.
      * 
+     * @param value
      */
     public void setClassificationID(int value) {
         this.classificationID = value;

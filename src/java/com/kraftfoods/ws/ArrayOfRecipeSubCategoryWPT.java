@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfRecipeSubCategoryWPT {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeSubCategoryWPT", nillable = true)
     protected List<RecipeSubCategoryWPT> recipeSubCategoryWPT;
 
@@ -58,6 +61,7 @@ public class ArrayOfRecipeSubCategoryWPT {
      * {@link RecipeSubCategoryWPT }
      * 
      * 
+     * @return 
      */
     public List<RecipeSubCategoryWPT> getRecipeSubCategoryWPT() {
         if (recipeSubCategoryWPT == null) {

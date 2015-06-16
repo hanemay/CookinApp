@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfTextSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "TextSummary", nillable = true)
     protected List<TextSummary> textSummary;
 
@@ -58,6 +61,7 @@ public class ArrayOfTextSummary {
      * {@link TextSummary }
      * 
      * 
+     * @return 
      */
     public List<TextSummary> getTextSummary() {
         if (textSummary == null) {

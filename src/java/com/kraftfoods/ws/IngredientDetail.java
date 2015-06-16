@@ -60,40 +60,100 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class IngredientDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeIngredientID")
     protected int recipeIngredientID;
+
+    /**
+     *
+     */
     @XmlElement(name = "IngredientID")
     protected int ingredientID;
+
+    /**
+     *
+     */
     @XmlElement(name = "IngredientName")
     protected String ingredientName;
+
+    /**
+     *
+     */
     @XmlElement(name = "QuantityText")
     protected String quantityText;
+
+    /**
+     *
+     */
     @XmlElement(name = "QuantityNum")
     protected String quantityNum;
+
+    /**
+     *
+     */
     @XmlElement(name = "QuantityUnit")
     protected String quantityUnit;
+
+    /**
+     *
+     */
     @XmlElement(name = "PostPreparation")
     protected String postPreparation;
+
+    /**
+     *
+     */
     @XmlElement(name = "PrePreparation")
     protected String prePreparation;
+
+    /**
+     *
+     */
     @XmlElement(name = "LinkURL")
     protected String linkURL;
+
+    /**
+     *
+     */
     @XmlElement(name = "LinkText")
     protected String linkText;
+
+    /**
+     *
+     */
     @XmlElement(name = "Headline")
     protected String headline;
+
+    /**
+     *
+     */
     @XmlElement(name = "ImageURL")
     protected String imageURL;
+
+    /**
+     *
+     */
     @XmlElement(name = "Description")
     protected String description;
+
+    /**
+     *
+     */
     @XmlElement(name = "RolloverHTML")
     protected String rolloverHTML;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeIngredientGridHeaderDetails")
     protected ArrayOfRecipeIngredientGridHeaderDetail recipeIngredientGridHeaderDetails;
 
     /**
      * Gets the value of the recipeIngredientID property.
      * 
+     * @return 
      */
     public int getRecipeIngredientID() {
         return recipeIngredientID;
@@ -102,6 +162,7 @@ public class IngredientDetail {
     /**
      * Sets the value of the recipeIngredientID property.
      * 
+     * @param value
      */
     public void setRecipeIngredientID(int value) {
         this.recipeIngredientID = value;
@@ -110,6 +171,7 @@ public class IngredientDetail {
     /**
      * Gets the value of the ingredientID property.
      * 
+     * @return 
      */
     public int getIngredientID() {
         return ingredientID;
@@ -118,6 +180,7 @@ public class IngredientDetail {
     /**
      * Sets the value of the ingredientID property.
      * 
+     * @param value
      */
     public void setIngredientID(int value) {
         this.ingredientID = value;

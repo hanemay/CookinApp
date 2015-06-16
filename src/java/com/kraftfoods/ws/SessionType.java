@@ -26,10 +26,21 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum SessionType {
 
+    /**
+     *
+     */
     @XmlEnumValue("NewVisitorNewSession")
     NEW_VISITOR_NEW_SESSION("NewVisitorNewSession"),
+
+    /**
+     *
+     */
     @XmlEnumValue("ExistingVisitorNewSession")
     EXISTING_VISITOR_NEW_SESSION("ExistingVisitorNewSession"),
+
+    /**
+     *
+     */
     @XmlEnumValue("ExistingVisitorExistingSession")
     EXISTING_VISITOR_EXISTING_SESSION("ExistingVisitorExistingSession");
     private final String value;
@@ -38,10 +49,19 @@ public enum SessionType {
         value = v;
     }
 
+    /**
+     *
+     * @return
+     */
     public String value() {
         return value;
     }
 
+    /**
+     *
+     * @param v
+     * @return
+     */
     public static SessionType fromValue(String v) {
         for (SessionType c: SessionType.values()) {
             if (c.value.equals(v)) {

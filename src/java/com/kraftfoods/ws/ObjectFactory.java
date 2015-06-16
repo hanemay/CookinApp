@@ -71,6 +71,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ExecuteRecipeSearch }
      * 
+     * @return 
      */
     public ExecuteRecipeSearch createExecuteRecipeSearch() {
         return new ExecuteRecipeSearch();
@@ -79,6 +80,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ExecuteRecipeSearchResponse }
      * 
+     * @return 
      */
     public ExecuteRecipeSearchResponse createExecuteRecipeSearchResponse() {
         return new ExecuteRecipeSearchResponse();
@@ -87,6 +89,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeSummariesResponse }
      * 
+     * @return 
      */
     public RecipeSummariesResponse createRecipeSummariesResponse() {
         return new RecipeSummariesResponse();
@@ -95,6 +98,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesBySubcategoryWithExtraInformation }
      * 
+     * @return 
      */
     public GetRecipesBySubcategoryWithExtraInformation createGetRecipesBySubcategoryWithExtraInformation() {
         return new GetRecipesBySubcategoryWithExtraInformation();
@@ -103,6 +107,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesBySubcategoryWithExtraInformationResponse }
      * 
+     * @return 
      */
     public GetRecipesBySubcategoryWithExtraInformationResponse createGetRecipesBySubcategoryWithExtraInformationResponse() {
         return new GetRecipesBySubcategoryWithExtraInformationResponse();
@@ -111,6 +116,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesBySubcategory }
      * 
+     * @return 
      */
     public GetRecipesBySubcategory createGetRecipesBySubcategory() {
         return new GetRecipesBySubcategory();
@@ -119,6 +125,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesBySubcategoryResponse }
      * 
+     * @return 
      */
     public GetRecipesBySubcategoryResponse createGetRecipesBySubcategoryResponse() {
         return new GetRecipesBySubcategoryResponse();
@@ -127,6 +134,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByCategory }
      * 
+     * @return 
      */
     public GetRecipesByCategory createGetRecipesByCategory() {
         return new GetRecipesByCategory();
@@ -135,6 +143,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByCategoryResponse }
      * 
+     * @return 
      */
     public GetRecipesByCategoryResponse createGetRecipesByCategoryResponse() {
         return new GetRecipesByCategoryResponse();
@@ -143,6 +152,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeCategories }
      * 
+     * @return 
      */
     public GetRecipeCategories createGetRecipeCategories() {
         return new GetRecipeCategories();
@@ -151,6 +161,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeCategoriesResponse }
      * 
+     * @return 
      */
     public GetRecipeCategoriesResponse createGetRecipeCategoriesResponse() {
         return new GetRecipeCategoriesResponse();
@@ -159,6 +170,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeCategoryResponse }
      * 
+     * @return 
      */
     public GetRecipeCategoryResponse createGetRecipeCategoryResponse() {
         return new GetRecipeCategoryResponse();
@@ -167,6 +179,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeClassifications }
      * 
+     * @return 
      */
     public GetRecipeClassifications createGetRecipeClassifications() {
         return new GetRecipeClassifications();
@@ -175,6 +188,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeClassificationsResponse }
      * 
+     * @return 
      */
     public GetRecipeClassificationsResponse createGetRecipeClassificationsResponse() {
         return new GetRecipeClassificationsResponse();
@@ -183,6 +197,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeClassificationResponse }
      * 
+     * @return 
      */
     public GetRecipeClassificationResponse createGetRecipeClassificationResponse() {
         return new GetRecipeClassificationResponse();
@@ -191,6 +206,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeSubCategories }
      * 
+     * @return 
      */
     public GetRecipeSubCategories createGetRecipeSubCategories() {
         return new GetRecipeSubCategories();
@@ -199,6 +215,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeSubCategoriesResponse }
      * 
+     * @return 
      */
     public GetRecipeSubCategoriesResponse createGetRecipeSubCategoriesResponse() {
         return new GetRecipeSubCategoriesResponse();
@@ -207,6 +224,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeSubCategoryResponse }
      * 
+     * @return 
      */
     public GetRecipeSubCategoryResponse createGetRecipeSubCategoryResponse() {
         return new GetRecipeSubCategoryResponse();
@@ -215,6 +233,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByKeywords }
      * 
+     * @return 
      */
     public GetRecipesByKeywords createGetRecipesByKeywords() {
         return new GetRecipesByKeywords();
@@ -223,6 +242,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByKeywordsResponse }
      * 
+     * @return 
      */
     public GetRecipesByKeywordsResponse createGetRecipesByKeywordsResponse() {
         return new GetRecipesByKeywordsResponse();
@@ -231,6 +251,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByIngredients }
      * 
+     * @return 
      */
     public GetRecipesByIngredients createGetRecipesByIngredients() {
         return new GetRecipesByIngredients();
@@ -239,6 +260,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByIngredientsResponse }
      * 
+     * @return 
      */
     public GetRecipesByIngredientsResponse createGetRecipesByIngredientsResponse() {
         return new GetRecipesByIngredientsResponse();
@@ -247,6 +269,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeVideos }
      * 
+     * @return 
      */
     public GetRecipeVideos createGetRecipeVideos() {
         return new GetRecipeVideos();
@@ -255,6 +278,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeVideosResponse }
      * 
+     * @return 
      */
     public GetRecipeVideosResponse createGetRecipeVideosResponse() {
         return new GetRecipeVideosResponse();
@@ -263,6 +287,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeVideosResponse }
      * 
+     * @return 
      */
     public RecipeVideosResponse createRecipeVideosResponse() {
         return new RecipeVideosResponse();
@@ -271,6 +296,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByKeywordsAndCategoryGroup }
      * 
+     * @return 
      */
     public GetRecipesByKeywordsAndCategoryGroup createGetRecipesByKeywordsAndCategoryGroup() {
         return new GetRecipesByKeywordsAndCategoryGroup();
@@ -279,6 +305,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByKeywordsAndCategoryGroupResponse }
      * 
+     * @return 
      */
     public GetRecipesByKeywordsAndCategoryGroupResponse createGetRecipesByKeywordsAndCategoryGroupResponse() {
         return new GetRecipesByKeywordsAndCategoryGroupResponse();
@@ -287,6 +314,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByKeywordsAndSubcategory }
      * 
+     * @return 
      */
     public GetRecipesByKeywordsAndSubcategory createGetRecipesByKeywordsAndSubcategory() {
         return new GetRecipesByKeywordsAndSubcategory();
@@ -295,6 +323,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByKeywordsAndSubcategoryResponse }
      * 
+     * @return 
      */
     public GetRecipesByKeywordsAndSubcategoryResponse createGetRecipesByKeywordsAndSubcategoryResponse() {
         return new GetRecipesByKeywordsAndSubcategoryResponse();
@@ -303,6 +332,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetHealthyLivingRecipes }
      * 
+     * @return 
      */
     public GetHealthyLivingRecipes createGetHealthyLivingRecipes() {
         return new GetHealthyLivingRecipes();
@@ -311,6 +341,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetHealthyLivingRecipesResponse }
      * 
+     * @return 
      */
     public GetHealthyLivingRecipesResponse createGetHealthyLivingRecipesResponse() {
         return new GetHealthyLivingRecipesResponse();
@@ -319,6 +350,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesOfTheWeek }
      * 
+     * @return 
      */
     public GetRecipesOfTheWeek createGetRecipesOfTheWeek() {
         return new GetRecipesOfTheWeek();
@@ -327,6 +359,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesOfTheWeekResponse }
      * 
+     * @return 
      */
     public GetRecipesOfTheWeekResponse createGetRecipesOfTheWeekResponse() {
         return new GetRecipesOfTheWeekResponse();
@@ -335,6 +368,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ROTDSummariesResponse }
      * 
+     * @return 
      */
     public ROTDSummariesResponse createROTDSummariesResponse() {
         return new ROTDSummariesResponse();
@@ -343,6 +377,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeOfTheDay }
      * 
+     * @return 
      */
     public GetRecipeOfTheDay createGetRecipeOfTheDay() {
         return new GetRecipeOfTheDay();
@@ -351,6 +386,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeOfTheDayResponse }
      * 
+     * @return 
      */
     public GetRecipeOfTheDayResponse createGetRecipeOfTheDayResponse() {
         return new GetRecipeOfTheDayResponse();
@@ -359,6 +395,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByRecipeIDs }
      * 
+     * @return 
      */
     public GetRecipesByRecipeIDs createGetRecipesByRecipeIDs() {
         return new GetRecipesByRecipeIDs();
@@ -367,6 +404,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByRecipeIDsResponse }
      * 
+     * @return 
      */
     public GetRecipesByRecipeIDsResponse createGetRecipesByRecipeIDsResponse() {
         return new GetRecipesByRecipeIDsResponse();
@@ -375,6 +413,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserRecipeByUserRecipeID }
      * 
+     * @return 
      */
     public GetUserRecipeByUserRecipeID createGetUserRecipeByUserRecipeID() {
         return new GetUserRecipeByUserRecipeID();
@@ -383,6 +422,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserRecipeByUserRecipeIDResponse }
      * 
+     * @return 
      */
     public GetUserRecipeByUserRecipeIDResponse createGetUserRecipeByUserRecipeIDResponse() {
         return new GetUserRecipeByUserRecipeIDResponse();
@@ -391,6 +431,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MemberRecipeDetailResponse }
      * 
+     * @return 
      */
     public MemberRecipeDetailResponse createMemberRecipeDetailResponse() {
         return new MemberRecipeDetailResponse();
@@ -399,6 +440,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByRecipeIDsWithExtraInformation }
      * 
+     * @return 
      */
     public GetRecipesByRecipeIDsWithExtraInformation createGetRecipesByRecipeIDsWithExtraInformation() {
         return new GetRecipesByRecipeIDsWithExtraInformation();
@@ -407,6 +449,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByRecipeIDsWithExtraInformationResponse }
      * 
+     * @return 
      */
     public GetRecipesByRecipeIDsWithExtraInformationResponse createGetRecipesByRecipeIDsWithExtraInformationResponse() {
         return new GetRecipesByRecipeIDsWithExtraInformationResponse();
@@ -415,6 +458,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeByRecipeID }
      * 
+     * @return 
      */
     public GetRecipeByRecipeID createGetRecipeByRecipeID() {
         return new GetRecipeByRecipeID();
@@ -423,6 +467,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeByRecipeIDResponse }
      * 
+     * @return 
      */
     public GetRecipeByRecipeIDResponse createGetRecipeByRecipeIDResponse() {
         return new GetRecipeByRecipeIDResponse();
@@ -431,6 +476,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeDetailResponse }
      * 
+     * @return 
      */
     public RecipeDetailResponse createRecipeDetailResponse() {
         return new RecipeDetailResponse();
@@ -439,6 +485,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeByRecipeIDWithExtraInformation }
      * 
+     * @return 
      */
     public GetRecipeByRecipeIDWithExtraInformation createGetRecipeByRecipeIDWithExtraInformation() {
         return new GetRecipeByRecipeIDWithExtraInformation();
@@ -447,6 +494,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipeByRecipeIDWithExtraInformationResponse }
      * 
+     * @return 
      */
     public GetRecipeByRecipeIDWithExtraInformationResponse createGetRecipeByRecipeIDWithExtraInformationResponse() {
         return new GetRecipeByRecipeIDWithExtraInformationResponse();
@@ -455,6 +503,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRatingsPaged }
      * 
+     * @return 
      */
     public GetRatingsPaged createGetRatingsPaged() {
         return new GetRatingsPaged();
@@ -463,6 +512,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRatingsPagedResponse }
      * 
+     * @return 
      */
     public GetRatingsPagedResponse createGetRatingsPagedResponse() {
         return new GetRatingsPagedResponse();
@@ -471,6 +521,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RatingsPagedResponse }
      * 
+     * @return 
      */
     public RatingsPagedResponse createRatingsPagedResponse() {
         return new RatingsPagedResponse();
@@ -479,6 +530,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRatingsPagedByRatingType }
      * 
+     * @return 
      */
     public GetRatingsPagedByRatingType createGetRatingsPagedByRatingType() {
         return new GetRatingsPagedByRatingType();
@@ -487,6 +539,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRatingsPagedByRatingTypeResponse }
      * 
+     * @return 
      */
     public GetRatingsPagedByRatingTypeResponse createGetRatingsPagedByRatingTypeResponse() {
         return new GetRatingsPagedByRatingTypeResponse();
@@ -495,6 +548,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoginUserAndReturnCookie }
      * 
+     * @return 
      */
     public LoginUserAndReturnCookie createLoginUserAndReturnCookie() {
         return new LoginUserAndReturnCookie();
@@ -503,6 +557,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoginUserAndReturnCookieResponse }
      * 
+     * @return 
      */
     public LoginUserAndReturnCookieResponse createLoginUserAndReturnCookieResponse() {
         return new LoginUserAndReturnCookieResponse();
@@ -511,6 +566,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoginResponse }
      * 
+     * @return 
      */
     public LoginResponse createLoginResponse() {
         return new LoginResponse();
@@ -519,6 +575,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoginUserAndReturnCookieWithExtraUserInfo }
      * 
+     * @return 
      */
     public LoginUserAndReturnCookieWithExtraUserInfo createLoginUserAndReturnCookieWithExtraUserInfo() {
         return new LoginUserAndReturnCookieWithExtraUserInfo();
@@ -527,6 +584,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoginUserAndReturnCookieWithExtraUserInfoResponse }
      * 
+     * @return 
      */
     public LoginUserAndReturnCookieWithExtraUserInfoResponse createLoginUserAndReturnCookieWithExtraUserInfoResponse() {
         return new LoginUserAndReturnCookieWithExtraUserInfoResponse();
@@ -535,6 +593,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoginUserAndReturnCookieWithEncryptedPassword }
      * 
+     * @return 
      */
     public LoginUserAndReturnCookieWithEncryptedPassword createLoginUserAndReturnCookieWithEncryptedPassword() {
         return new LoginUserAndReturnCookieWithEncryptedPassword();
@@ -543,6 +602,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoginUserAndReturnCookieWithEncryptedPasswordResponse }
      * 
+     * @return 
      */
     public LoginUserAndReturnCookieWithEncryptedPasswordResponse createLoginUserAndReturnCookieWithEncryptedPasswordResponse() {
         return new LoginUserAndReturnCookieWithEncryptedPasswordResponse();
@@ -551,6 +611,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ForgotPassword }
      * 
+     * @return 
      */
     public ForgotPassword createForgotPassword() {
         return new ForgotPassword();
@@ -559,6 +620,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ForgotPasswordResponse }
      * 
+     * @return 
      */
     public ForgotPasswordResponse createForgotPasswordResponse() {
         return new ForgotPasswordResponse();
@@ -567,6 +629,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ForgotPasswordCallResponse }
      * 
+     * @return 
      */
     public ForgotPasswordCallResponse createForgotPasswordCallResponse() {
         return new ForgotPasswordCallResponse();
@@ -575,6 +638,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ForgotPasswordByLangID }
      * 
+     * @return 
      */
     public ForgotPasswordByLangID createForgotPasswordByLangID() {
         return new ForgotPasswordByLangID();
@@ -583,6 +647,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ForgotPasswordByLangIDResponse }
      * 
+     * @return 
      */
     public ForgotPasswordByLangIDResponse createForgotPasswordByLangIDResponse() {
         return new ForgotPasswordByLangIDResponse();
@@ -591,6 +656,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LogoutUserAndReturnCookie }
      * 
+     * @return 
      */
     public LogoutUserAndReturnCookie createLogoutUserAndReturnCookie() {
         return new LogoutUserAndReturnCookie();
@@ -599,6 +665,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LogoutUserAndReturnCookieResponse }
      * 
+     * @return 
      */
     public LogoutUserAndReturnCookieResponse createLogoutUserAndReturnCookieResponse() {
         return new LogoutUserAndReturnCookieResponse();
@@ -607,6 +674,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LogoutResponse }
      * 
+     * @return 
      */
     public LogoutResponse createLogoutResponse() {
         return new LogoutResponse();
@@ -615,6 +683,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoginUser }
      * 
+     * @return 
      */
     public LoginUser createLoginUser() {
         return new LoginUser();
@@ -623,6 +692,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoginUserResponse }
      * 
+     * @return 
      */
     public LoginUserResponse createLoginUserResponse() {
         return new LoginUserResponse();
@@ -631,6 +701,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterNewUser }
      * 
+     * @return 
      */
     public RegisterNewUser createRegisterNewUser() {
         return new RegisterNewUser();
@@ -639,6 +710,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterNewUserResponse }
      * 
+     * @return 
      */
     public RegisterNewUserResponse createRegisterNewUserResponse() {
         return new RegisterNewUserResponse();
@@ -647,6 +719,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterNewUserWithExtraUserInfo }
      * 
+     * @return 
      */
     public RegisterNewUserWithExtraUserInfo createRegisterNewUserWithExtraUserInfo() {
         return new RegisterNewUserWithExtraUserInfo();
@@ -655,6 +728,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterNewUserWithExtraUserInfoResponse }
      * 
+     * @return 
      */
     public RegisterNewUserWithExtraUserInfoResponse createRegisterNewUserWithExtraUserInfoResponse() {
         return new RegisterNewUserWithExtraUserInfoResponse();
@@ -663,6 +737,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateUserProfile }
      * 
+     * @return 
      */
     public UpdateUserProfile createUpdateUserProfile() {
         return new UpdateUserProfile();
@@ -671,6 +746,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateUserProfileResponse }
      * 
+     * @return 
      */
     public UpdateUserProfileResponse createUpdateUserProfileResponse() {
         return new UpdateUserProfileResponse();
@@ -679,6 +755,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipeToRecipeBox }
      * 
+     * @return 
      */
     public AddRecipeToRecipeBox createAddRecipeToRecipeBox() {
         return new AddRecipeToRecipeBox();
@@ -687,6 +764,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipeToRecipeBoxResponse }
      * 
+     * @return 
      */
     public AddRecipeToRecipeBoxResponse createAddRecipeToRecipeBoxResponse() {
         return new AddRecipeToRecipeBoxResponse();
@@ -695,6 +773,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeBoxResponse }
      * 
+     * @return 
      */
     public RecipeBoxResponse createRecipeBoxResponse() {
         return new RecipeBoxResponse();
@@ -703,6 +782,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipesToRecipeBox }
      * 
+     * @return 
      */
     public AddRecipesToRecipeBox createAddRecipesToRecipeBox() {
         return new AddRecipesToRecipeBox();
@@ -711,6 +791,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipesToRecipeBoxResponse }
      * 
+     * @return 
      */
     public AddRecipesToRecipeBoxResponse createAddRecipesToRecipeBoxResponse() {
         return new AddRecipesToRecipeBoxResponse();
@@ -719,6 +800,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteRecipeFromRecipeBox }
      * 
+     * @return 
      */
     public DeleteRecipeFromRecipeBox createDeleteRecipeFromRecipeBox() {
         return new DeleteRecipeFromRecipeBox();
@@ -727,6 +809,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteRecipeFromRecipeBoxResponse }
      * 
+     * @return 
      */
     public DeleteRecipeFromRecipeBoxResponse createDeleteRecipeFromRecipeBoxResponse() {
         return new DeleteRecipeFromRecipeBoxResponse();
@@ -735,6 +818,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link StatusResponse }
      * 
+     * @return 
      */
     public StatusResponse createStatusResponse() {
         return new StatusResponse();
@@ -743,6 +827,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteRecipesFromRecipeBox }
      * 
+     * @return 
      */
     public DeleteRecipesFromRecipeBox createDeleteRecipesFromRecipeBox() {
         return new DeleteRecipesFromRecipeBox();
@@ -751,6 +836,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteRecipesFromRecipeBoxResponse }
      * 
+     * @return 
      */
     public DeleteRecipesFromRecipeBoxResponse createDeleteRecipesFromRecipeBoxResponse() {
         return new DeleteRecipesFromRecipeBoxResponse();
@@ -759,6 +845,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesFromRecipeBox }
      * 
+     * @return 
      */
     public GetRecipesFromRecipeBox createGetRecipesFromRecipeBox() {
         return new GetRecipesFromRecipeBox();
@@ -767,6 +854,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesFromRecipeBoxResponse }
      * 
+     * @return 
      */
     public GetRecipesFromRecipeBoxResponse createGetRecipesFromRecipeBoxResponse() {
         return new GetRecipesFromRecipeBoxResponse();
@@ -775,6 +863,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeBoxRecipeSummariesResponse }
      * 
+     * @return 
      */
     public RecipeBoxRecipeSummariesResponse createRecipeBoxRecipeSummariesResponse() {
         return new RecipeBoxRecipeSummariesResponse();
@@ -783,6 +872,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesFromRecipeBoxByCategory }
      * 
+     * @return 
      */
     public GetRecipesFromRecipeBoxByCategory createGetRecipesFromRecipeBoxByCategory() {
         return new GetRecipesFromRecipeBoxByCategory();
@@ -791,6 +881,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesFromRecipeBoxByCategoryResponse }
      * 
+     * @return 
      */
     public GetRecipesFromRecipeBoxByCategoryResponse createGetRecipesFromRecipeBoxByCategoryResponse() {
         return new GetRecipesFromRecipeBoxByCategoryResponse();
@@ -799,6 +890,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IsRecipeInRecipeBox }
      * 
+     * @return 
      */
     public IsRecipeInRecipeBox createIsRecipeInRecipeBox() {
         return new IsRecipeInRecipeBox();
@@ -807,6 +899,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IsRecipeInRecipeBoxResponse }
      * 
+     * @return 
      */
     public IsRecipeInRecipeBoxResponse createIsRecipeInRecipeBoxResponse() {
         return new IsRecipeInRecipeBoxResponse();
@@ -815,6 +908,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeInRecipeBoxResponse }
      * 
+     * @return 
      */
     public RecipeInRecipeBoxResponse createRecipeInRecipeBoxResponse() {
         return new RecipeInRecipeBoxResponse();
@@ -823,6 +917,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetShoppingLists }
      * 
+     * @return 
      */
     public GetShoppingLists createGetShoppingLists() {
         return new GetShoppingLists();
@@ -831,6 +926,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetShoppingListsResponse }
      * 
+     * @return 
      */
     public GetShoppingListsResponse createGetShoppingListsResponse() {
         return new GetShoppingListsResponse();
@@ -839,6 +935,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ShoppingListsResponse }
      * 
+     * @return 
      */
     public ShoppingListsResponse createShoppingListsResponse() {
         return new ShoppingListsResponse();
@@ -847,6 +944,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDefaultShoppingList }
      * 
+     * @return 
      */
     public GetDefaultShoppingList createGetDefaultShoppingList() {
         return new GetDefaultShoppingList();
@@ -855,6 +953,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDefaultShoppingListResponse }
      * 
+     * @return 
      */
     public GetDefaultShoppingListResponse createGetDefaultShoppingListResponse() {
         return new GetDefaultShoppingListResponse();
@@ -863,6 +962,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ShoppingListResponse }
      * 
+     * @return 
      */
     public ShoppingListResponse createShoppingListResponse() {
         return new ShoppingListResponse();
@@ -871,6 +971,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetShoppingListSorted }
      * 
+     * @return 
      */
     public GetShoppingListSorted createGetShoppingListSorted() {
         return new GetShoppingListSorted();
@@ -879,6 +980,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetShoppingListSortedResponse }
      * 
+     * @return 
      */
     public GetShoppingListSortedResponse createGetShoppingListSortedResponse() {
         return new GetShoppingListSortedResponse();
@@ -887,6 +989,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SortedShoppingListResponse }
      * 
+     * @return 
      */
     public SortedShoppingListResponse createSortedShoppingListResponse() {
         return new SortedShoppingListResponse();
@@ -895,6 +998,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddShoppingList }
      * 
+     * @return 
      */
     public AddShoppingList createAddShoppingList() {
         return new AddShoppingList();
@@ -903,6 +1007,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddShoppingListResponse }
      * 
+     * @return 
      */
     public AddShoppingListResponse createAddShoppingListResponse() {
         return new AddShoppingListResponse();
@@ -911,6 +1016,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EditShoppingList }
      * 
+     * @return 
      */
     public EditShoppingList createEditShoppingList() {
         return new EditShoppingList();
@@ -919,6 +1025,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EditShoppingListResponse }
      * 
+     * @return 
      */
     public EditShoppingListResponse createEditShoppingListResponse() {
         return new EditShoppingListResponse();
@@ -927,6 +1034,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EditShoppingListItem }
      * 
+     * @return 
      */
     public EditShoppingListItem createEditShoppingListItem() {
         return new EditShoppingListItem();
@@ -935,6 +1043,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EditShoppingListItemResponse }
      * 
+     * @return 
      */
     public EditShoppingListItemResponse createEditShoppingListItemResponse() {
         return new EditShoppingListItemResponse();
@@ -943,6 +1052,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EditShoppingListItemResponseNew }
      * 
+     * @return 
      */
     public EditShoppingListItemResponseNew createEditShoppingListItemResponseNew() {
         return new EditShoppingListItemResponseNew();
@@ -951,6 +1061,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteShoppingList }
      * 
+     * @return 
      */
     public DeleteShoppingList createDeleteShoppingList() {
         return new DeleteShoppingList();
@@ -959,6 +1070,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteShoppingListResponse }
      * 
+     * @return 
      */
     public DeleteShoppingListResponse createDeleteShoppingListResponse() {
         return new DeleteShoppingListResponse();
@@ -967,6 +1079,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddItemToShoppingList }
      * 
+     * @return 
      */
     public AddItemToShoppingList createAddItemToShoppingList() {
         return new AddItemToShoppingList();
@@ -975,6 +1088,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddItemToShoppingListResponse }
      * 
+     * @return 
      */
     public AddItemToShoppingListResponse createAddItemToShoppingListResponse() {
         return new AddItemToShoppingListResponse();
@@ -983,6 +1097,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddItemToShoppingListReturnItemListId }
      * 
+     * @return 
      */
     public AddItemToShoppingListReturnItemListId createAddItemToShoppingListReturnItemListId() {
         return new AddItemToShoppingListReturnItemListId();
@@ -991,6 +1106,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddItemToShoppingListReturnItemListIdResponse }
      * 
+     * @return 
      */
     public AddItemToShoppingListReturnItemListIdResponse createAddItemToShoppingListReturnItemListIdResponse() {
         return new AddItemToShoppingListReturnItemListIdResponse();
@@ -999,6 +1115,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddItemToShoppingListResponseNew }
      * 
+     * @return 
      */
     public AddItemToShoppingListResponseNew createAddItemToShoppingListResponseNew() {
         return new AddItemToShoppingListResponseNew();
@@ -1007,6 +1124,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddItemsToShoppingListReturnItemListIds }
      * 
+     * @return 
      */
     public AddItemsToShoppingListReturnItemListIds createAddItemsToShoppingListReturnItemListIds() {
         return new AddItemsToShoppingListReturnItemListIds();
@@ -1015,6 +1133,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddItemsToShoppingListReturnItemListIdsResponse }
      * 
+     * @return 
      */
     public AddItemsToShoppingListReturnItemListIdsResponse createAddItemsToShoppingListReturnItemListIdsResponse() {
         return new AddItemsToShoppingListReturnItemListIdsResponse();
@@ -1023,6 +1142,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteItemFromShoppingList }
      * 
+     * @return 
      */
     public DeleteItemFromShoppingList createDeleteItemFromShoppingList() {
         return new DeleteItemFromShoppingList();
@@ -1031,6 +1151,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteItemFromShoppingListResponse }
      * 
+     * @return 
      */
     public DeleteItemFromShoppingListResponse createDeleteItemFromShoppingListResponse() {
         return new DeleteItemFromShoppingListResponse();
@@ -1039,6 +1160,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteItemsFromShoppingList }
      * 
+     * @return 
      */
     public DeleteItemsFromShoppingList createDeleteItemsFromShoppingList() {
         return new DeleteItemsFromShoppingList();
@@ -1047,6 +1169,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteItemsFromShoppingListResponse }
      * 
+     * @return 
      */
     public DeleteItemsFromShoppingListResponse createDeleteItemsFromShoppingListResponse() {
         return new DeleteItemsFromShoppingListResponse();
@@ -1055,6 +1178,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipeToShoppingList }
      * 
+     * @return 
      */
     public AddRecipeToShoppingList createAddRecipeToShoppingList() {
         return new AddRecipeToShoppingList();
@@ -1063,6 +1187,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipeToShoppingListResponse }
      * 
+     * @return 
      */
     public AddRecipeToShoppingListResponse createAddRecipeToShoppingListResponse() {
         return new AddRecipeToShoppingListResponse();
@@ -1071,6 +1196,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipesToShoppingList }
      * 
+     * @return 
      */
     public AddRecipesToShoppingList createAddRecipesToShoppingList() {
         return new AddRecipesToShoppingList();
@@ -1079,6 +1205,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipesToShoppingListResponse }
      * 
+     * @return 
      */
     public AddRecipesToShoppingListResponse createAddRecipesToShoppingListResponse() {
         return new AddRecipesToShoppingListResponse();
@@ -1087,6 +1214,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeBoxShoppingListResponses }
      * 
+     * @return 
      */
     public RecipeBoxShoppingListResponses createRecipeBoxShoppingListResponses() {
         return new RecipeBoxShoppingListResponses();
@@ -1095,6 +1223,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipeToRecipeBoxShoppingList }
      * 
+     * @return 
      */
     public AddRecipeToRecipeBoxShoppingList createAddRecipeToRecipeBoxShoppingList() {
         return new AddRecipeToRecipeBoxShoppingList();
@@ -1103,6 +1232,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRecipeToRecipeBoxShoppingListResponse }
      * 
+     * @return 
      */
     public AddRecipeToRecipeBoxShoppingListResponse createAddRecipeToRecipeBoxShoppingListResponse() {
         return new AddRecipeToRecipeBoxShoppingListResponse();
@@ -1111,6 +1241,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeBoxShoppingListResponse }
      * 
+     * @return 
      */
     public RecipeBoxShoppingListResponse createRecipeBoxShoppingListResponse() {
         return new RecipeBoxShoppingListResponse();
@@ -1119,6 +1250,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetStoresByLatAndLong }
      * 
+     * @return 
      */
     public GetStoresByLatAndLong createGetStoresByLatAndLong() {
         return new GetStoresByLatAndLong();
@@ -1127,6 +1259,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetStoresByLatAndLongResponse }
      * 
+     * @return 
      */
     public GetStoresByLatAndLongResponse createGetStoresByLatAndLongResponse() {
         return new GetStoresByLatAndLongResponse();
@@ -1135,6 +1268,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link StoreSummariesResponse }
      * 
+     * @return 
      */
     public StoreSummariesResponse createStoreSummariesResponse() {
         return new StoreSummariesResponse();
@@ -1143,6 +1277,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCoremetricsVisitorID }
      * 
+     * @return 
      */
     public GetCoremetricsVisitorID createGetCoremetricsVisitorID() {
         return new GetCoremetricsVisitorID();
@@ -1151,6 +1286,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCoremetricsVisitorIDResponse }
      * 
+     * @return 
      */
     public GetCoremetricsVisitorIDResponse createGetCoremetricsVisitorIDResponse() {
         return new GetCoremetricsVisitorIDResponse();
@@ -1159,6 +1295,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CoremetricsResponse }
      * 
+     * @return 
      */
     public CoremetricsResponse createCoremetricsResponse() {
         return new CoremetricsResponse();
@@ -1167,6 +1304,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCoremetricsSessionID }
      * 
+     * @return 
      */
     public GetCoremetricsSessionID createGetCoremetricsSessionID() {
         return new GetCoremetricsSessionID();
@@ -1175,6 +1313,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCoremetricsSessionIDResponse }
      * 
+     * @return 
      */
     public GetCoremetricsSessionIDResponse createGetCoremetricsSessionIDResponse() {
         return new GetCoremetricsSessionIDResponse();
@@ -1183,6 +1322,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendTrackingData }
      * 
+     * @return 
      */
     public SendTrackingData createSendTrackingData() {
         return new SendTrackingData();
@@ -1191,6 +1331,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendTrackingDataResponse }
      * 
+     * @return 
      */
     public SendTrackingDataResponse createSendTrackingDataResponse() {
         return new SendTrackingDataResponse();
@@ -1199,6 +1340,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendConversionEventTrackingData }
      * 
+     * @return 
      */
     public SendConversionEventTrackingData createSendConversionEventTrackingData() {
         return new SendConversionEventTrackingData();
@@ -1207,6 +1349,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendConversionEventTrackingDataResponse }
      * 
+     * @return 
      */
     public SendConversionEventTrackingDataResponse createSendConversionEventTrackingDataResponse() {
         return new SendConversionEventTrackingDataResponse();
@@ -1215,6 +1358,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RateItem }
      * 
+     * @return 
      */
     public RateItem createRateItem() {
         return new RateItem();
@@ -1223,6 +1367,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RateItemResponse }
      * 
+     * @return 
      */
     public RateItemResponse createRateItemResponse() {
         return new RateItemResponse();
@@ -1231,6 +1376,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendPageViewTrackingData }
      * 
+     * @return 
      */
     public SendPageViewTrackingData createSendPageViewTrackingData() {
         return new SendPageViewTrackingData();
@@ -1239,6 +1385,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendPageViewTrackingDataResponse }
      * 
+     * @return 
      */
     public SendPageViewTrackingDataResponse createSendPageViewTrackingDataResponse() {
         return new SendPageViewTrackingDataResponse();
@@ -1247,6 +1394,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendEmail }
      * 
+     * @return 
      */
     public SendEmail createSendEmail() {
         return new SendEmail();
@@ -1255,6 +1403,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendEmailResponse }
      * 
+     * @return 
      */
     public SendEmailResponse createSendEmailResponse() {
         return new SendEmailResponse();
@@ -1263,6 +1412,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendRecipeToEmail }
      * 
+     * @return 
      */
     public SendRecipeToEmail createSendRecipeToEmail() {
         return new SendRecipeToEmail();
@@ -1271,6 +1421,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendRecipeToEmailResponse }
      * 
+     * @return 
      */
     public SendRecipeToEmailResponse createSendRecipeToEmailResponse() {
         return new SendRecipeToEmailResponse();
@@ -1279,6 +1430,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendSMSMessage }
      * 
+     * @return 
      */
     public SendSMSMessage createSendSMSMessage() {
         return new SendSMSMessage();
@@ -1287,6 +1439,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendSMSMessageResponse }
      * 
+     * @return 
      */
     public SendSMSMessageResponse createSendSMSMessageResponse() {
         return new SendSMSMessageResponse();
@@ -1295,6 +1448,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RateRecipe }
      * 
+     * @return 
      */
     public RateRecipe createRateRecipe() {
         return new RateRecipe();
@@ -1303,6 +1457,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RateRecipeResponse }
      * 
+     * @return 
      */
     public RateRecipeResponse createRateRecipeResponse() {
         return new RateRecipeResponse();
@@ -1311,6 +1466,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTopTenRecipes }
      * 
+     * @return 
      */
     public GetTopTenRecipes createGetTopTenRecipes() {
         return new GetTopTenRecipes();
@@ -1319,6 +1475,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTopTenRecipesResponse }
      * 
+     * @return 
      */
     public GetTopTenRecipesResponse createGetTopTenRecipesResponse() {
         return new GetTopTenRecipesResponse();
@@ -1327,6 +1484,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTopTenRecipesByCategory }
      * 
+     * @return 
      */
     public GetTopTenRecipesByCategory createGetTopTenRecipesByCategory() {
         return new GetTopTenRecipesByCategory();
@@ -1335,6 +1493,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTopTenRecipesByCategoryResponse }
      * 
+     * @return 
      */
     public GetTopTenRecipesByCategoryResponse createGetTopTenRecipesByCategoryResponse() {
         return new GetTopTenRecipesByCategoryResponse();
@@ -1343,6 +1502,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWYDRecipes }
      * 
+     * @return 
      */
     public GetWYDRecipes createGetWYDRecipes() {
         return new GetWYDRecipes();
@@ -1351,6 +1511,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWYDRecipesResponse }
      * 
+     * @return 
      */
     public GetWYDRecipesResponse createGetWYDRecipesResponse() {
         return new GetWYDRecipesResponse();
@@ -1359,6 +1520,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCookingVideos }
      * 
+     * @return 
      */
     public GetCookingVideos createGetCookingVideos() {
         return new GetCookingVideos();
@@ -1367,6 +1529,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCookingVideosResponse }
      * 
+     * @return 
      */
     public GetCookingVideosResponse createGetCookingVideosResponse() {
         return new GetCookingVideosResponse();
@@ -1375,6 +1538,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link VideoRecipeSummariesResponse }
      * 
+     * @return 
      */
     public VideoRecipeSummariesResponse createVideoRecipeSummariesResponse() {
         return new VideoRecipeSummariesResponse();
@@ -1383,6 +1547,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDinnerTonight }
      * 
+     * @return 
      */
     public GetDinnerTonight createGetDinnerTonight() {
         return new GetDinnerTonight();
@@ -1391,6 +1556,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDinnerTonightResponse }
      * 
+     * @return 
      */
     public GetDinnerTonightResponse createGetDinnerTonightResponse() {
         return new GetDinnerTonightResponse();
@@ -1399,6 +1565,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DTSummariesResponse }
      * 
+     * @return 
      */
     public DTSummariesResponse createDTSummariesResponse() {
         return new DTSummariesResponse();
@@ -1407,6 +1574,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDinnerTonightForWeek }
      * 
+     * @return 
      */
     public GetDinnerTonightForWeek createGetDinnerTonightForWeek() {
         return new GetDinnerTonightForWeek();
@@ -1415,6 +1583,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDinnerTonightForWeekResponse }
      * 
+     * @return 
      */
     public GetDinnerTonightForWeekResponse createGetDinnerTonightForWeekResponse() {
         return new GetDinnerTonightForWeekResponse();
@@ -1423,6 +1592,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCookingVideoForRecipeID }
      * 
+     * @return 
      */
     public GetCookingVideoForRecipeID createGetCookingVideoForRecipeID() {
         return new GetCookingVideoForRecipeID();
@@ -1431,6 +1601,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCookingVideoForRecipeIDResponse }
      * 
+     * @return 
      */
     public GetCookingVideoForRecipeIDResponse createGetCookingVideoForRecipeIDResponse() {
         return new GetCookingVideoForRecipeIDResponse();
@@ -1439,6 +1610,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWYDRecipeSubCategory }
      * 
+     * @return 
      */
     public GetWYDRecipeSubCategory createGetWYDRecipeSubCategory() {
         return new GetWYDRecipeSubCategory();
@@ -1447,6 +1619,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWYDRecipeSubCategoryResponse }
      * 
+     * @return 
      */
     public GetWYDRecipeSubCategoryResponse createGetWYDRecipeSubCategoryResponse() {
         return new GetWYDRecipeSubCategoryResponse();
@@ -1455,6 +1628,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeSubCategoryResponse }
      * 
+     * @return 
      */
     public RecipeSubCategoryResponse createRecipeSubCategoryResponse() {
         return new RecipeSubCategoryResponse();
@@ -1463,6 +1637,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCookingVideosSubCategory }
      * 
+     * @return 
      */
     public GetCookingVideosSubCategory createGetCookingVideosSubCategory() {
         return new GetCookingVideosSubCategory();
@@ -1471,6 +1646,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCookingVideosSubCategoryResponse }
      * 
+     * @return 
      */
     public GetCookingVideosSubCategoryResponse createGetCookingVideosSubCategoryResponse() {
         return new GetCookingVideosSubCategoryResponse();
@@ -1479,6 +1655,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPollsByPollIDs }
      * 
+     * @return 
      */
     public GetPollsByPollIDs createGetPollsByPollIDs() {
         return new GetPollsByPollIDs();
@@ -1487,6 +1664,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPollsByPollIDsResponse }
      * 
+     * @return 
      */
     public GetPollsByPollIDsResponse createGetPollsByPollIDsResponse() {
         return new GetPollsByPollIDsResponse();
@@ -1495,6 +1673,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PollDetailsResponse }
      * 
+     * @return 
      */
     public PollDetailsResponse createPollDetailsResponse() {
         return new PollDetailsResponse();
@@ -1503,6 +1682,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPollsByRelationID }
      * 
+     * @return 
      */
     public GetPollsByRelationID createGetPollsByRelationID() {
         return new GetPollsByRelationID();
@@ -1511,6 +1691,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPollsByRelationIDResponse }
      * 
+     * @return 
      */
     public GetPollsByRelationIDResponse createGetPollsByRelationIDResponse() {
         return new GetPollsByRelationIDResponse();
@@ -1519,6 +1700,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TestJSON }
      * 
+     * @return 
      */
     public TestJSON createTestJSON() {
         return new TestJSON();
@@ -1527,6 +1709,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TestJSONResponse }
      * 
+     * @return 
      */
     public TestJSONResponse createTestJSONResponse() {
         return new TestJSONResponse();
@@ -1535,6 +1718,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AnswerPoll }
      * 
+     * @return 
      */
     public AnswerPoll createAnswerPoll() {
         return new AnswerPoll();
@@ -1543,6 +1727,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AnswerPollResponse }
      * 
+     * @return 
      */
     public AnswerPollResponse createAnswerPollResponse() {
         return new AnswerPollResponse();
@@ -1551,6 +1736,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNodesByCategoryList }
      * 
+     * @return 
      */
     public GetNodesByCategoryList createGetNodesByCategoryList() {
         return new GetNodesByCategoryList();
@@ -1559,6 +1745,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNodesByCategoryListResponse }
      * 
+     * @return 
      */
     public GetNodesByCategoryListResponse createGetNodesByCategoryListResponse() {
         return new GetNodesByCategoryListResponse();
@@ -1567,6 +1754,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSiteUserAcctPointsLeft }
      * 
+     * @return 
      */
     public GetSiteUserAcctPointsLeft createGetSiteUserAcctPointsLeft() {
         return new GetSiteUserAcctPointsLeft();
@@ -1575,6 +1763,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSiteUserAcctPointsLeftResponse }
      * 
+     * @return 
      */
     public GetSiteUserAcctPointsLeftResponse createGetSiteUserAcctPointsLeftResponse() {
         return new GetSiteUserAcctPointsLeftResponse();
@@ -1583,6 +1772,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SiteUserAcctPointsLeftResponse }
      * 
+     * @return 
      */
     public SiteUserAcctPointsLeftResponse createSiteUserAcctPointsLeftResponse() {
         return new SiteUserAcctPointsLeftResponse();
@@ -1591,6 +1781,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByDates }
      * 
+     * @return 
      */
     public GetRecipesByDates createGetRecipesByDates() {
         return new GetRecipesByDates();
@@ -1599,6 +1790,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRecipesByDatesResponse }
      * 
+     * @return 
      */
     public GetRecipesByDatesResponse createGetRecipesByDatesResponse() {
         return new GetRecipesByDatesResponse();
@@ -1607,6 +1799,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeSummaryDetailsResponse }
      * 
+     * @return 
      */
     public RecipeSummaryDetailsResponse createRecipeSummaryDetailsResponse() {
         return new RecipeSummaryDetailsResponse();
@@ -1615,6 +1808,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTraditionalRecipesByDates }
      * 
+     * @return 
      */
     public GetTraditionalRecipesByDates createGetTraditionalRecipesByDates() {
         return new GetTraditionalRecipesByDates();
@@ -1623,6 +1817,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTraditionalRecipesByDatesResponse }
      * 
+     * @return 
      */
     public GetTraditionalRecipesByDatesResponse createGetTraditionalRecipesByDatesResponse() {
         return new GetTraditionalRecipesByDatesResponse();
@@ -1631,6 +1826,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeDetailResponses }
      * 
+     * @return 
      */
     public RecipeDetailResponses createRecipeDetailResponses() {
         return new RecipeDetailResponses();
@@ -1639,6 +1835,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserOptin }
      * 
+     * @return 
      */
     public UserOptin createUserOptin() {
         return new UserOptin();
@@ -1647,6 +1844,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserOptinResponse }
      * 
+     * @return 
      */
     public UserOptinResponse createUserOptinResponse() {
         return new UserOptinResponse();
@@ -1655,6 +1853,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OptinSummaryResponse }
      * 
+     * @return 
      */
     public OptinSummaryResponse createOptinSummaryResponse() {
         return new OptinSummaryResponse();
@@ -1663,6 +1862,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserAnswerUpdate }
      * 
+     * @return 
      */
     public UserAnswerUpdate createUserAnswerUpdate() {
         return new UserAnswerUpdate();
@@ -1671,6 +1871,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserAnswerUpdateResponse }
      * 
+     * @return 
      */
     public UserAnswerUpdateResponse createUserAnswerUpdateResponse() {
         return new UserAnswerUpdateResponse();
@@ -1679,6 +1880,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpadteUserAnswerResponse }
      * 
+     * @return 
      */
     public UpadteUserAnswerResponse createUpadteUserAnswerResponse() {
         return new UpadteUserAnswerResponse();
@@ -1687,6 +1889,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserOptinUpdate }
      * 
+     * @return 
      */
     public UserOptinUpdate createUserOptinUpdate() {
         return new UserOptinUpdate();
@@ -1695,6 +1898,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserOptinUpdateResponse }
      * 
+     * @return 
      */
     public UserOptinUpdateResponse createUserOptinUpdateResponse() {
         return new UserOptinUpdateResponse();
@@ -1703,6 +1907,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeSummary }
      * 
+     * @return 
      */
     public ArrayOfRecipeSummary createArrayOfRecipeSummary() {
         return new ArrayOfRecipeSummary();
@@ -1711,6 +1916,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeSummary }
      * 
+     * @return 
      */
     public RecipeSummary createRecipeSummary() {
         return new RecipeSummary();
@@ -1719,6 +1925,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeClassification }
      * 
+     * @return 
      */
     public ArrayOfRecipeClassification createArrayOfRecipeClassification() {
         return new ArrayOfRecipeClassification();
@@ -1727,6 +1934,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeClassification }
      * 
+     * @return 
      */
     public RecipeClassification createRecipeClassification() {
         return new RecipeClassification();
@@ -1735,6 +1943,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeCategory }
      * 
+     * @return 
      */
     public ArrayOfRecipeCategory createArrayOfRecipeCategory() {
         return new ArrayOfRecipeCategory();
@@ -1743,6 +1952,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeCategory }
      * 
+     * @return 
      */
     public RecipeCategory createRecipeCategory() {
         return new RecipeCategory();
@@ -1751,6 +1961,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfCookingVideoAd }
      * 
+     * @return 
      */
     public ArrayOfCookingVideoAd createArrayOfCookingVideoAd() {
         return new ArrayOfCookingVideoAd();
@@ -1759,6 +1970,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CookingVideoAd }
      * 
+     * @return 
      */
     public CookingVideoAd createCookingVideoAd() {
         return new CookingVideoAd();
@@ -1767,6 +1979,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeFlashVideo }
      * 
+     * @return 
      */
     public ArrayOfRecipeFlashVideo createArrayOfRecipeFlashVideo() {
         return new ArrayOfRecipeFlashVideo();
@@ -1775,6 +1988,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeFlashVideo }
      * 
+     * @return 
      */
     public RecipeFlashVideo createRecipeFlashVideo() {
         return new RecipeFlashVideo();
@@ -1783,6 +1997,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfROTDSummary }
      * 
+     * @return 
      */
     public ArrayOfROTDSummary createArrayOfROTDSummary() {
         return new ArrayOfROTDSummary();
@@ -1791,6 +2006,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ROTDSummary }
      * 
+     * @return 
      */
     public ROTDSummary createROTDSummary() {
         return new ROTDSummary();
@@ -1799,6 +2015,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MemberRecipeDetail }
      * 
+     * @return 
      */
     public MemberRecipeDetail createMemberRecipeDetail() {
         return new MemberRecipeDetail();
@@ -1807,6 +2024,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MemberRecipeSummary }
      * 
+     * @return 
      */
     public MemberRecipeSummary createMemberRecipeSummary() {
         return new MemberRecipeSummary();
@@ -1815,6 +2033,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRatingDetail }
      * 
+     * @return 
      */
     public ArrayOfRatingDetail createArrayOfRatingDetail() {
         return new ArrayOfRatingDetail();
@@ -1823,6 +2042,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RatingDetail }
      * 
+     * @return 
      */
     public RatingDetail createRatingDetail() {
         return new RatingDetail();
@@ -1831,6 +2051,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeDetail }
      * 
+     * @return 
      */
     public RecipeDetail createRecipeDetail() {
         return new RecipeDetail();
@@ -1839,6 +2060,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfIngredientDetail }
      * 
+     * @return 
      */
     public ArrayOfIngredientDetail createArrayOfIngredientDetail() {
         return new ArrayOfIngredientDetail();
@@ -1847,6 +2069,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IngredientDetail }
      * 
+     * @return 
      */
     public IngredientDetail createIngredientDetail() {
         return new IngredientDetail();
@@ -1855,6 +2078,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeIngredientGridHeaderDetail }
      * 
+     * @return 
      */
     public ArrayOfRecipeIngredientGridHeaderDetail createArrayOfRecipeIngredientGridHeaderDetail() {
         return new ArrayOfRecipeIngredientGridHeaderDetail();
@@ -1863,6 +2087,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeIngredientGridHeaderDetail }
      * 
+     * @return 
      */
     public RecipeIngredientGridHeaderDetail createRecipeIngredientGridHeaderDetail() {
         return new RecipeIngredientGridHeaderDetail();
@@ -1871,6 +2096,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeIngredientGridDetail }
      * 
+     * @return 
      */
     public ArrayOfRecipeIngredientGridDetail createArrayOfRecipeIngredientGridDetail() {
         return new ArrayOfRecipeIngredientGridDetail();
@@ -1879,6 +2105,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeIngredientGridDetail }
      * 
+     * @return 
      */
     public RecipeIngredientGridDetail createRecipeIngredientGridDetail() {
         return new RecipeIngredientGridDetail();
@@ -1887,6 +2114,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfPreparationDetail }
      * 
+     * @return 
      */
     public ArrayOfPreparationDetail createArrayOfPreparationDetail() {
         return new ArrayOfPreparationDetail();
@@ -1895,6 +2123,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PreparationDetail }
      * 
+     * @return 
      */
     public PreparationDetail createPreparationDetail() {
         return new PreparationDetail();
@@ -1903,6 +2132,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfNutritionItemDetail }
      * 
+     * @return 
      */
     public ArrayOfNutritionItemDetail createArrayOfNutritionItemDetail() {
         return new ArrayOfNutritionItemDetail();
@@ -1911,6 +2141,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NutritionItemDetail }
      * 
+     * @return 
      */
     public NutritionItemDetail createNutritionItemDetail() {
         return new NutritionItemDetail();
@@ -1919,6 +2150,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfNutritionGridItemDetail }
      * 
+     * @return 
      */
     public ArrayOfNutritionGridItemDetail createArrayOfNutritionGridItemDetail() {
         return new ArrayOfNutritionGridItemDetail();
@@ -1927,6 +2159,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NutritionGridItemDetail }
      * 
+     * @return 
      */
     public NutritionGridItemDetail createNutritionGridItemDetail() {
         return new NutritionGridItemDetail();
@@ -1935,6 +2168,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeTipDetail }
      * 
+     * @return 
      */
     public ArrayOfRecipeTipDetail createArrayOfRecipeTipDetail() {
         return new ArrayOfRecipeTipDetail();
@@ -1943,6 +2177,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeTipDetail }
      * 
+     * @return 
      */
     public RecipeTipDetail createRecipeTipDetail() {
         return new RecipeTipDetail();
@@ -1951,6 +2186,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CookieResponseEntity }
      * 
+     * @return 
      */
     public CookieResponseEntity createCookieResponseEntity() {
         return new CookieResponseEntity();
@@ -1959,6 +2195,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CookiePairs }
      * 
+     * @return 
      */
     public CookiePairs createCookiePairs() {
         return new CookiePairs();
@@ -1967,6 +2204,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CookiePair }
      * 
+     * @return 
      */
     public CookiePair createCookiePair() {
         return new CookiePair();
@@ -1975,6 +2213,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeBoxRecipeSummary }
      * 
+     * @return 
      */
     public ArrayOfRecipeBoxRecipeSummary createArrayOfRecipeBoxRecipeSummary() {
         return new ArrayOfRecipeBoxRecipeSummary();
@@ -1983,6 +2222,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeBoxRecipeSummary }
      * 
+     * @return 
      */
     public RecipeBoxRecipeSummary createRecipeBoxRecipeSummary() {
         return new RecipeBoxRecipeSummary();
@@ -1991,6 +2231,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfString }
      * 
+     * @return 
      */
     public ArrayOfString createArrayOfString() {
         return new ArrayOfString();
@@ -1999,6 +2240,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfShoppingList }
      * 
+     * @return 
      */
     public ArrayOfShoppingList createArrayOfShoppingList() {
         return new ArrayOfShoppingList();
@@ -2007,6 +2249,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ShoppingList }
      * 
+     * @return 
      */
     public ShoppingList createShoppingList() {
         return new ShoppingList();
@@ -2015,6 +2258,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfShoppingListItem }
      * 
+     * @return 
      */
     public ArrayOfShoppingListItem createArrayOfShoppingListItem() {
         return new ArrayOfShoppingListItem();
@@ -2023,6 +2267,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ShoppingListItem }
      * 
+     * @return 
      */
     public ShoppingListItem createShoppingListItem() {
         return new ShoppingListItem();
@@ -2031,6 +2276,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAddItemToShoppingListResult }
      * 
+     * @return 
      */
     public ArrayOfAddItemToShoppingListResult createArrayOfAddItemToShoppingListResult() {
         return new ArrayOfAddItemToShoppingListResult();
@@ -2039,6 +2285,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddItemToShoppingListResult }
      * 
+     * @return 
      */
     public AddItemToShoppingListResult createAddItemToShoppingListResult() {
         return new AddItemToShoppingListResult();
@@ -2047,6 +2294,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeBoxShoppingListResponse }
      * 
+     * @return 
      */
     public ArrayOfRecipeBoxShoppingListResponse createArrayOfRecipeBoxShoppingListResponse() {
         return new ArrayOfRecipeBoxShoppingListResponse();
@@ -2055,6 +2303,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfStoreSummary }
      * 
+     * @return 
      */
     public ArrayOfStoreSummary createArrayOfStoreSummary() {
         return new ArrayOfStoreSummary();
@@ -2063,6 +2312,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link StoreSummary }
      * 
+     * @return 
      */
     public StoreSummary createStoreSummary() {
         return new StoreSummary();
@@ -2071,6 +2321,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfVideoRecipeSummary }
      * 
+     * @return 
      */
     public ArrayOfVideoRecipeSummary createArrayOfVideoRecipeSummary() {
         return new ArrayOfVideoRecipeSummary();
@@ -2079,6 +2330,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link VideoRecipeSummary }
      * 
+     * @return 
      */
     public VideoRecipeSummary createVideoRecipeSummary() {
         return new VideoRecipeSummary();
@@ -2087,6 +2339,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDTSummary }
      * 
+     * @return 
      */
     public ArrayOfDTSummary createArrayOfDTSummary() {
         return new ArrayOfDTSummary();
@@ -2095,6 +2348,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DTSummary }
      * 
+     * @return 
      */
     public DTSummary createDTSummary() {
         return new DTSummary();
@@ -2103,6 +2357,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeSubCategory }
      * 
+     * @return 
      */
     public ArrayOfRecipeSubCategory createArrayOfRecipeSubCategory() {
         return new ArrayOfRecipeSubCategory();
@@ -2111,6 +2366,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeSubCategory }
      * 
+     * @return 
      */
     public RecipeSubCategory createRecipeSubCategory() {
         return new RecipeSubCategory();
@@ -2119,6 +2375,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfPollDetail }
      * 
+     * @return 
      */
     public ArrayOfPollDetail createArrayOfPollDetail() {
         return new ArrayOfPollDetail();
@@ -2127,6 +2384,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PollDetail }
      * 
+     * @return 
      */
     public PollDetail createPollDetail() {
         return new PollDetail();
@@ -2135,6 +2393,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfPollResultDetail }
      * 
+     * @return 
      */
     public ArrayOfPollResultDetail createArrayOfPollResultDetail() {
         return new ArrayOfPollResultDetail();
@@ -2143,6 +2402,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PollResultDetail }
      * 
+     * @return 
      */
     public PollResultDetail createPollResultDetail() {
         return new PollResultDetail();
@@ -2151,6 +2411,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeSubCategoryResponseWPT }
      * 
+     * @return 
      */
     public RecipeSubCategoryResponseWPT createRecipeSubCategoryResponseWPT() {
         return new RecipeSubCategoryResponseWPT();
@@ -2159,6 +2420,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeSubCategoryWPT }
      * 
+     * @return 
      */
     public ArrayOfRecipeSubCategoryWPT createArrayOfRecipeSubCategoryWPT() {
         return new ArrayOfRecipeSubCategoryWPT();
@@ -2167,6 +2429,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeSubCategoryWPT }
      * 
+     * @return 
      */
     public RecipeSubCategoryWPT createRecipeSubCategoryWPT() {
         return new RecipeSubCategoryWPT();
@@ -2175,6 +2438,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TextResponse }
      * 
+     * @return 
      */
     public TextResponse createTextResponse() {
         return new TextResponse();
@@ -2183,6 +2447,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfTextSummary }
      * 
+     * @return 
      */
     public ArrayOfTextSummary createArrayOfTextSummary() {
         return new ArrayOfTextSummary();
@@ -2191,6 +2456,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TextSummary }
      * 
+     * @return 
      */
     public TextSummary createTextSummary() {
         return new TextSummary();
@@ -2199,6 +2465,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BrandRecipeSummariesResponse }
      * 
+     * @return 
      */
     public BrandRecipeSummariesResponse createBrandRecipeSummariesResponse() {
         return new BrandRecipeSummariesResponse();
@@ -2207,6 +2474,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfBrandRecipeSummary }
      * 
+     * @return 
      */
     public ArrayOfBrandRecipeSummary createArrayOfBrandRecipeSummary() {
         return new ArrayOfBrandRecipeSummary();
@@ -2215,6 +2483,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BrandRecipeSummary }
      * 
+     * @return 
      */
     public BrandRecipeSummary createBrandRecipeSummary() {
         return new BrandRecipeSummary();
@@ -2223,6 +2492,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeSummaryDetails }
      * 
+     * @return 
      */
     public ArrayOfRecipeSummaryDetails createArrayOfRecipeSummaryDetails() {
         return new ArrayOfRecipeSummaryDetails();
@@ -2231,6 +2501,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RecipeSummaryDetails }
      * 
+     * @return 
      */
     public RecipeSummaryDetails createRecipeSummaryDetails() {
         return new RecipeSummaryDetails();
@@ -2239,6 +2510,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRecipeDetail }
      * 
+     * @return 
      */
     public ArrayOfRecipeDetail createArrayOfRecipeDetail() {
         return new ArrayOfRecipeDetail();
@@ -2247,6 +2519,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfOptinResponse }
      * 
+     * @return 
      */
     public ArrayOfOptinResponse createArrayOfOptinResponse() {
         return new ArrayOfOptinResponse();
@@ -2255,6 +2528,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OptinResponse }
      * 
+     * @return 
      */
     public OptinResponse createOptinResponse() {
         return new OptinResponse();
@@ -2263,6 +2537,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeSummariesResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeSummariesResponse")
     public JAXBElement<RecipeSummariesResponse> createRecipeSummariesResponse(RecipeSummariesResponse value) {
@@ -2272,6 +2548,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetRecipeCategoryResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "GetRecipeCategoryResponse")
     public JAXBElement<GetRecipeCategoryResponse> createGetRecipeCategoryResponse(GetRecipeCategoryResponse value) {
@@ -2281,6 +2559,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetRecipeClassificationResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "GetRecipeClassificationResponse")
     public JAXBElement<GetRecipeClassificationResponse> createGetRecipeClassificationResponse(GetRecipeClassificationResponse value) {
@@ -2290,6 +2570,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetRecipeSubCategoryResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "GetRecipeSubCategoryResponse")
     public JAXBElement<GetRecipeSubCategoryResponse> createGetRecipeSubCategoryResponse(GetRecipeSubCategoryResponse value) {
@@ -2299,6 +2581,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeVideosResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeVideosResponse")
     public JAXBElement<RecipeVideosResponse> createRecipeVideosResponse(RecipeVideosResponse value) {
@@ -2308,6 +2592,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ROTDSummariesResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "ROTDSummariesResponse")
     public JAXBElement<ROTDSummariesResponse> createROTDSummariesResponse(ROTDSummariesResponse value) {
@@ -2317,6 +2603,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MemberRecipeDetailResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "MemberRecipeDetailResponse")
     public JAXBElement<MemberRecipeDetailResponse> createMemberRecipeDetailResponse(MemberRecipeDetailResponse value) {
@@ -2326,6 +2614,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeDetailResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeDetailResponse")
     public JAXBElement<RecipeDetailResponse> createRecipeDetailResponse(RecipeDetailResponse value) {
@@ -2335,6 +2625,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RatingsPagedResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RatingsPagedResponse")
     public JAXBElement<RatingsPagedResponse> createRatingsPagedResponse(RatingsPagedResponse value) {
@@ -2344,6 +2636,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LoginResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "LoginResponse")
     public JAXBElement<LoginResponse> createLoginResponse(LoginResponse value) {
@@ -2353,6 +2647,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ForgotPasswordCallResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "ForgotPasswordCallResponse")
     public JAXBElement<ForgotPasswordCallResponse> createForgotPasswordCallResponse(ForgotPasswordCallResponse value) {
@@ -2362,6 +2658,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LogoutResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "LogoutResponse")
     public JAXBElement<LogoutResponse> createLogoutResponse(LogoutResponse value) {
@@ -2371,6 +2669,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeBoxResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeBoxResponse")
     public JAXBElement<RecipeBoxResponse> createRecipeBoxResponse(RecipeBoxResponse value) {
@@ -2380,6 +2680,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StatusResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "StatusResponse")
     public JAXBElement<StatusResponse> createStatusResponse(StatusResponse value) {
@@ -2389,6 +2691,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeBoxRecipeSummariesResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeBoxRecipeSummariesResponse")
     public JAXBElement<RecipeBoxRecipeSummariesResponse> createRecipeBoxRecipeSummariesResponse(RecipeBoxRecipeSummariesResponse value) {
@@ -2398,6 +2702,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeInRecipeBoxResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeInRecipeBoxResponse")
     public JAXBElement<RecipeInRecipeBoxResponse> createRecipeInRecipeBoxResponse(RecipeInRecipeBoxResponse value) {
@@ -2407,6 +2713,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShoppingListsResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "ShoppingListsResponse")
     public JAXBElement<ShoppingListsResponse> createShoppingListsResponse(ShoppingListsResponse value) {
@@ -2416,6 +2724,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShoppingListResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "ShoppingListResponse")
     public JAXBElement<ShoppingListResponse> createShoppingListResponse(ShoppingListResponse value) {
@@ -2425,6 +2735,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SortedShoppingListResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "SortedShoppingListResponse")
     public JAXBElement<SortedShoppingListResponse> createSortedShoppingListResponse(SortedShoppingListResponse value) {
@@ -2434,6 +2746,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EditShoppingListItemResponseNew }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "EditShoppingListItemResponseNew")
     public JAXBElement<EditShoppingListItemResponseNew> createEditShoppingListItemResponseNew(EditShoppingListItemResponseNew value) {
@@ -2443,6 +2757,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddItemToShoppingListResponseNew }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "AddItemToShoppingListResponseNew")
     public JAXBElement<AddItemToShoppingListResponseNew> createAddItemToShoppingListResponseNew(AddItemToShoppingListResponseNew value) {
@@ -2452,6 +2768,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeBoxShoppingListResponses }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeBoxShoppingListResponses")
     public JAXBElement<RecipeBoxShoppingListResponses> createRecipeBoxShoppingListResponses(RecipeBoxShoppingListResponses value) {
@@ -2461,6 +2779,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeBoxShoppingListResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeBoxShoppingListResponse")
     public JAXBElement<RecipeBoxShoppingListResponse> createRecipeBoxShoppingListResponse(RecipeBoxShoppingListResponse value) {
@@ -2470,6 +2790,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StoreSummariesResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "StoreSummariesResponse")
     public JAXBElement<StoreSummariesResponse> createStoreSummariesResponse(StoreSummariesResponse value) {
@@ -2479,6 +2801,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CoremetricsResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "CoremetricsResponse")
     public JAXBElement<CoremetricsResponse> createCoremetricsResponse(CoremetricsResponse value) {
@@ -2488,6 +2812,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link VideoRecipeSummariesResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "VideoRecipeSummariesResponse")
     public JAXBElement<VideoRecipeSummariesResponse> createVideoRecipeSummariesResponse(VideoRecipeSummariesResponse value) {
@@ -2497,6 +2823,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DTSummariesResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "DTSummariesResponse")
     public JAXBElement<DTSummariesResponse> createDTSummariesResponse(DTSummariesResponse value) {
@@ -2506,6 +2834,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeSubCategoryResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeSubCategoryResponse")
     public JAXBElement<RecipeSubCategoryResponse> createRecipeSubCategoryResponse(RecipeSubCategoryResponse value) {
@@ -2515,6 +2845,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PollDetailsResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "PollDetailsResponse")
     public JAXBElement<PollDetailsResponse> createPollDetailsResponse(PollDetailsResponse value) {
@@ -2524,6 +2856,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "string")
     public JAXBElement<String> createString(String value) {
@@ -2533,6 +2867,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "anyType")
     public JAXBElement<Object> createAnyType(Object value) {
@@ -2542,6 +2878,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SiteUserAcctPointsLeftResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "SiteUserAcctPointsLeftResponse")
     public JAXBElement<SiteUserAcctPointsLeftResponse> createSiteUserAcctPointsLeftResponse(SiteUserAcctPointsLeftResponse value) {
@@ -2551,6 +2889,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeSummaryDetailsResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeSummaryDetailsResponse")
     public JAXBElement<RecipeSummaryDetailsResponse> createRecipeSummaryDetailsResponse(RecipeSummaryDetailsResponse value) {
@@ -2560,6 +2900,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RecipeDetailResponses }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "RecipeDetailResponses")
     public JAXBElement<RecipeDetailResponses> createRecipeDetailResponses(RecipeDetailResponses value) {
@@ -2569,6 +2911,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OptinSummaryResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "OptinSummaryResponse")
     public JAXBElement<OptinSummaryResponse> createOptinSummaryResponse(OptinSummaryResponse value) {
@@ -2578,6 +2922,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpadteUserAnswerResponse }{@code >}}
      * 
+     * @param value
+     * @return 
      */
     @XmlElementDecl(namespace = "http://www.kraftfoods.com/ws/", name = "UpadteUserAnswerResponse")
     public JAXBElement<UpadteUserAnswerResponse> createUpadteUserAnswerResponse(UpadteUserAnswerResponse value) {

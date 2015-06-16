@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfAddItemToShoppingListResult {
 
+    /**
+     *
+     */
     @XmlElement(name = "AddItemToShoppingListResult", nillable = true)
     protected List<AddItemToShoppingListResult> addItemToShoppingListResult;
 
@@ -58,6 +61,7 @@ public class ArrayOfAddItemToShoppingListResult {
      * {@link AddItemToShoppingListResult }
      * 
      * 
+     * @return 
      */
     public List<AddItemToShoppingListResult> getAddItemToShoppingListResult() {
         if (addItemToShoppingListResult == null) {

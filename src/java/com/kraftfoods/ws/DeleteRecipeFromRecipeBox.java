@@ -33,11 +33,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "DeleteRecipeFromRecipeBox")
 public class DeleteRecipeFromRecipeBox {
 
+    /**
+     *
+     */
     protected int iRecipeBoxRecipeID;
 
     /**
      * Gets the value of the iRecipeBoxRecipeID property.
      * 
+     * @return 
      */
     public int getIRecipeBoxRecipeID() {
         return iRecipeBoxRecipeID;
@@ -46,6 +50,7 @@ public class DeleteRecipeFromRecipeBox {
     /**
      * Sets the value of the iRecipeBoxRecipeID property.
      * 
+     * @param value
      */
     public void setIRecipeBoxRecipeID(int value) {
         this.iRecipeBoxRecipeID = value;

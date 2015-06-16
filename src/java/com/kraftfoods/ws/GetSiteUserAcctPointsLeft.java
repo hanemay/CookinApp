@@ -39,14 +39,30 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetSiteUserAcctPointsLeft")
 public class GetSiteUserAcctPointsLeft {
 
+    /**
+     *
+     */
     protected int iSiteUserID;
+
+    /**
+     *
+     */
     protected int iSiteAccountID;
+
+    /**
+     *
+     */
     protected int iIncreaseCountBy;
+
+    /**
+     *
+     */
     protected boolean bIncreaseCount;
 
     /**
      * Gets the value of the iSiteUserID property.
      * 
+     * @return 
      */
     public int getISiteUserID() {
         return iSiteUserID;
@@ -55,6 +71,7 @@ public class GetSiteUserAcctPointsLeft {
     /**
      * Sets the value of the iSiteUserID property.
      * 
+     * @param value
      */
     public void setISiteUserID(int value) {
         this.iSiteUserID = value;
@@ -63,6 +80,7 @@ public class GetSiteUserAcctPointsLeft {
     /**
      * Gets the value of the iSiteAccountID property.
      * 
+     * @return 
      */
     public int getISiteAccountID() {
         return iSiteAccountID;
@@ -71,6 +89,7 @@ public class GetSiteUserAcctPointsLeft {
     /**
      * Sets the value of the iSiteAccountID property.
      * 
+     * @param value
      */
     public void setISiteAccountID(int value) {
         this.iSiteAccountID = value;
@@ -79,6 +98,7 @@ public class GetSiteUserAcctPointsLeft {
     /**
      * Gets the value of the iIncreaseCountBy property.
      * 
+     * @return 
      */
     public int getIIncreaseCountBy() {
         return iIncreaseCountBy;
@@ -87,6 +107,7 @@ public class GetSiteUserAcctPointsLeft {
     /**
      * Sets the value of the iIncreaseCountBy property.
      * 
+     * @param value
      */
     public void setIIncreaseCountBy(int value) {
         this.iIncreaseCountBy = value;
@@ -95,6 +116,7 @@ public class GetSiteUserAcctPointsLeft {
     /**
      * Gets the value of the bIncreaseCount property.
      * 
+     * @return 
      */
     public boolean isBIncreaseCount() {
         return bIncreaseCount;
@@ -103,6 +125,7 @@ public class GetSiteUserAcctPointsLeft {
     /**
      * Sets the value of the bIncreaseCount property.
      * 
+     * @param value
      */
     public void setBIncreaseCount(boolean value) {
         this.bIncreaseCount = value;

@@ -48,22 +48,57 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class StoreSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "LocationID")
     protected String locationID;
+
+    /**
+     *
+     */
     @XmlElement(name = "LocationName")
     protected String locationName;
+
+    /**
+     *
+     */
     @XmlElement(name = "Street")
     protected String street;
+
+    /**
+     *
+     */
     @XmlElement(name = "City")
     protected String city;
+
+    /**
+     *
+     */
     @XmlElement(name = "State")
     protected String state;
+
+    /**
+     *
+     */
     @XmlElement(name = "Zipcode")
     protected String zipcode;
+
+    /**
+     *
+     */
     @XmlElement(name = "Phone")
     protected String phone;
+
+    /**
+     *
+     */
     @XmlElement(name = "Distance")
     protected String distance;
+
+    /**
+     *
+     */
     @XmlElement(name = "MarketingMessage")
     protected String marketingMessage;
 

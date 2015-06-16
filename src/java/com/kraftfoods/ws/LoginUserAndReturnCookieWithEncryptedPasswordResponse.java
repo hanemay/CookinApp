@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "LoginUserAndReturnCookieWithEncryptedPasswordResponse")
 public class LoginUserAndReturnCookieWithEncryptedPasswordResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "LoginUserAndReturnCookieWithEncryptedPasswordResult")
     protected LoginResponse loginUserAndReturnCookieWithEncryptedPasswordResult;
 

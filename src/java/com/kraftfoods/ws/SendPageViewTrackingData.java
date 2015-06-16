@@ -49,16 +49,47 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SendPageViewTrackingData")
 public class SendPageViewTrackingData {
 
+    /**
+     *
+     */
     protected String sVisitorID;
+
+    /**
+     *
+     */
     protected String sSessionID;
+
+    /**
+     *
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
     protected SessionType iSessionType;
+
+    /**
+     *
+     */
     @XmlElement(name = "sURL")
     protected String surl;
+
+    /**
+     *
+     */
     protected String sSearchString;
+
+    /**
+     *
+     */
     protected String sPageID;
+
+    /**
+     *
+     */
     protected String sCategoryID;
+
+    /**
+     *
+     */
     protected boolean bIsTestData;
 
     /**
@@ -232,6 +263,7 @@ public class SendPageViewTrackingData {
     /**
      * Gets the value of the bIsTestData property.
      * 
+     * @return 
      */
     public boolean isBIsTestData() {
         return bIsTestData;
@@ -240,6 +272,7 @@ public class SendPageViewTrackingData {
     /**
      * Sets the value of the bIsTestData property.
      * 
+     * @param value
      */
     public void setBIsTestData(boolean value) {
         this.bIsTestData = value;

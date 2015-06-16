@@ -34,8 +34,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ROTDSummariesResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "ROTDSummaries")
     protected ArrayOfROTDSummary rotdSummaries;
 

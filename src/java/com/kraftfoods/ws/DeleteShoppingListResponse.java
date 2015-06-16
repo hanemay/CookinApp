@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "DeleteShoppingListResponse")
 public class DeleteShoppingListResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "DeleteShoppingListResult")
     protected StatusResponse deleteShoppingListResult;
 

@@ -46,20 +46,51 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class VideoRecipeSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "PointToType")
     protected String pointToType;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeSummary")
     protected RecipeSummary recipeSummary;
+
+    /**
+     *
+     */
     @XmlElement(name = "CookingVideoAds")
     protected ArrayOfCookingVideoAd cookingVideoAds;
+
+    /**
+     *
+     */
     @XmlElement(name = "Duration")
     protected String duration;
+
+    /**
+     *
+     */
     @XmlElement(name = "VideoImage")
     protected String videoImage;
+
+    /**
+     *
+     */
     @XmlElement(name = "VideoPath")
     protected String videoPath;
+
+    /**
+     *
+     */
     @XmlElement(name = "VideoUrl")
     protected String videoUrl;
+
+    /**
+     *
+     */
     @XmlElement(name = "Video_TabletURL")
     protected String videoTabletURL;
 

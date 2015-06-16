@@ -36,14 +36,22 @@ public class RecipeBoxRecipeSummary
     extends RecipeSummary
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeBoxRecipeID")
     protected int recipeBoxRecipeID;
+
+    /**
+     *
+     */
     @XmlElement(name = "Categories")
     protected ArrayOfString categories;
 
     /**
      * Gets the value of the recipeBoxRecipeID property.
      * 
+     * @return 
      */
     public int getRecipeBoxRecipeID() {
         return recipeBoxRecipeID;
@@ -52,6 +60,7 @@ public class RecipeBoxRecipeSummary
     /**
      * Sets the value of the recipeBoxRecipeID property.
      * 
+     * @param value
      */
     public void setRecipeBoxRecipeID(int value) {
         this.recipeBoxRecipeID = value;

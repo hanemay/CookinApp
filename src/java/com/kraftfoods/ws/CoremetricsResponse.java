@@ -36,10 +36,21 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class CoremetricsResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "CoremetricsVisitorID")
     protected String coremetricsVisitorID;
+
+    /**
+     *
+     */
     @XmlElement(name = "CoremetricsSessionID")
     protected String coremetricsSessionID;
+
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
 

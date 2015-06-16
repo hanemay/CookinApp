@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "ExecuteRecipeSearchResponse")
 public class ExecuteRecipeSearchResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "ExecuteRecipeSearchResult")
     protected RecipeSummariesResponse executeRecipeSearchResult;
 

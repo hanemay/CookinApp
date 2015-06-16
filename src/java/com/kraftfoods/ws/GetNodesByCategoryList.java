@@ -55,17 +55,64 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetNodesByCategoryList")
 public class GetNodesByCategoryList {
 
+    /**
+     *
+     */
     protected String isSiteID;
+
+    /**
+     *
+     */
     protected String isLangID;
+
+    /**
+     *
+     */
     protected String sSectionType;
+
+    /**
+     *
+     */
     protected String bsIsLowBandwidth;
+
+    /**
+     *
+     */
     protected String bsIsRecipePhotoRequired;
+
+    /**
+     *
+     */
     protected String bsIsReadyIn30Mins;
+
+    /**
+     *
+     */
     protected String bsIsOnlyHealthyRecipe;
+
+    /**
+     *
+     */
     protected String sSortField;
+
+    /**
+     *
+     */
     protected String sSortDirection;
+
+    /**
+     *
+     */
     protected String sCategoryList;
+
+    /**
+     *
+     */
     protected String isStartRow;
+
+    /**
+     *
+     */
     protected String isEndRow;
 
     /**

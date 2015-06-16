@@ -37,13 +37,25 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "UserOptin")
 public class UserOptin {
 
+    /**
+     *
+     */
     protected int iSiteId;
+
+    /**
+     *
+     */
     protected int iUserId;
+
+    /**
+     *
+     */
     protected int iLanguageId;
 
     /**
      * Gets the value of the iSiteId property.
      * 
+     * @return 
      */
     public int getISiteId() {
         return iSiteId;
@@ -52,6 +64,7 @@ public class UserOptin {
     /**
      * Sets the value of the iSiteId property.
      * 
+     * @param value
      */
     public void setISiteId(int value) {
         this.iSiteId = value;
@@ -60,6 +73,7 @@ public class UserOptin {
     /**
      * Gets the value of the iUserId property.
      * 
+     * @return 
      */
     public int getIUserId() {
         return iUserId;
@@ -68,6 +82,7 @@ public class UserOptin {
     /**
      * Sets the value of the iUserId property.
      * 
+     * @param value
      */
     public void setIUserId(int value) {
         this.iUserId = value;
@@ -76,6 +91,7 @@ public class UserOptin {
     /**
      * Gets the value of the iLanguageId property.
      * 
+     * @return 
      */
     public int getILanguageId() {
         return iLanguageId;
@@ -84,6 +100,7 @@ public class UserOptin {
     /**
      * Sets the value of the iLanguageId property.
      * 
+     * @param value
      */
     public void setILanguageId(int value) {
         this.iLanguageId = value;

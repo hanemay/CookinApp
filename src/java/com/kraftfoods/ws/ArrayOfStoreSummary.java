@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfStoreSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "StoreSummary", nillable = true)
     protected List<StoreSummary> storeSummary;
 
@@ -58,6 +61,7 @@ public class ArrayOfStoreSummary {
      * {@link StoreSummary }
      * 
      * 
+     * @return 
      */
     public List<StoreSummary> getStoreSummary() {
         if (storeSummary == null) {

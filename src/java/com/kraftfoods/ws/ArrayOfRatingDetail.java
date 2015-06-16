@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfRatingDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "RatingDetail", nillable = true)
     protected List<RatingDetail> ratingDetail;
 
@@ -58,6 +61,7 @@ public class ArrayOfRatingDetail {
      * {@link RatingDetail }
      * 
      * 
+     * @return 
      */
     public List<RatingDetail> getRatingDetail() {
         if (ratingDetail == null) {

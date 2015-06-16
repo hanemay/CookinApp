@@ -44,24 +44,52 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class PollResultDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "PollResultID")
     protected int pollResultID;
+
+    /**
+     *
+     */
     @XmlElement(name = "Answer")
     protected String answer;
+
+    /**
+     *
+     */
     @XmlElement(name = "AnswerHelp")
     protected String answerHelp;
+
+    /**
+     *
+     */
     @XmlElement(name = "PollResultLink")
     protected String pollResultLink;
+
+    /**
+     *
+     */
     @XmlElement(name = "PollResultLinkText")
     protected String pollResultLinkText;
+
+    /**
+     *
+     */
     @XmlElement(name = "ResultCount")
     protected int resultCount;
+
+    /**
+     *
+     */
     @XmlElement(name = "PercentSelected")
     protected int percentSelected;
 
     /**
      * Gets the value of the pollResultID property.
      * 
+     * @return 
      */
     public int getPollResultID() {
         return pollResultID;
@@ -70,6 +98,7 @@ public class PollResultDetail {
     /**
      * Sets the value of the pollResultID property.
      * 
+     * @param value
      */
     public void setPollResultID(int value) {
         this.pollResultID = value;
@@ -174,6 +203,7 @@ public class PollResultDetail {
     /**
      * Gets the value of the resultCount property.
      * 
+     * @return 
      */
     public int getResultCount() {
         return resultCount;
@@ -182,6 +212,7 @@ public class PollResultDetail {
     /**
      * Sets the value of the resultCount property.
      * 
+     * @param value
      */
     public void setResultCount(int value) {
         this.resultCount = value;
@@ -190,6 +221,7 @@ public class PollResultDetail {
     /**
      * Gets the value of the percentSelected property.
      * 
+     * @return 
      */
     public int getPercentSelected() {
         return percentSelected;
@@ -198,6 +230,7 @@ public class PollResultDetail {
     /**
      * Sets the value of the percentSelected property.
      * 
+     * @param value
      */
     public void setPercentSelected(int value) {
         this.percentSelected = value;

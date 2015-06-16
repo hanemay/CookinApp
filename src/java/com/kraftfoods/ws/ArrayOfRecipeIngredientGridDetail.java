@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfRecipeIngredientGridDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeIngredientGridDetail", nillable = true)
     protected List<RecipeIngredientGridDetail> recipeIngredientGridDetail;
 
@@ -58,6 +61,7 @@ public class ArrayOfRecipeIngredientGridDetail {
      * {@link RecipeIngredientGridDetail }
      * 
      * 
+     * @return 
      */
     public List<RecipeIngredientGridDetail> getRecipeIngredientGridDetail() {
         if (recipeIngredientGridDetail == null) {

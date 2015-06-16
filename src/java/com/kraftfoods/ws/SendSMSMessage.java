@@ -39,9 +39,24 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SendSMSMessage")
 public class SendSMSMessage {
 
+    /**
+     *
+     */
     protected String sRecipeName;
+
+    /**
+     *
+     */
     protected String sRecipeURL;
+
+    /**
+     *
+     */
     protected String sSenderEmail;
+
+    /**
+     *
+     */
     protected String sDestPhoneNumber;
 
     /**

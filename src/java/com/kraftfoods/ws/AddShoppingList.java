@@ -35,12 +35,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "AddShoppingList")
 public class AddShoppingList {
 
+    /**
+     *
+     */
     protected int iSiteUserID;
+
+    /**
+     *
+     */
     protected String sShoppingListName;
 
     /**
      * Gets the value of the iSiteUserID property.
      * 
+     * @return 
      */
     public int getISiteUserID() {
         return iSiteUserID;
@@ -49,6 +57,7 @@ public class AddShoppingList {
     /**
      * Sets the value of the iSiteUserID property.
      * 
+     * @param value
      */
     public void setISiteUserID(int value) {
         this.iSiteUserID = value;

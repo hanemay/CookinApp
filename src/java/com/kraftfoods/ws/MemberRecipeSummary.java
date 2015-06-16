@@ -64,40 +64,100 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class MemberRecipeSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "LanguageID")
     protected int languageID;
+
+    /**
+     *
+     */
     @XmlElement(name = "UserRecipeID")
     protected int userRecipeID;
+
+    /**
+     *
+     */
     @XmlElement(name = "UserRecipeName")
     protected String userRecipeName;
+
+    /**
+     *
+     */
     @XmlElement(name = "CreatedByUser")
     protected String createdByUser;
+
+    /**
+     *
+     */
     @XmlElement(name = "UserNBR")
     protected int userNBR;
+
+    /**
+     *
+     */
     @XmlElement(name = "TotalTime")
     protected String totalTime;
+
+    /**
+     *
+     */
     @XmlElement(name = "Notes")
     protected String notes;
+
+    /**
+     *
+     */
     @XmlElement(name = "AvgRating")
     protected String avgRating;
+
+    /**
+     *
+     */
     @XmlElement(name = "NumberOfRatings")
     protected String numberOfRatings;
+
+    /**
+     *
+     */
     @XmlElement(name = "NumberOfIngredients")
     protected String numberOfIngredients;
+
+    /**
+     *
+     */
     @XmlElement(name = "Ingredients")
     protected String ingredients;
+
+    /**
+     *
+     */
     @XmlElement(name = "PreparationDetails")
     protected String preparationDetails;
+
+    /**
+     *
+     */
     @XmlElement(name = "Makes")
     protected String makes;
+
+    /**
+     *
+     */
     @XmlElement(name = "Category")
     protected String category;
+
+    /**
+     *
+     */
     @XmlElement(name = "SubCategory")
     protected String subCategory;
 
     /**
      * Gets the value of the languageID property.
      * 
+     * @return 
      */
     public int getLanguageID() {
         return languageID;
@@ -106,6 +166,7 @@ public class MemberRecipeSummary {
     /**
      * Sets the value of the languageID property.
      * 
+     * @param value
      */
     public void setLanguageID(int value) {
         this.languageID = value;
@@ -114,6 +175,7 @@ public class MemberRecipeSummary {
     /**
      * Gets the value of the userRecipeID property.
      * 
+     * @return 
      */
     public int getUserRecipeID() {
         return userRecipeID;
@@ -122,6 +184,7 @@ public class MemberRecipeSummary {
     /**
      * Sets the value of the userRecipeID property.
      * 
+     * @param value
      */
     public void setUserRecipeID(int value) {
         this.userRecipeID = value;
@@ -178,6 +241,7 @@ public class MemberRecipeSummary {
     /**
      * Gets the value of the userNBR property.
      * 
+     * @return 
      */
     public int getUserNBR() {
         return userNBR;
@@ -186,6 +250,7 @@ public class MemberRecipeSummary {
     /**
      * Sets the value of the userNBR property.
      * 
+     * @param value
      */
     public void setUserNBR(int value) {
         this.userNBR = value;

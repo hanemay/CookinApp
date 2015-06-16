@@ -41,10 +41,29 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "LoginUserAndReturnCookieWithEncryptedPassword")
 public class LoginUserAndReturnCookieWithEncryptedPassword {
 
+    /**
+     *
+     */
     protected String sUserName;
+
+    /**
+     *
+     */
     protected String sEncryptedPassword;
+
+    /**
+     *
+     */
     protected int iSiteID;
+
+    /**
+     *
+     */
     protected boolean bRememberMe;
+
+    /**
+     *
+     */
     protected String sOptInIDs;
 
     /**
@@ -98,6 +117,7 @@ public class LoginUserAndReturnCookieWithEncryptedPassword {
     /**
      * Gets the value of the iSiteID property.
      * 
+     * @return 
      */
     public int getISiteID() {
         return iSiteID;
@@ -106,6 +126,7 @@ public class LoginUserAndReturnCookieWithEncryptedPassword {
     /**
      * Sets the value of the iSiteID property.
      * 
+     * @param value
      */
     public void setISiteID(int value) {
         this.iSiteID = value;
@@ -114,6 +135,7 @@ public class LoginUserAndReturnCookieWithEncryptedPassword {
     /**
      * Gets the value of the bRememberMe property.
      * 
+     * @return 
      */
     public boolean isBRememberMe() {
         return bRememberMe;
@@ -122,6 +144,7 @@ public class LoginUserAndReturnCookieWithEncryptedPassword {
     /**
      * Sets the value of the bRememberMe property.
      * 
+     * @param value
      */
     public void setBRememberMe(boolean value) {
         this.bRememberMe = value;

@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "UpdateUserProfileResponse")
 public class UpdateUserProfileResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "UpdateUserProfileResult")
     protected LoginResponse updateUserProfileResult;
 

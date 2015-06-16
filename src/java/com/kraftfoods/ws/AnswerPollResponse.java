@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "AnswerPollResponse")
 public class AnswerPollResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "AnswerPollResult")
     protected StatusResponse answerPollResult;
 

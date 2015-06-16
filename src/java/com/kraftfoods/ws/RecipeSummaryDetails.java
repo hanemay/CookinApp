@@ -34,6 +34,9 @@ public class RecipeSummaryDetails
     extends RecipeSummary
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "IngredientDetails")
     protected ArrayOfIngredientDetail ingredientDetails;
 

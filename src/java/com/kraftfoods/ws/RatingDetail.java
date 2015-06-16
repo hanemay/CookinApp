@@ -42,16 +42,39 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RatingDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "Rating")
     protected String rating;
+
+    /**
+     *
+     */
     @XmlElement(name = "UserName")
     protected String userName;
+
+    /**
+     *
+     */
     @XmlElement(name = "SubmitDate")
     protected String submitDate;
+
+    /**
+     *
+     */
     @XmlElement(name = "SubmitDateJS")
     protected String submitDateJS;
+
+    /**
+     *
+     */
     @XmlElement(name = "UpdatedDate")
     protected String updatedDate;
+
+    /**
+     *
+     */
     @XmlElement(name = "Comments")
     protected String comments;
 

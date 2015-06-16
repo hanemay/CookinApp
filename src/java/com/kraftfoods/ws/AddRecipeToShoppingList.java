@@ -35,12 +35,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "AddRecipeToShoppingList")
 public class AddRecipeToShoppingList {
 
+    /**
+     *
+     */
     protected int iRecipeBoxRecipeID;
+
+    /**
+     *
+     */
     protected int iShoppingListID;
 
     /**
      * Gets the value of the iRecipeBoxRecipeID property.
      * 
+     * @return 
      */
     public int getIRecipeBoxRecipeID() {
         return iRecipeBoxRecipeID;
@@ -49,6 +57,7 @@ public class AddRecipeToShoppingList {
     /**
      * Sets the value of the iRecipeBoxRecipeID property.
      * 
+     * @param value
      */
     public void setIRecipeBoxRecipeID(int value) {
         this.iRecipeBoxRecipeID = value;
@@ -57,6 +66,7 @@ public class AddRecipeToShoppingList {
     /**
      * Gets the value of the iShoppingListID property.
      * 
+     * @return 
      */
     public int getIShoppingListID() {
         return iShoppingListID;
@@ -65,6 +75,7 @@ public class AddRecipeToShoppingList {
     /**
      * Sets the value of the iShoppingListID property.
      * 
+     * @param value
      */
     public void setIShoppingListID(int value) {
         this.iShoppingListID = value;

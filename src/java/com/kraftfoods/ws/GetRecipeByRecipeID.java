@@ -39,14 +39,30 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipeByRecipeID")
 public class GetRecipeByRecipeID {
 
+    /**
+     *
+     */
     protected int iRecipeID;
+
+    /**
+     *
+     */
     protected boolean bStripHTML;
+
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
 
     /**
      * Gets the value of the iRecipeID property.
      * 
+     * @return 
      */
     public int getIRecipeID() {
         return iRecipeID;
@@ -55,6 +71,7 @@ public class GetRecipeByRecipeID {
     /**
      * Sets the value of the iRecipeID property.
      * 
+     * @param value
      */
     public void setIRecipeID(int value) {
         this.iRecipeID = value;
@@ -63,6 +80,7 @@ public class GetRecipeByRecipeID {
     /**
      * Gets the value of the bStripHTML property.
      * 
+     * @return 
      */
     public boolean isBStripHTML() {
         return bStripHTML;
@@ -71,6 +89,7 @@ public class GetRecipeByRecipeID {
     /**
      * Sets the value of the bStripHTML property.
      * 
+     * @param value
      */
     public void setBStripHTML(boolean value) {
         this.bStripHTML = value;
@@ -79,6 +98,7 @@ public class GetRecipeByRecipeID {
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -87,6 +107,7 @@ public class GetRecipeByRecipeID {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -95,6 +116,7 @@ public class GetRecipeByRecipeID {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -103,6 +125,7 @@ public class GetRecipeByRecipeID {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;

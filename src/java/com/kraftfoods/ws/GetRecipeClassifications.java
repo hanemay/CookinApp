@@ -35,12 +35,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipeClassifications")
 public class GetRecipeClassifications {
 
+    /**
+     *
+     */
     protected int iSiteID;
+
+    /**
+     *
+     */
     protected int iLangID;
 
     /**
      * Gets the value of the iSiteID property.
      * 
+     * @return 
      */
     public int getISiteID() {
         return iSiteID;
@@ -49,6 +57,7 @@ public class GetRecipeClassifications {
     /**
      * Sets the value of the iSiteID property.
      * 
+     * @param value
      */
     public void setISiteID(int value) {
         this.iSiteID = value;
@@ -57,6 +66,7 @@ public class GetRecipeClassifications {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -65,6 +75,7 @@ public class GetRecipeClassifications {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;

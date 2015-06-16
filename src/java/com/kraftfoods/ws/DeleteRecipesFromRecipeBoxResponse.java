@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "DeleteRecipesFromRecipeBoxResponse")
 public class DeleteRecipesFromRecipeBoxResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "DeleteRecipesFromRecipeBoxResult")
     protected StatusResponse deleteRecipesFromRecipeBoxResult;
 

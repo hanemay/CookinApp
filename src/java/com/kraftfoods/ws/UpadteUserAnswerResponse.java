@@ -32,6 +32,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class UpadteUserAnswerResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
 

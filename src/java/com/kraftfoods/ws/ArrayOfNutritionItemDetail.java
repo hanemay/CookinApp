@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfNutritionItemDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "NutritionItemDetail", nillable = true)
     protected List<NutritionItemDetail> nutritionItemDetail;
 
@@ -58,6 +61,7 @@ public class ArrayOfNutritionItemDetail {
      * {@link NutritionItemDetail }
      * 
      * 
+     * @return 
      */
     public List<NutritionItemDetail> getNutritionItemDetail() {
         if (nutritionItemDetail == null) {

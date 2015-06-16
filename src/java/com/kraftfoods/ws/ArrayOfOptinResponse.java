@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfOptinResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "OptinResponse", nillable = true)
     protected List<OptinResponse> optinResponse;
 
@@ -58,6 +61,7 @@ public class ArrayOfOptinResponse {
      * {@link OptinResponse }
      * 
      * 
+     * @return 
      */
     public List<OptinResponse> getOptinResponse() {
         if (optinResponse == null) {

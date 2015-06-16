@@ -36,10 +36,21 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeFlashVideo {
 
+    /**
+     *
+     */
     @XmlElement(name = "VideoImage")
     protected String videoImage;
+
+    /**
+     *
+     */
     @XmlElement(name = "VideoPath")
     protected String videoPath;
+
+    /**
+     *
+     */
     @XmlElement(name = "VideoUrl")
     protected String videoUrl;
 

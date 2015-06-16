@@ -35,12 +35,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "LogoutUserAndReturnCookie")
 public class LogoutUserAndReturnCookie {
 
+    /**
+     *
+     */
     protected boolean bThirdPartyLogout;
+
+    /**
+     *
+     */
     protected String iLang;
 
     /**
      * Gets the value of the bThirdPartyLogout property.
      * 
+     * @return 
      */
     public boolean isBThirdPartyLogout() {
         return bThirdPartyLogout;
@@ -49,6 +57,7 @@ public class LogoutUserAndReturnCookie {
     /**
      * Sets the value of the bThirdPartyLogout property.
      * 
+     * @param value
      */
     public void setBThirdPartyLogout(boolean value) {
         this.bThirdPartyLogout = value;

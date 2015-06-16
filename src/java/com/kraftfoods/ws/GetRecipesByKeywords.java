@@ -59,19 +59,74 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipesByKeywords")
 public class GetRecipesByKeywords {
 
+    /**
+     *
+     */
     protected String sKeyword1;
+
+    /**
+     *
+     */
     protected String sKeyword2;
+
+    /**
+     *
+     */
     protected String sKeyword3;
+
+    /**
+     *
+     */
     protected String sKeyword4;
+
+    /**
+     *
+     */
     protected String sKeyword5;
+
+    /**
+     *
+     */
     protected String sKeyword6;
+
+    /**
+     *
+     */
     protected boolean bIsRecipePhotoRequired;
+
+    /**
+     *
+     */
     protected boolean bIsReadyIn30Mins;
+
+    /**
+     *
+     */
     protected String sSortField;
+
+    /**
+     *
+     */
     protected String sSortDirection;
+
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected int iStartRow;
+
+    /**
+     *
+     */
     protected int iEndRow;
 
     /**
@@ -221,6 +276,7 @@ public class GetRecipesByKeywords {
     /**
      * Gets the value of the bIsRecipePhotoRequired property.
      * 
+     * @return 
      */
     public boolean isBIsRecipePhotoRequired() {
         return bIsRecipePhotoRequired;
@@ -229,6 +285,7 @@ public class GetRecipesByKeywords {
     /**
      * Sets the value of the bIsRecipePhotoRequired property.
      * 
+     * @param value
      */
     public void setBIsRecipePhotoRequired(boolean value) {
         this.bIsRecipePhotoRequired = value;
@@ -237,6 +294,7 @@ public class GetRecipesByKeywords {
     /**
      * Gets the value of the bIsReadyIn30Mins property.
      * 
+     * @return 
      */
     public boolean isBIsReadyIn30Mins() {
         return bIsReadyIn30Mins;
@@ -245,6 +303,7 @@ public class GetRecipesByKeywords {
     /**
      * Sets the value of the bIsReadyIn30Mins property.
      * 
+     * @param value
      */
     public void setBIsReadyIn30Mins(boolean value) {
         this.bIsReadyIn30Mins = value;
@@ -301,6 +360,7 @@ public class GetRecipesByKeywords {
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -309,6 +369,7 @@ public class GetRecipesByKeywords {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -317,6 +378,7 @@ public class GetRecipesByKeywords {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -325,6 +387,7 @@ public class GetRecipesByKeywords {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -333,6 +396,7 @@ public class GetRecipesByKeywords {
     /**
      * Gets the value of the iStartRow property.
      * 
+     * @return 
      */
     public int getIStartRow() {
         return iStartRow;
@@ -341,6 +405,7 @@ public class GetRecipesByKeywords {
     /**
      * Sets the value of the iStartRow property.
      * 
+     * @param value
      */
     public void setIStartRow(int value) {
         this.iStartRow = value;
@@ -349,6 +414,7 @@ public class GetRecipesByKeywords {
     /**
      * Gets the value of the iEndRow property.
      * 
+     * @return 
      */
     public int getIEndRow() {
         return iEndRow;
@@ -357,6 +423,7 @@ public class GetRecipesByKeywords {
     /**
      * Sets the value of the iEndRow property.
      * 
+     * @param value
      */
     public void setIEndRow(int value) {
         this.iEndRow = value;

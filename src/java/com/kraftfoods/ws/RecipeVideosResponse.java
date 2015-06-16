@@ -42,14 +42,33 @@ public class RecipeVideosResponse
     extends StatusResponse
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "CookingVideoAds")
     protected ArrayOfCookingVideoAd cookingVideoAds;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeFlashVideos")
     protected ArrayOfRecipeFlashVideo recipeFlashVideos;
+
+    /**
+     *
+     */
     @XmlElement(name = "Recipe3GPVideo")
     protected String recipe3GPVideo;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeMP4Video")
     protected String recipeMP4Video;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeTabletVideo")
     protected String recipeTabletVideo;
 

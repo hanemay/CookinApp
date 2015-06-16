@@ -21,12 +21,34 @@ import javax.xml.ws.Service;
                   targetNamespace = "http://www.kraftfoods.com/ws/") 
 public class KraftX0020RecipeX0020WebX0020Service extends Service {
 
+    /**
+     *
+     */
     public final static URL WSDL_LOCATION;
 
+    /**
+     *
+     */
     public final static QName SERVICE = new QName("http://www.kraftfoods.com/ws/", "Kraft_x0020_Recipe_x0020_Web_x0020_Service");
+
+    /**
+     *
+     */
     public final static QName KraftX0020RecipeX0020WebX0020ServiceSoap = new QName("http://www.kraftfoods.com/ws/", "Kraft_x0020_Recipe_x0020_Web_x0020_ServiceSoap");
+
+    /**
+     *
+     */
     public final static QName KraftX0020RecipeX0020WebX0020ServiceSoap12 = new QName("http://www.kraftfoods.com/ws/", "Kraft_x0020_Recipe_x0020_Web_x0020_ServiceSoap12");
+
+    /**
+     *
+     */
     public final static QName KraftX0020RecipeX0020WebX0020ServiceHttpGet = new QName("http://www.kraftfoods.com/ws/", "Kraft_x0020_Recipe_x0020_Web_x0020_ServiceHttpGet");
+
+    /**
+     *
+     */
     public final static QName KraftX0020RecipeX0020WebX0020ServiceHttpPost = new QName("http://www.kraftfoods.com/ws/", "Kraft_x0020_Recipe_x0020_Web_x0020_ServiceHttpPost");
     static {
         URL url = null;
@@ -40,26 +62,53 @@ public class KraftX0020RecipeX0020WebX0020Service extends Service {
         WSDL_LOCATION = url;
     }
 
+    /**
+     *
+     * @param wsdlLocation
+     */
     public KraftX0020RecipeX0020WebX0020Service(URL wsdlLocation) {
         super(wsdlLocation, SERVICE);
     }
 
+    /**
+     *
+     * @param wsdlLocation
+     * @param serviceName
+     */
     public KraftX0020RecipeX0020WebX0020Service(URL wsdlLocation, QName serviceName) {
         super(wsdlLocation, serviceName);
     }
 
+    /**
+     *
+     */
     public KraftX0020RecipeX0020WebX0020Service() {
         super(WSDL_LOCATION, SERVICE);
     }
     
+    /**
+     *
+     * @param features
+     */
     public KraftX0020RecipeX0020WebX0020Service(WebServiceFeature ... features) {
         super(WSDL_LOCATION, SERVICE, features);
     }
 
+    /**
+     *
+     * @param wsdlLocation
+     * @param features
+     */
     public KraftX0020RecipeX0020WebX0020Service(URL wsdlLocation, WebServiceFeature ... features) {
         super(wsdlLocation, SERVICE, features);
     }
 
+    /**
+     *
+     * @param wsdlLocation
+     * @param serviceName
+     * @param features
+     */
     public KraftX0020RecipeX0020WebX0020Service(URL wsdlLocation, QName serviceName, WebServiceFeature ... features) {
         super(wsdlLocation, serviceName, features);
     }    

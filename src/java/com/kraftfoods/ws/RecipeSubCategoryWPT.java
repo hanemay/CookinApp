@@ -36,10 +36,21 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeSubCategoryWPT {
 
+    /**
+     *
+     */
     @XmlElement(name = "Id")
     protected String id;
+
+    /**
+     *
+     */
     @XmlElement(name = "Name")
     protected String name;
+
+    /**
+     *
+     */
     @XmlElement(name = "PointToType")
     protected String pointToType;
 

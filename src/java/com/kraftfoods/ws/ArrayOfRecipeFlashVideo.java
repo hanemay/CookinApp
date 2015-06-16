@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfRecipeFlashVideo {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeFlashVideo", nillable = true)
     protected List<RecipeFlashVideo> recipeFlashVideo;
 
@@ -58,6 +61,7 @@ public class ArrayOfRecipeFlashVideo {
      * {@link RecipeFlashVideo }
      * 
      * 
+     * @return 
      */
     public List<RecipeFlashVideo> getRecipeFlashVideo() {
         if (recipeFlashVideo == null) {

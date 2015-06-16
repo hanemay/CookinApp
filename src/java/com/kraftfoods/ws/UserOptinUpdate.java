@@ -43,16 +43,40 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "UserOptinUpdate")
 public class UserOptinUpdate {
 
+    /**
+     *
+     */
     protected int iSiteId;
+
+    /**
+     *
+     */
     protected int iSiteUserId;
+
+    /**
+     *
+     */
     protected String sOptinIds;
+
+    /**
+     *
+     */
     protected String sOptOutIds;
+
+    /**
+     *
+     */
     protected int iLanguageID;
+
+    /**
+     *
+     */
     protected String sOptinSource;
 
     /**
      * Gets the value of the iSiteId property.
      * 
+     * @return 
      */
     public int getISiteId() {
         return iSiteId;
@@ -61,6 +85,7 @@ public class UserOptinUpdate {
     /**
      * Sets the value of the iSiteId property.
      * 
+     * @param value
      */
     public void setISiteId(int value) {
         this.iSiteId = value;
@@ -69,6 +94,7 @@ public class UserOptinUpdate {
     /**
      * Gets the value of the iSiteUserId property.
      * 
+     * @return 
      */
     public int getISiteUserId() {
         return iSiteUserId;
@@ -77,6 +103,7 @@ public class UserOptinUpdate {
     /**
      * Sets the value of the iSiteUserId property.
      * 
+     * @param value
      */
     public void setISiteUserId(int value) {
         this.iSiteUserId = value;
@@ -133,6 +160,7 @@ public class UserOptinUpdate {
     /**
      * Gets the value of the iLanguageID property.
      * 
+     * @return 
      */
     public int getILanguageID() {
         return iLanguageID;
@@ -141,6 +169,7 @@ public class UserOptinUpdate {
     /**
      * Sets the value of the iLanguageID property.
      * 
+     * @param value
      */
     public void setILanguageID(int value) {
         this.iLanguageID = value;

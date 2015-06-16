@@ -34,8 +34,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeDetailResponses {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeSummaries")
     protected ArrayOfRecipeDetail recipeSummaries;
 

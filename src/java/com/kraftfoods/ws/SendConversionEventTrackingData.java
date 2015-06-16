@@ -53,19 +53,58 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SendConversionEventTrackingData")
 public class SendConversionEventTrackingData {
 
+    /**
+     *
+     */
     protected String sEventID;
+
+    /**
+     *
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
     protected ConversionActionType iActionType;
+
+    /**
+     *
+     */
     protected String sOptionalCategoryID;
+
+    /**
+     *
+     */
     protected double dConversionPoints;
+
+    /**
+     *
+     */
     protected String sCustomData;
+
+    /**
+     *
+     */
     protected String sVisitorID;
+
+    /**
+     *
+     */
     protected String sSessionID;
+
+    /**
+     *
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
     protected SessionType iSessionType;
+
+    /**
+     *
+     */
     protected int iTagID;
+
+    /**
+     *
+     */
     protected boolean bIsTestData;
 
     /**
@@ -143,6 +182,7 @@ public class SendConversionEventTrackingData {
     /**
      * Gets the value of the dConversionPoints property.
      * 
+     * @return 
      */
     public double getDConversionPoints() {
         return dConversionPoints;
@@ -151,6 +191,7 @@ public class SendConversionEventTrackingData {
     /**
      * Sets the value of the dConversionPoints property.
      * 
+     * @param value
      */
     public void setDConversionPoints(double value) {
         this.dConversionPoints = value;
@@ -255,6 +296,7 @@ public class SendConversionEventTrackingData {
     /**
      * Gets the value of the iTagID property.
      * 
+     * @return 
      */
     public int getITagID() {
         return iTagID;
@@ -263,6 +305,7 @@ public class SendConversionEventTrackingData {
     /**
      * Sets the value of the iTagID property.
      * 
+     * @param value
      */
     public void setITagID(int value) {
         this.iTagID = value;
@@ -271,6 +314,7 @@ public class SendConversionEventTrackingData {
     /**
      * Gets the value of the bIsTestData property.
      * 
+     * @return 
      */
     public boolean isBIsTestData() {
         return bIsTestData;
@@ -279,6 +323,7 @@ public class SendConversionEventTrackingData {
     /**
      * Sets the value of the bIsTestData property.
      * 
+     * @param value
      */
     public void setBIsTestData(boolean value) {
         this.bIsTestData = value;

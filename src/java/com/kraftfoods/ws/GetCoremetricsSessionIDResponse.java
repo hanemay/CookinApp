@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetCoremetricsSessionIDResponse")
 public class GetCoremetricsSessionIDResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetCoremetricsSessionIDResult")
     protected CoremetricsResponse getCoremetricsSessionIDResult;
 

@@ -34,6 +34,11 @@ public class Recipes extends RecipeSummariesResponse {
         KraftX0020RecipeX0020WebX0020Service webService = new KraftX0020RecipeX0020WebX0020Service();
         this.soapService = webService.getKraftX0020RecipeX0020WebX0020ServiceSoap();
     }
+
+    /**
+     *
+     * @return
+     */
     public RecipeSummariesResponse results(){
         return recSumResp;
       //  return recSumResp;

@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfPreparationDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "PreparationDetail", nillable = true)
     protected List<PreparationDetail> preparationDetail;
 
@@ -58,6 +61,7 @@ public class ArrayOfPreparationDetail {
      * {@link PreparationDetail }
      * 
      * 
+     * @return 
      */
     public List<PreparationDetail> getPreparationDetail() {
         if (preparationDetail == null) {

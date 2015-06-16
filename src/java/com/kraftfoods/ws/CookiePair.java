@@ -38,12 +38,27 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class CookiePair {
 
+    /**
+     *
+     */
     @XmlElement(name = "Name")
     protected String name;
+
+    /**
+     *
+     */
     @XmlElement(name = "Value")
     protected String value;
+
+    /**
+     *
+     */
     @XmlElement(name = "Path")
     protected String path;
+
+    /**
+     *
+     */
     @XmlElement(name = "ExpirationDate")
     protected String expirationDate;
 

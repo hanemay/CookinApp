@@ -44,19 +44,39 @@ import javax.xml.datatype.XMLGregorianCalendar;
 @XmlRootElement(name = "GetRecipesByDates")
 public class GetRecipesByDates {
 
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar dStartDate;
+
+    /**
+     *
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar dEndDate;
+
+    /**
+     *
+     */
     protected boolean bStripHTML;
 
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -65,6 +85,7 @@ public class GetRecipesByDates {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -73,6 +94,7 @@ public class GetRecipesByDates {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -81,6 +103,7 @@ public class GetRecipesByDates {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -137,6 +160,7 @@ public class GetRecipesByDates {
     /**
      * Gets the value of the bStripHTML property.
      * 
+     * @return 
      */
     public boolean isBStripHTML() {
         return bStripHTML;
@@ -145,6 +169,7 @@ public class GetRecipesByDates {
     /**
      * Sets the value of the bStripHTML property.
      * 
+     * @param value
      */
     public void setBStripHTML(boolean value) {
         this.bStripHTML = value;

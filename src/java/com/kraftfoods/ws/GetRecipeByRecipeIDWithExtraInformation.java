@@ -41,15 +41,35 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRecipeByRecipeIDWithExtraInformation")
 public class GetRecipeByRecipeIDWithExtraInformation {
 
+    /**
+     *
+     */
     protected int iRecipeID;
+
+    /**
+     *
+     */
     protected boolean bStripHTML;
+
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected boolean bIncludeExtraInformation;
 
     /**
      * Gets the value of the iRecipeID property.
      * 
+     * @return 
      */
     public int getIRecipeID() {
         return iRecipeID;
@@ -58,6 +78,7 @@ public class GetRecipeByRecipeIDWithExtraInformation {
     /**
      * Sets the value of the iRecipeID property.
      * 
+     * @param value
      */
     public void setIRecipeID(int value) {
         this.iRecipeID = value;
@@ -66,6 +87,7 @@ public class GetRecipeByRecipeIDWithExtraInformation {
     /**
      * Gets the value of the bStripHTML property.
      * 
+     * @return 
      */
     public boolean isBStripHTML() {
         return bStripHTML;
@@ -74,6 +96,7 @@ public class GetRecipeByRecipeIDWithExtraInformation {
     /**
      * Sets the value of the bStripHTML property.
      * 
+     * @param value
      */
     public void setBStripHTML(boolean value) {
         this.bStripHTML = value;
@@ -82,6 +105,7 @@ public class GetRecipeByRecipeIDWithExtraInformation {
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -90,6 +114,7 @@ public class GetRecipeByRecipeIDWithExtraInformation {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -98,6 +123,7 @@ public class GetRecipeByRecipeIDWithExtraInformation {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -106,6 +132,7 @@ public class GetRecipeByRecipeIDWithExtraInformation {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -114,6 +141,7 @@ public class GetRecipeByRecipeIDWithExtraInformation {
     /**
      * Gets the value of the bIncludeExtraInformation property.
      * 
+     * @return 
      */
     public boolean isBIncludeExtraInformation() {
         return bIncludeExtraInformation;
@@ -122,6 +150,7 @@ public class GetRecipeByRecipeIDWithExtraInformation {
     /**
      * Sets the value of the bIncludeExtraInformation property.
      * 
+     * @param value
      */
     public void setBIncludeExtraInformation(boolean value) {
         this.bIncludeExtraInformation = value;

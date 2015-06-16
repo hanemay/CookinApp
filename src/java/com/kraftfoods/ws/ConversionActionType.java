@@ -25,8 +25,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum ConversionActionType {
 
+    /**
+     *
+     */
     @XmlEnumValue("Initiation")
     INITIATION("Initiation"),
+
+    /**
+     *
+     */
     @XmlEnumValue("Completion")
     COMPLETION("Completion");
     private final String value;
@@ -35,10 +42,19 @@ public enum ConversionActionType {
         value = v;
     }
 
+    /**
+     *
+     * @return
+     */
     public String value() {
         return value;
     }
 
+    /**
+     *
+     * @param v
+     * @return
+     */
     public static ConversionActionType fromValue(String v) {
         for (ConversionActionType c: ConversionActionType.values()) {
             if (c.value.equals(v)) {

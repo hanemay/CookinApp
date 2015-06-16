@@ -57,23 +57,75 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "RateRecipe")
 public class RateRecipe {
 
+    /**
+     *
+     */
     protected int iRecipeID;
+
+    /**
+     *
+     */
     protected int iSiteUserID;
+
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected boolean bDisplayName;
+
+    /**
+     *
+     */
     protected int iRating;
+
+    /**
+     *
+     */
     protected int iRateItemTypeID;
+
+    /**
+     *
+     */
     protected String sComments;
+
+    /**
+     *
+     */
     protected boolean bActive;
+
+    /**
+     *
+     */
     protected boolean bTryItem;
+
+    /**
+     *
+     */
     protected boolean bGetAgain;
+
+    /**
+     *
+     */
     protected boolean bApprovedFoulLang;
+
+    /**
+     *
+     */
     protected boolean bApprovedCompetitor;
 
     /**
      * Gets the value of the iRecipeID property.
      * 
+     * @return 
      */
     public int getIRecipeID() {
         return iRecipeID;
@@ -82,6 +134,7 @@ public class RateRecipe {
     /**
      * Sets the value of the iRecipeID property.
      * 
+     * @param value
      */
     public void setIRecipeID(int value) {
         this.iRecipeID = value;
@@ -90,6 +143,7 @@ public class RateRecipe {
     /**
      * Gets the value of the iSiteUserID property.
      * 
+     * @return 
      */
     public int getISiteUserID() {
         return iSiteUserID;
@@ -98,6 +152,7 @@ public class RateRecipe {
     /**
      * Sets the value of the iSiteUserID property.
      * 
+     * @param value
      */
     public void setISiteUserID(int value) {
         this.iSiteUserID = value;
@@ -106,6 +161,7 @@ public class RateRecipe {
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -114,6 +170,7 @@ public class RateRecipe {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -122,6 +179,7 @@ public class RateRecipe {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -130,6 +188,7 @@ public class RateRecipe {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;
@@ -138,6 +197,7 @@ public class RateRecipe {
     /**
      * Gets the value of the bDisplayName property.
      * 
+     * @return 
      */
     public boolean isBDisplayName() {
         return bDisplayName;
@@ -146,6 +206,7 @@ public class RateRecipe {
     /**
      * Sets the value of the bDisplayName property.
      * 
+     * @param value
      */
     public void setBDisplayName(boolean value) {
         this.bDisplayName = value;
@@ -154,6 +215,7 @@ public class RateRecipe {
     /**
      * Gets the value of the iRating property.
      * 
+     * @return 
      */
     public int getIRating() {
         return iRating;
@@ -162,6 +224,7 @@ public class RateRecipe {
     /**
      * Sets the value of the iRating property.
      * 
+     * @param value
      */
     public void setIRating(int value) {
         this.iRating = value;
@@ -170,6 +233,7 @@ public class RateRecipe {
     /**
      * Gets the value of the iRateItemTypeID property.
      * 
+     * @return 
      */
     public int getIRateItemTypeID() {
         return iRateItemTypeID;
@@ -178,6 +242,7 @@ public class RateRecipe {
     /**
      * Sets the value of the iRateItemTypeID property.
      * 
+     * @param value
      */
     public void setIRateItemTypeID(int value) {
         this.iRateItemTypeID = value;
@@ -210,6 +275,7 @@ public class RateRecipe {
     /**
      * Gets the value of the bActive property.
      * 
+     * @return 
      */
     public boolean isBActive() {
         return bActive;
@@ -218,6 +284,7 @@ public class RateRecipe {
     /**
      * Sets the value of the bActive property.
      * 
+     * @param value
      */
     public void setBActive(boolean value) {
         this.bActive = value;
@@ -226,6 +293,7 @@ public class RateRecipe {
     /**
      * Gets the value of the bTryItem property.
      * 
+     * @return 
      */
     public boolean isBTryItem() {
         return bTryItem;
@@ -234,6 +302,7 @@ public class RateRecipe {
     /**
      * Sets the value of the bTryItem property.
      * 
+     * @param value
      */
     public void setBTryItem(boolean value) {
         this.bTryItem = value;
@@ -242,6 +311,7 @@ public class RateRecipe {
     /**
      * Gets the value of the bGetAgain property.
      * 
+     * @return 
      */
     public boolean isBGetAgain() {
         return bGetAgain;
@@ -250,6 +320,7 @@ public class RateRecipe {
     /**
      * Sets the value of the bGetAgain property.
      * 
+     * @param value
      */
     public void setBGetAgain(boolean value) {
         this.bGetAgain = value;
@@ -258,6 +329,7 @@ public class RateRecipe {
     /**
      * Gets the value of the bApprovedFoulLang property.
      * 
+     * @return 
      */
     public boolean isBApprovedFoulLang() {
         return bApprovedFoulLang;
@@ -266,6 +338,7 @@ public class RateRecipe {
     /**
      * Sets the value of the bApprovedFoulLang property.
      * 
+     * @param value
      */
     public void setBApprovedFoulLang(boolean value) {
         this.bApprovedFoulLang = value;
@@ -274,6 +347,7 @@ public class RateRecipe {
     /**
      * Gets the value of the bApprovedCompetitor property.
      * 
+     * @return 
      */
     public boolean isBApprovedCompetitor() {
         return bApprovedCompetitor;
@@ -282,6 +356,7 @@ public class RateRecipe {
     /**
      * Sets the value of the bApprovedCompetitor property.
      * 
+     * @param value
      */
     public void setBApprovedCompetitor(boolean value) {
         this.bApprovedCompetitor = value;

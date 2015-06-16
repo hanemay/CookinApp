@@ -38,12 +38,27 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeSummariesResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "Title")
     protected String title;
+
+    /**
+     *
+     */
     @XmlElement(name = "TotalCount")
     protected int totalCount;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeSummaries")
     protected ArrayOfRecipeSummary recipeSummaries;
 
@@ -98,6 +113,7 @@ public class RecipeSummariesResponse {
     /**
      * Gets the value of the totalCount property.
      * 
+     * @return 
      */
     public int getTotalCount() {
         return totalCount;
@@ -106,6 +122,7 @@ public class RecipeSummariesResponse {
     /**
      * Sets the value of the totalCount property.
      * 
+     * @param value
      */
     public void setTotalCount(int value) {
         this.totalCount = value;

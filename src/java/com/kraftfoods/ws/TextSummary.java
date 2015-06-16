@@ -36,10 +36,21 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class TextSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "PointToType")
     protected String pointToType;
+
+    /**
+     *
+     */
     @XmlElement(name = "Heading")
     protected String heading;
+
+    /**
+     *
+     */
     @XmlElement(name = "SubText")
     protected String subText;
 

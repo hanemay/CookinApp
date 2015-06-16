@@ -32,6 +32,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class CookieResponseEntity {
 
+    /**
+     *
+     */
     @XmlElement(name = "CookiePairs")
     protected CookiePairs cookiePairs;
 

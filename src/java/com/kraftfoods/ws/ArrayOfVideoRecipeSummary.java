@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfVideoRecipeSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "VideoRecipeSummary", nillable = true)
     protected List<VideoRecipeSummary> videoRecipeSummary;
 
@@ -58,6 +61,7 @@ public class ArrayOfVideoRecipeSummary {
      * {@link VideoRecipeSummary }
      * 
      * 
+     * @return 
      */
     public List<VideoRecipeSummary> getVideoRecipeSummary() {
         if (videoRecipeSummary == null) {

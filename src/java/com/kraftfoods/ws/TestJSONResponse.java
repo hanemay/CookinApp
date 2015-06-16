@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "TestJSONResponse")
 public class TestJSONResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "TestJSONResult")
     protected String testJSONResult;
 

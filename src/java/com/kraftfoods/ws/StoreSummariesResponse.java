@@ -36,10 +36,21 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class StoreSummariesResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "TotalCount")
     protected int totalCount;
+
+    /**
+     *
+     */
     @XmlElement(name = "StoreSummaries")
     protected ArrayOfStoreSummary storeSummaries;
 
@@ -70,6 +81,7 @@ public class StoreSummariesResponse {
     /**
      * Gets the value of the totalCount property.
      * 
+     * @return 
      */
     public int getTotalCount() {
         return totalCount;
@@ -78,6 +90,7 @@ public class StoreSummariesResponse {
     /**
      * Sets the value of the totalCount property.
      * 
+     * @param value
      */
     public void setTotalCount(int value) {
         this.totalCount = value;

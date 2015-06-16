@@ -52,32 +52,76 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class PollDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "PollID")
     protected int pollID;
+
+    /**
+     *
+     */
     @XmlElement(name = "PollName")
     protected String pollName;
+
+    /**
+     *
+     */
     @XmlElement(name = "PollDescription")
     protected String pollDescription;
+
+    /**
+     *
+     */
     @XmlElement(name = "Question")
     protected String question;
+
+    /**
+     *
+     */
     @XmlElement(name = "QuestionHelp")
     protected String questionHelp;
+
+    /**
+     *
+     */
     @XmlElement(name = "QuestionIntro")
     protected String questionIntro;
+
+    /**
+     *
+     */
     @XmlElement(name = "QuestionLink")
     protected String questionLink;
+
+    /**
+     *
+     */
     @XmlElement(name = "QuestionLinkText")
     protected String questionLinkText;
+
+    /**
+     *
+     */
     @XmlElement(name = "SponsoredByLink")
     protected String sponsoredByLink;
+
+    /**
+     *
+     */
     @XmlElement(name = "SponsoredByLinkText")
     protected String sponsoredByLinkText;
+
+    /**
+     *
+     */
     @XmlElement(name = "PollResults")
     protected ArrayOfPollResultDetail pollResults;
 
     /**
      * Gets the value of the pollID property.
      * 
+     * @return 
      */
     public int getPollID() {
         return pollID;
@@ -86,6 +130,7 @@ public class PollDetail {
     /**
      * Sets the value of the pollID property.
      * 
+     * @param value
      */
     public void setPollID(int value) {
         this.pollID = value;

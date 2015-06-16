@@ -18,6 +18,20 @@ import javax.xml.ws.ResponseWrapper;
 @XmlSeeAlso({ObjectFactory.class})
 public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
 
+    /**
+     *
+     * @param sIngredient1
+     * @param sIngredient2
+     * @param sIngredient3
+     * @param bIsRecipePhotoRequired
+     * @param sSortField
+     * @param sSortDirection
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByIngredients", action = "http://www.kraftfoods.com/ws/GetRecipesByIngredients")
     @RequestWrapper(localName = "GetRecipesByIngredients", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByIngredients")
     @ResponseWrapper(localName = "GetRecipesByIngredientsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByIngredientsResponse")
@@ -45,6 +59,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iEndRow
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeClassifications", action = "http://www.kraftfoods.com/ws/GetRecipeClassifications")
     @RequestWrapper(localName = "GetRecipeClassifications", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeClassifications")
     @ResponseWrapper(localName = "GetRecipeClassificationsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeClassificationsResponse")
@@ -56,6 +76,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param sRecipeBoxRecipeIDs
+     * @return
+     */
     @WebMethod(operationName = "DeleteRecipesFromRecipeBox", action = "http://www.kraftfoods.com/ws/DeleteRecipesFromRecipeBox")
     @RequestWrapper(localName = "DeleteRecipesFromRecipeBox", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.DeleteRecipesFromRecipeBox")
     @ResponseWrapper(localName = "DeleteRecipesFromRecipeBoxResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.DeleteRecipesFromRecipeBoxResponse")
@@ -65,6 +90,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sRecipeBoxRecipeIDs
     );
 
+    /**
+     *
+     * @param sPollIds
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetPollsByPollIDs", action = "http://www.kraftfoods.com/ws/GetPollsByPollIDs")
     @RequestWrapper(localName = "GetPollsByPollIDs", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetPollsByPollIDs")
     @ResponseWrapper(localName = "GetPollsByPollIDsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetPollsByPollIDsResponse")
@@ -76,6 +107,26 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param sFirstName
+     * @param sLastName
+     * @param sEmail
+     * @param iRegistrationActivityID
+     * @param sRegistrationSource
+     * @param bIsRegistrationComplete
+     * @param bAddOptIn
+     * @param iOptInID
+     * @param iSiteID
+     * @param iLangID
+     * @param sBirthDate
+     * @param sPostalCode
+     * @param iGenderID
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "UpdateUserProfile", action = "http://www.kraftfoods.com/ws/UpdateUserProfile")
     @RequestWrapper(localName = "UpdateUserProfile", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.UpdateUserProfile")
     @ResponseWrapper(localName = "UpdateUserProfileResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.UpdateUserProfileResponse")
@@ -115,6 +166,23 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iSiteUserID
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param iSiteUserID
+     * @param iBrandID
+     * @param iLangID
+     * @param bDisplayName
+     * @param iRating
+     * @param iRateItemTypeID
+     * @param sComments
+     * @param bActive
+     * @param bTryItem
+     * @param bGetAgain
+     * @param bApprovedFoulLang
+     * @param bApprovedCompetitor
+     * @return
+     */
     @WebMethod(operationName = "RateRecipe", action = "http://www.kraftfoods.com/ws/RateRecipe")
     @RequestWrapper(localName = "RateRecipe", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.RateRecipe")
     @ResponseWrapper(localName = "RateRecipeResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.RateRecipeResponse")
@@ -148,6 +216,27 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bApprovedCompetitor
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iLanguageID
+     * @param sSearchTerm
+     * @param sScopes
+     * @param sClassifications
+     * @param sCategories
+     * @param sSubCategories
+     * @param iPrepStartTime
+     * @param iPrepEndTime
+     * @param iTotalStartTime
+     * @param iTotalEndTime
+     * @param iPageNumber
+     * @param iPageSize
+     * @param sSortColumn
+     * @param sSortDirection
+     * @param sIgnoreWords
+     * @param bPhoto
+     * @return
+     */
     @WebMethod(operationName = "ExecuteRecipeSearch", action = "http://www.kraftfoods.com/ws/ExecuteRecipeSearch")
     @RequestWrapper(localName = "ExecuteRecipeSearch", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.ExecuteRecipeSearch")
     @ResponseWrapper(localName = "ExecuteRecipeSearchResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.ExecuteRecipeSearchResponse")
@@ -189,6 +278,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String bPhoto
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param bIsLowBandwidth
+     * @param iSiteID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetCookingVideoForRecipeID", action = "http://www.kraftfoods.com/ws/GetCookingVideoForRecipeID")
     @RequestWrapper(localName = "GetCookingVideoForRecipeID", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCookingVideoForRecipeID")
     @ResponseWrapper(localName = "GetCookingVideoForRecipeIDResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCookingVideoForRecipeIDResponse")
@@ -204,6 +301,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String iLangID
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeOfTheDay", action = "http://www.kraftfoods.com/ws/GetRecipeOfTheDay")
     @RequestWrapper(localName = "GetRecipeOfTheDay", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeOfTheDay")
     @ResponseWrapper(localName = "GetRecipeOfTheDayResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeOfTheDayResponse")
@@ -217,6 +321,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param iSiteID
+     * @return
+     */
     @WebMethod(operationName = "LoginUser", action = "http://www.kraftfoods.com/ws/LoginUser")
     @RequestWrapper(localName = "LoginUser", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LoginUser")
     @ResponseWrapper(localName = "LoginUserResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LoginUserResponse")
@@ -230,6 +341,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iSiteID
     );
 
+    /**
+     *
+     * @param sMessageFrom
+     * @param sMessageTo
+     * @param sMessageSubject
+     * @param sMessageBody
+     * @param bIsMessageTypeHTML
+     * @return
+     */
     @WebMethod(operationName = "SendEmail", action = "http://www.kraftfoods.com/ws/SendEmail")
     @RequestWrapper(localName = "SendEmail", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.SendEmail")
     @ResponseWrapper(localName = "SendEmailResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.SendEmailResponse")
@@ -247,6 +367,17 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bIsMessageTypeHTML
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iLangID
+     * @param iRecipeID
+     * @param senderEmail
+     * @param recipientEmail
+     * @param recipientName
+     * @param deviceType
+     * @return
+     */
     @WebMethod(operationName = "SendRecipeToEmail", action = "http://www.kraftfoods.com/ws/SendRecipeToEmail")
     @RequestWrapper(localName = "SendRecipeToEmail", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.SendRecipeToEmail")
     @ResponseWrapper(localName = "SendRecipeToEmailResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.SendRecipeToEmailResponse")
@@ -268,6 +399,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int deviceType
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sEncryptedPassword
+     * @param iSiteID
+     * @param bRememberMe
+     * @param sOptInIDs
+     * @return
+     */
     @WebMethod(operationName = "LoginUserAndReturnCookieWithEncryptedPassword", action = "http://www.kraftfoods.com/ws/LoginUserAndReturnCookieWithEncryptedPassword")
     @RequestWrapper(localName = "LoginUserAndReturnCookieWithEncryptedPassword", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LoginUserAndReturnCookieWithEncryptedPassword")
     @ResponseWrapper(localName = "LoginUserAndReturnCookieWithEncryptedPasswordResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LoginUserAndReturnCookieWithEncryptedPasswordResponse")
@@ -285,6 +425,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sOptInIDs
     );
 
+    /**
+     *
+     * @param iSiteID
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesOfTheWeek", action = "http://www.kraftfoods.com/ws/GetRecipesOfTheWeek")
     @RequestWrapper(localName = "GetRecipesOfTheWeek", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesOfTheWeek")
     @ResponseWrapper(localName = "GetRecipesOfTheWeekResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesOfTheWeekResponse")
@@ -298,6 +445,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetTopTenRecipes", action = "http://www.kraftfoods.com/ws/GetTopTenRecipes")
     @RequestWrapper(localName = "GetTopTenRecipes", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetTopTenRecipes")
     @ResponseWrapper(localName = "GetTopTenRecipesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetTopTenRecipesResponse")
@@ -309,6 +462,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param siteUserID
+     * @param recipeID
+     * @return
+     */
     @WebMethod(operationName = "IsRecipeInRecipeBox", action = "http://www.kraftfoods.com/ws/IsRecipeInRecipeBox")
     @RequestWrapper(localName = "IsRecipeInRecipeBox", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.IsRecipeInRecipeBox")
     @ResponseWrapper(localName = "IsRecipeInRecipeBoxResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.IsRecipeInRecipeBoxResponse")
@@ -320,6 +479,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int recipeID
     );
 
+    /**
+     *
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "DeleteShoppingList", action = "http://www.kraftfoods.com/ws/DeleteShoppingList")
     @RequestWrapper(localName = "DeleteShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.DeleteShoppingList")
     @ResponseWrapper(localName = "DeleteShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.DeleteShoppingListResponse")
@@ -329,6 +493,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iShoppingListID
     );
 
+    /**
+     *
+     * @param iCatID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeSubCategories", action = "http://www.kraftfoods.com/ws/GetRecipeSubCategories")
     @RequestWrapper(localName = "GetRecipeSubCategories", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeSubCategories")
     @ResponseWrapper(localName = "GetRecipeSubCategoriesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeSubCategoriesResponse")
@@ -340,6 +509,10 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
 
     /**
      * Adds the specified recipe to a user's recipe box and specified shopping list. If the user does not have a recipe box, one will be created automatically.
+     * @param iSiteUserID
+     * @param iRecipeID
+     * @param iShoppingListID
+     * @return 
      */
     @WebMethod(operationName = "AddRecipeToRecipeBoxShoppingList", action = "http://www.kraftfoods.com/ws/AddRecipeToRecipeBoxShoppingList")
     @RequestWrapper(localName = "AddRecipeToRecipeBoxShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddRecipeToRecipeBoxShoppingList")
@@ -354,6 +527,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iShoppingListID
     );
 
+    /**
+     *
+     * @param sRecipeName
+     * @param sRecipeURL
+     * @param sSenderEmail
+     * @param sDestPhoneNumber
+     * @return
+     */
     @WebMethod(operationName = "SendSMSMessage", action = "http://www.kraftfoods.com/ws/SendSMSMessage")
     @RequestWrapper(localName = "SendSMSMessage", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.SendSMSMessage")
     @ResponseWrapper(localName = "SendSMSMessageResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.SendSMSMessageResponse")
@@ -369,6 +550,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sDestPhoneNumber
     );
 
+    /**
+     *
+     * @param sRecipeIDs
+     * @param iBrandID
+     * @param iLangID
+     * @param bIncludeExtraInformation
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByRecipeIDsWithExtraInformation", action = "http://www.kraftfoods.com/ws/GetRecipesByRecipeIDsWithExtraInformation")
     @RequestWrapper(localName = "GetRecipesByRecipeIDsWithExtraInformation", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByRecipeIDsWithExtraInformation")
     @ResponseWrapper(localName = "GetRecipesByRecipeIDsWithExtraInformationResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByRecipeIDsWithExtraInformationResponse")
@@ -384,6 +573,21 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bIncludeExtraInformation
     );
 
+    /**
+     *
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param bOnlyHealthyRecipes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @param bIncludeExtraInformation
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesBySubcategoryWithExtraInformation", action = "http://www.kraftfoods.com/ws/GetRecipesBySubcategoryWithExtraInformation")
     @RequestWrapper(localName = "GetRecipesBySubcategoryWithExtraInformation", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesBySubcategoryWithExtraInformation")
     @ResponseWrapper(localName = "GetRecipesBySubcategoryWithExtraInformationResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesBySubcategoryWithExtraInformationResponse")
@@ -413,6 +617,16 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bIncludeExtraInformation
     );
 
+    /**
+     *
+     * @param iSiteUserId
+     * @param iQuestionID
+     * @param sAnswer
+     * @param iLanguageID
+     * @param iChoiceID
+     * @param iAnswerActivityID
+     * @return
+     */
     @WebMethod(operationName = "UserAnswerUpdate", action = "http://www.kraftfoods.com/ws/UserAnswerUpdate")
     @RequestWrapper(localName = "UserAnswerUpdate", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.UserAnswerUpdate")
     @ResponseWrapper(localName = "UserAnswerUpdateResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.UserAnswerUpdateResponse")
@@ -432,6 +646,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iAnswerActivityID
     );
 
+    /**
+     *
+     * @param iCatID
+     * @return
+     */
     @WebMethod(operationName = "GetCookingVideosSubCategory", action = "http://www.kraftfoods.com/ws/GetCookingVideosSubCategory")
     @RequestWrapper(localName = "GetCookingVideosSubCategory", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCookingVideosSubCategory")
     @ResponseWrapper(localName = "GetCookingVideosSubCategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCookingVideosSubCategoryResponse")
@@ -441,6 +660,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iCatID
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @param iCatGroupID
+     * @param sIsHealthyLiving
+     * @param sFilterDays
+     * @return
+     */
     @WebMethod(operationName = "GetTopTenRecipesByCategory", action = "http://www.kraftfoods.com/ws/GetTopTenRecipesByCategory")
     @RequestWrapper(localName = "GetTopTenRecipesByCategory", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetTopTenRecipesByCategory")
     @ResponseWrapper(localName = "GetTopTenRecipesByCategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetTopTenRecipesByCategoryResponse")
@@ -458,6 +686,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sFilterDays
     );
 
+    /**
+     *
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "GetDefaultShoppingList", action = "http://www.kraftfoods.com/ws/GetDefaultShoppingList")
     @RequestWrapper(localName = "GetDefaultShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetDefaultShoppingList")
     @ResponseWrapper(localName = "GetDefaultShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetDefaultShoppingListResponse")
@@ -467,6 +700,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iSiteUserID
     );
 
+    /**
+     *
+     * @param iSiteId
+     * @param iRelationId
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetPollsByRelationID", action = "http://www.kraftfoods.com/ws/GetPollsByRelationID")
     @RequestWrapper(localName = "GetPollsByRelationID", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetPollsByRelationID")
     @ResponseWrapper(localName = "GetPollsByRelationIDResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetPollsByRelationIDResponse")
@@ -480,6 +720,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param iShoppingListItemID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "DeleteItemFromShoppingList", action = "http://www.kraftfoods.com/ws/DeleteItemFromShoppingList")
     @RequestWrapper(localName = "DeleteItemFromShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.DeleteItemFromShoppingList")
     @ResponseWrapper(localName = "DeleteItemFromShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.DeleteItemFromShoppingListResponse")
@@ -491,6 +737,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iShoppingListID
     );
 
+    /**
+     *
+     * @param iShoppingListId
+     * @param iSiteUserID
+     * @param sShoppingListName
+     * @return
+     */
     @WebMethod(operationName = "EditShoppingList", action = "http://www.kraftfoods.com/ws/EditShoppingList")
     @RequestWrapper(localName = "EditShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.EditShoppingList")
     @ResponseWrapper(localName = "EditShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.EditShoppingListResponse")
@@ -504,6 +757,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sShoppingListName
     );
 
+    /**
+     *
+     * @param bIsRecipePhotoRequired
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetHealthyLivingRecipes", action = "http://www.kraftfoods.com/ws/GetHealthyLivingRecipes")
     @RequestWrapper(localName = "GetHealthyLivingRecipes", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetHealthyLivingRecipes")
     @ResponseWrapper(localName = "GetHealthyLivingRecipesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetHealthyLivingRecipesResponse")
@@ -521,6 +783,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iEndRow
     );
 
+    /**
+     *
+     * @param sItemName
+     * @param sQuantity
+     * @param iAisleID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "AddItemToShoppingList", action = "http://www.kraftfoods.com/ws/AddItemToShoppingList")
     @RequestWrapper(localName = "AddItemToShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddItemToShoppingList")
     @ResponseWrapper(localName = "AddItemToShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddItemToShoppingListResponse")
@@ -536,6 +806,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iShoppingListID
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetDinnerTonight", action = "http://www.kraftfoods.com/ws/GetDinnerTonight")
     @RequestWrapper(localName = "GetDinnerTonight", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetDinnerTonight")
     @ResponseWrapper(localName = "GetDinnerTonightResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetDinnerTonightResponse")
@@ -547,6 +823,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param sEmail
+     * @param iSiteID
+     * @param iLangId
+     * @return
+     */
     @WebMethod(operationName = "ForgotPasswordByLangID", action = "http://www.kraftfoods.com/ws/ForgotPasswordByLangID")
     @RequestWrapper(localName = "ForgotPasswordByLangID", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.ForgotPasswordByLangID")
     @ResponseWrapper(localName = "ForgotPasswordByLangIDResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.ForgotPasswordByLangIDResponse")
@@ -560,6 +843,25 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangId
     );
 
+    /**
+     *
+     * @param sKeyword1
+     * @param sKeyword2
+     * @param sKeyword3
+     * @param sKeyword4
+     * @param sKeyword5
+     * @param sKeyword6
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByKeywordsAndSubcategory", action = "http://www.kraftfoods.com/ws/GetRecipesByKeywordsAndSubcategory")
     @RequestWrapper(localName = "GetRecipesByKeywordsAndSubcategory", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByKeywordsAndSubcategory")
     @ResponseWrapper(localName = "GetRecipesByKeywordsAndSubcategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByKeywordsAndSubcategoryResponse")
@@ -597,6 +899,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iEndRow
     );
 
+    /**
+     *
+     * @param sRecipeIDs
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByRecipeIDs", action = "http://www.kraftfoods.com/ws/GetRecipesByRecipeIDs")
     @RequestWrapper(localName = "GetRecipesByRecipeIDs", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByRecipeIDs")
     @ResponseWrapper(localName = "GetRecipesByRecipeIDsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByRecipeIDsResponse")
@@ -610,6 +919,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param parmeter1
+     * @param parmeter2
+     * @return
+     */
     @WebMethod(operationName = "TestJSON", action = "http://www.kraftfoods.com/ws/TestJSON")
     @RequestWrapper(localName = "TestJSON", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.TestJSON")
     @ResponseWrapper(localName = "TestJSONResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.TestJSONResponse")
@@ -621,6 +936,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String parmeter2
     );
 
+    /**
+     *
+     * @param iSiteUserID
+     * @param iSiteAccountID
+     * @param iIncreaseCountBy
+     * @param bIncreaseCount
+     * @return
+     */
     @WebMethod(operationName = "GetSiteUserAcctPointsLeft", action = "http://www.kraftfoods.com/ws/GetSiteUserAcctPointsLeft")
     @RequestWrapper(localName = "GetSiteUserAcctPointsLeft", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetSiteUserAcctPointsLeft")
     @ResponseWrapper(localName = "GetSiteUserAcctPointsLeftResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetSiteUserAcctPointsLeftResponse")
@@ -636,6 +959,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bIncreaseCount
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param iPageNumber
+     * @param iPageSize
+     * @return
+     */
     @WebMethod(operationName = "GetRatingsPaged", action = "http://www.kraftfoods.com/ws/GetRatingsPaged")
     @RequestWrapper(localName = "GetRatingsPaged", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRatingsPaged")
     @ResponseWrapper(localName = "GetRatingsPagedResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRatingsPagedResponse")
@@ -649,6 +979,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iPageSize
     );
 
+    /**
+     *
+     * @param strRecipeIDs
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "AddRecipesToRecipeBox", action = "http://www.kraftfoods.com/ws/AddRecipesToRecipeBox")
     @RequestWrapper(localName = "AddRecipesToRecipeBox", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddRecipesToRecipeBox")
     @ResponseWrapper(localName = "AddRecipesToRecipeBoxResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddRecipesToRecipeBoxResponse")
@@ -660,6 +996,24 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iSiteUserID
     );
 
+    /**
+     *
+     * @param sKeyword1
+     * @param sKeyword2
+     * @param sKeyword3
+     * @param sKeyword4
+     * @param sKeyword5
+     * @param sKeyword6
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param sSortField
+     * @param sSortDirection
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByKeywords", action = "http://www.kraftfoods.com/ws/GetRecipesByKeywords")
     @RequestWrapper(localName = "GetRecipesByKeywords", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByKeywords")
     @ResponseWrapper(localName = "GetRecipesByKeywordsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByKeywordsResponse")
@@ -695,6 +1049,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iEndRow
     );
 
+    /**
+     *
+     * @param iRecipeBoxRecipeID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "AddRecipeToShoppingList", action = "http://www.kraftfoods.com/ws/AddRecipeToShoppingList")
     @RequestWrapper(localName = "AddRecipeToShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddRecipeToShoppingList")
     @ResponseWrapper(localName = "AddRecipeToShoppingListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddRecipeToShoppingListResponse")
@@ -706,6 +1066,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iShoppingListID
     );
 
+    /**
+     *
+     * @param iCatID
+     * @return
+     */
     @WebMethod(operationName = "GetWYDRecipeSubCategory", action = "http://www.kraftfoods.com/ws/GetWYDRecipeSubCategory")
     @RequestWrapper(localName = "GetWYDRecipeSubCategory", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetWYDRecipeSubCategory")
     @ResponseWrapper(localName = "GetWYDRecipeSubCategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetWYDRecipeSubCategoryResponse")
@@ -717,6 +1082,10 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
 
     /**
      * Adds the specified recipes to a user's recipe box and specified shopping list. If the user does not have a recipe box, one will be created automatically.
+     * @param iSiteUserID
+     * @param sRecipeIDs
+     * @param iShoppingListID
+     * @return 
      */
     @WebMethod(operationName = "AddRecipesToShoppingList", action = "http://www.kraftfoods.com/ws/AddRecipesToShoppingList")
     @RequestWrapper(localName = "AddRecipesToShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddRecipesToShoppingList")
@@ -731,6 +1100,22 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iShoppingListID
     );
 
+    /**
+     *
+     * @param isSiteID
+     * @param isLangID
+     * @param sSectionType
+     * @param bsIsLowBandwidth
+     * @param bsIsRecipePhotoRequired
+     * @param bsIsReadyIn30Mins
+     * @param bsIsOnlyHealthyRecipe
+     * @param sSortField
+     * @param sSortDirection
+     * @param sCategoryList
+     * @param isStartRow
+     * @param isEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetNodesByCategoryList", action = "http://www.kraftfoods.com/ws/GetNodesByCategoryList")
     @RequestWrapper(localName = "GetNodesByCategoryList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetNodesByCategoryList")
     @ResponseWrapper(localName = "GetNodesByCategoryListResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetNodesByCategoryListResponse")
@@ -762,6 +1147,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String isEndRow
     );
 
+    /**
+     *
+     * @param sItemName
+     * @param sQuantity
+     * @param iAisleID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "AddItemToShoppingListReturnItemListId", action = "http://www.kraftfoods.com/ws/AddItemToShoppingListReturnItemListId")
     @RequestWrapper(localName = "AddItemToShoppingListReturnItemListId", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddItemToShoppingListReturnItemListId")
     @ResponseWrapper(localName = "AddItemToShoppingListReturnItemListIdResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddItemToShoppingListReturnItemListIdResponse")
@@ -779,6 +1172,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
 
     /**
      * iSessionType can be 7 (NewVisitorNewSession), 3 (ExistingVisitorNewSession) or 1 (ExistingVisitorExistingSession).
+     * @param sVisitorID
+     * @param sSessionID
+     * @param sCategoryID
+     * @param iSessionType
+     * @param sPageID
+     * @param iTagID
+     * @param bIsTestData
+     * @return 
      */
     @WebMethod(operationName = "SendTrackingData", action = "http://www.kraftfoods.com/ws/SendTrackingData")
     @RequestWrapper(localName = "SendTrackingData", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.SendTrackingData")
@@ -801,12 +1202,24 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bIsTestData
     );
 
+    /**
+     *
+     * @return
+     */
     @WebMethod(operationName = "GetCoremetricsVisitorID", action = "http://www.kraftfoods.com/ws/GetCoremetricsVisitorID")
     @RequestWrapper(localName = "GetCoremetricsVisitorID", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCoremetricsVisitorID")
     @ResponseWrapper(localName = "GetCoremetricsVisitorIDResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCoremetricsVisitorIDResponse")
     @WebResult(name = "GetCoremetricsVisitorIDResult", targetNamespace = "http://www.kraftfoods.com/ws/")
     public com.kraftfoods.ws.CoremetricsResponse getCoremetricsVisitorID();
 
+    /**
+     *
+     * @param iRecipeID
+     * @param bStripHTML
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeByRecipeID", action = "http://www.kraftfoods.com/ws/GetRecipeByRecipeID")
     @RequestWrapper(localName = "GetRecipeByRecipeID", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeByRecipeID")
     @ResponseWrapper(localName = "GetRecipeByRecipeIDResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeByRecipeIDResponse")
@@ -822,6 +1235,25 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param sFirstName
+     * @param sLastName
+     * @param sEmail
+     * @param iRegistrationActivityID
+     * @param sRegistrationSource
+     * @param bIsRegistrationComplete
+     * @param bAddOptIn
+     * @param iOptInID
+     * @param iSiteID
+     * @param iLangID
+     * @param sBirthDate
+     * @param sPostalCode
+     * @param iGenderID
+     * @return
+     */
     @WebMethod(operationName = "RegisterNewUserWithExtraUserInfo", action = "http://www.kraftfoods.com/ws/RegisterNewUserWithExtraUserInfo")
     @RequestWrapper(localName = "RegisterNewUserWithExtraUserInfo", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.RegisterNewUserWithExtraUserInfo")
     @ResponseWrapper(localName = "RegisterNewUserWithExtraUserInfoResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.RegisterNewUserWithExtraUserInfoResponse")
@@ -859,6 +1291,20 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iGenderID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param sEmail
+     * @param iRegistrationActivityID
+     * @param sRegistrationSource
+     * @param bIsRegistrationComplete
+     * @param bAddOptIn
+     * @param iOptInID
+     * @param iSiteID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "RegisterNewUser", action = "http://www.kraftfoods.com/ws/RegisterNewUser")
     @RequestWrapper(localName = "RegisterNewUser", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.RegisterNewUser")
     @ResponseWrapper(localName = "RegisterNewUserResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.RegisterNewUserResponse")
@@ -886,6 +1332,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param iSiteID
+     * @param bRememberMe
+     * @param sOptInIDs
+     * @return
+     */
     @WebMethod(operationName = "LoginUserAndReturnCookie", action = "http://www.kraftfoods.com/ws/LoginUserAndReturnCookie")
     @RequestWrapper(localName = "LoginUserAndReturnCookie", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LoginUserAndReturnCookie")
     @ResponseWrapper(localName = "LoginUserAndReturnCookieResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LoginUserAndReturnCookieResponse")
@@ -903,6 +1358,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sOptInIDs
     );
 
+    /**
+     *
+     * @param sItemName
+     * @param sQuantity
+     * @param sAisleID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "AddItemsToShoppingListReturnItemListIds", action = "http://www.kraftfoods.com/ws/AddItemsToShoppingListReturnItemListIds")
     @RequestWrapper(localName = "AddItemsToShoppingListReturnItemListIds", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddItemsToShoppingListReturnItemListIds")
     @ResponseWrapper(localName = "AddItemsToShoppingListReturnItemListIdsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddItemsToShoppingListReturnItemListIdsResponse")
@@ -918,6 +1381,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iShoppingListID
     );
 
+    /**
+     *
+     * @param sExternalIdentifier
+     * @param iRatingItemTypeID
+     * @param iPageNumber
+     * @param iPageSize
+     * @return
+     */
     @WebMethod(operationName = "GetRatingsPagedByRatingType", action = "http://www.kraftfoods.com/ws/GetRatingsPagedByRatingType")
     @RequestWrapper(localName = "GetRatingsPagedByRatingType", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRatingsPagedByRatingType")
     @ResponseWrapper(localName = "GetRatingsPagedByRatingTypeResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRatingsPagedByRatingTypeResponse")
@@ -933,6 +1404,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iPageSize
     );
 
+    /**
+     *
+     * @param iRecipeBoxRecipeID
+     * @return
+     */
     @WebMethod(operationName = "DeleteRecipeFromRecipeBox", action = "http://www.kraftfoods.com/ws/DeleteRecipeFromRecipeBox")
     @RequestWrapper(localName = "DeleteRecipeFromRecipeBox", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.DeleteRecipeFromRecipeBox")
     @ResponseWrapper(localName = "DeleteRecipeFromRecipeBoxResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.DeleteRecipeFromRecipeBoxResponse")
@@ -942,6 +1418,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iRecipeBoxRecipeID
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @param dStartDate
+     * @param dEndDate
+     * @param bStripHTML
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByDates", action = "http://www.kraftfoods.com/ws/GetRecipesByDates")
     @RequestWrapper(localName = "GetRecipesByDates", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByDates")
     @ResponseWrapper(localName = "GetRecipesByDatesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByDatesResponse")
@@ -959,6 +1444,25 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bStripHTML
     );
 
+    /**
+     *
+     * @param sKeyword1
+     * @param sKeyword2
+     * @param sKeyword3
+     * @param sKeyword4
+     * @param sKeyword5
+     * @param sKeyword6
+     * @param iCatGroupID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByKeywordsAndCategoryGroup", action = "http://www.kraftfoods.com/ws/GetRecipesByKeywordsAndCategoryGroup")
     @RequestWrapper(localName = "GetRecipesByKeywordsAndCategoryGroup", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByKeywordsAndCategoryGroup")
     @ResponseWrapper(localName = "GetRecipesByKeywordsAndCategoryGroupResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByKeywordsAndCategoryGroupResponse")
@@ -996,6 +1500,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iEndRow
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeCategories", action = "http://www.kraftfoods.com/ws/GetRecipeCategories")
     @RequestWrapper(localName = "GetRecipeCategories", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeCategories")
     @ResponseWrapper(localName = "GetRecipeCategoriesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeCategoriesResponse")
@@ -1009,6 +1519,9 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
 
     /**
      * Creates the specified shopping list on behalf of the specified user. If specified shopping list already exists, does not recreate it and returns existing list's ID. If user already has 2 or more shopping lists, does not create specified shopping list and returns status of "error" and ErrorCode of 1. Under all other circumstances, ErrorCode is returned as 0.
+     * @param iSiteUserID
+     * @param sShoppingListName
+     * @return 
      */
     @WebMethod(operationName = "AddShoppingList", action = "http://www.kraftfoods.com/ws/AddShoppingList")
     @RequestWrapper(localName = "AddShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddShoppingList")
@@ -1021,6 +1534,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sShoppingListName
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "GetDinnerTonightForWeek", action = "http://www.kraftfoods.com/ws/GetDinnerTonightForWeek")
     @RequestWrapper(localName = "GetDinnerTonightForWeek", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetDinnerTonightForWeek")
     @ResponseWrapper(localName = "GetDinnerTonightForWeekResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetDinnerTonightForWeekResponse")
@@ -1032,6 +1551,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param iUserRecipeID
+     * @return
+     */
     @WebMethod(operationName = "GetUserRecipeByUserRecipeID", action = "http://www.kraftfoods.com/ws/GetUserRecipeByUserRecipeID")
     @RequestWrapper(localName = "GetUserRecipeByUserRecipeID", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetUserRecipeByUserRecipeID")
     @ResponseWrapper(localName = "GetUserRecipeByUserRecipeIDResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetUserRecipeByUserRecipeIDResponse")
@@ -1041,6 +1565,18 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iUserRecipeID
     );
 
+    /**
+     *
+     * @param iCatID
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetWYDRecipes", action = "http://www.kraftfoods.com/ws/GetWYDRecipes")
     @RequestWrapper(localName = "GetWYDRecipes", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetWYDRecipes")
     @ResponseWrapper(localName = "GetWYDRecipesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetWYDRecipesResponse")
@@ -1066,6 +1602,17 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
 
     /**
      * iActionType can be 1 (Initiation) or 2 (Completion). Set dConversionPoints to zero if not in use. iSessionType can be 7 (NewVisitorNewSession), 3 (ExistingVisitorNewSession) or 1 (ExistingVisitorExistingSession).
+     * @param sEventID
+     * @param sVisitorID
+     * @param iActionType
+     * @param dConversionPoints
+     * @param sOptionalCategoryID
+     * @param bIsTestData
+     * @param sCustomData
+     * @param iTagID
+     * @param sSessionID
+     * @param iSessionType
+     * @return 
      */
     @WebMethod(operationName = "SendConversionEventTrackingData", action = "http://www.kraftfoods.com/ws/SendConversionEventTrackingData")
     @RequestWrapper(localName = "SendConversionEventTrackingData", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.SendConversionEventTrackingData")
@@ -1094,6 +1641,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bIsTestData
     );
 
+    /**
+     *
+     * @param iPollID
+     * @param iPollResultID
+     * @param iLangID
+     * @return
+     */
     @WebMethod(operationName = "AnswerPoll", action = "http://www.kraftfoods.com/ws/AnswerPoll")
     @RequestWrapper(localName = "AnswerPoll", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AnswerPoll")
     @ResponseWrapper(localName = "AnswerPollResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AnswerPollResponse")
@@ -1107,6 +1661,20 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iLangID
     );
 
+    /**
+     *
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param bOnlyHealthyRecipes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesBySubcategory", action = "http://www.kraftfoods.com/ws/GetRecipesBySubcategory")
     @RequestWrapper(localName = "GetRecipesBySubcategory", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesBySubcategory")
     @ResponseWrapper(localName = "GetRecipesBySubcategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesBySubcategoryResponse")
@@ -1136,6 +1704,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
 
     /**
      * iSessionType can be 7 (NewVisitorNewSession), 3 (ExistingVisitorNewSession) or 1 (ExistingVisitorExistingSession).
+     * @param sVisitorID
+     * @param iSessionType
+     * @param sSessionID
+     * @param sURL
+     * @param bIsTestData
+     * @param sPageID
+     * @param sSearchString
+     * @param sCategoryID
+     * @return 
      */
     @WebMethod(operationName = "SendPageViewTrackingData", action = "http://www.kraftfoods.com/ws/SendPageViewTrackingData")
     @RequestWrapper(localName = "SendPageViewTrackingData", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.SendPageViewTrackingData")
@@ -1160,6 +1737,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bIsTestData
     );
 
+    /**
+     *
+     * @param iRecipeId
+     * @param iMax
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeVideos", action = "http://www.kraftfoods.com/ws/GetRecipeVideos")
     @RequestWrapper(localName = "GetRecipeVideos", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeVideos")
     @ResponseWrapper(localName = "GetRecipeVideosResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeVideosResponse")
@@ -1171,6 +1754,16 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iMax
     );
 
+    /**
+     *
+     * @param iSiteId
+     * @param iSiteUserId
+     * @param sOptinIds
+     * @param sOptOutIds
+     * @param iLanguageID
+     * @param sOptinSource
+     * @return
+     */
     @WebMethod(operationName = "UserOptinUpdate", action = "http://www.kraftfoods.com/ws/UserOptinUpdate")
     @RequestWrapper(localName = "UserOptinUpdate", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.UserOptinUpdate")
     @ResponseWrapper(localName = "UserOptinUpdateResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.UserOptinUpdateResponse")
@@ -1190,6 +1783,19 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sOptinSource
     );
 
+    /**
+     *
+     * @param iAppID
+     * @param dLatitude
+     * @param dLongitude
+     * @param iRadius
+     * @param iRadiusType
+     * @param iLangID
+     * @param iCountryID
+     * @param iPageNum
+     * @param iPageSize
+     * @return
+     */
     @WebMethod(operationName = "GetStoresByLatAndLong", action = "http://www.kraftfoods.com/ws/GetStoresByLatAndLong")
     @RequestWrapper(localName = "GetStoresByLatAndLong", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetStoresByLatAndLong")
     @ResponseWrapper(localName = "GetStoresByLatAndLongResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetStoresByLatAndLongResponse")
@@ -1215,6 +1821,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iPageSize
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "AddRecipeToRecipeBox", action = "http://www.kraftfoods.com/ws/AddRecipeToRecipeBox")
     @RequestWrapper(localName = "AddRecipeToRecipeBox", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddRecipeToRecipeBox")
     @ResponseWrapper(localName = "AddRecipeToRecipeBoxResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.AddRecipeToRecipeBoxResponse")
@@ -1226,6 +1838,24 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iSiteUserID
     );
 
+    /**
+     *
+     * @param sExternalIdentifier
+     * @param iSiteUserID
+     * @param sSiteUser
+     * @param iBrandID
+     * @param iLangID
+     * @param bDisplayName
+     * @param iRating
+     * @param iRateItemTypeID
+     * @param sComments
+     * @param bActive
+     * @param bTryItem
+     * @param bGetAgain
+     * @param bApprovedFoulLang
+     * @param bApprovedCompetitor
+     * @return
+     */
     @WebMethod(operationName = "RateItem", action = "http://www.kraftfoods.com/ws/RateItem")
     @RequestWrapper(localName = "RateItem", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.RateItem")
     @ResponseWrapper(localName = "RateItemResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.RateItemResponse")
@@ -1261,6 +1891,14 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bApprovedCompetitor
     );
 
+    /**
+     *
+     * @param iListItemId
+     * @param sQuantity
+     * @param iAisleID
+     * @param iShoppingListID
+     * @return
+     */
     @WebMethod(operationName = "EditShoppingListItem", action = "http://www.kraftfoods.com/ws/EditShoppingListItem")
     @RequestWrapper(localName = "EditShoppingListItem", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.EditShoppingListItem")
     @ResponseWrapper(localName = "EditShoppingListItemResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.EditShoppingListItemResponse")
@@ -1276,6 +1914,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iShoppingListID
     );
 
+    /**
+     *
+     * @param iRecipeID
+     * @param bStripHTML
+     * @param iBrandID
+     * @param iLangID
+     * @param bIncludeExtraInformation
+     * @return
+     */
     @WebMethod(operationName = "GetRecipeByRecipeIDWithExtraInformation", action = "http://www.kraftfoods.com/ws/GetRecipeByRecipeIDWithExtraInformation")
     @RequestWrapper(localName = "GetRecipeByRecipeIDWithExtraInformation", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeByRecipeIDWithExtraInformation")
     @ResponseWrapper(localName = "GetRecipeByRecipeIDWithExtraInformationResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipeByRecipeIDWithExtraInformationResponse")
@@ -1293,6 +1940,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bIncludeExtraInformation
     );
 
+    /**
+     *
+     * @param sEmail
+     * @param iSiteID
+     * @return
+     */
     @WebMethod(operationName = "ForgotPassword", action = "http://www.kraftfoods.com/ws/ForgotPassword")
     @RequestWrapper(localName = "ForgotPassword", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.ForgotPassword")
     @ResponseWrapper(localName = "ForgotPasswordResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.ForgotPasswordResponse")
@@ -1304,6 +1957,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iSiteID
     );
 
+    /**
+     *
+     * @param sUserName
+     * @param sPassword
+     * @param iSiteID
+     * @param bRememberMe
+     * @param sOptInIDs
+     * @return
+     */
     @WebMethod(operationName = "LoginUserAndReturnCookieWithExtraUserInfo", action = "http://www.kraftfoods.com/ws/LoginUserAndReturnCookieWithExtraUserInfo")
     @RequestWrapper(localName = "LoginUserAndReturnCookieWithExtraUserInfo", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LoginUserAndReturnCookieWithExtraUserInfo")
     @ResponseWrapper(localName = "LoginUserAndReturnCookieWithExtraUserInfoResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LoginUserAndReturnCookieWithExtraUserInfoResponse")
@@ -1321,6 +1983,12 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sOptInIDs
     );
 
+    /**
+     *
+     * @param bThirdPartyLogout
+     * @param iLang
+     * @return
+     */
     @WebMethod(operationName = "LogoutUserAndReturnCookie", action = "http://www.kraftfoods.com/ws/LogoutUserAndReturnCookie")
     @RequestWrapper(localName = "LogoutUserAndReturnCookie", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LogoutUserAndReturnCookie")
     @ResponseWrapper(localName = "LogoutUserAndReturnCookieResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.LogoutUserAndReturnCookieResponse")
@@ -1332,6 +2000,17 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String iLang
     );
 
+    /**
+     *
+     * @param iSiteUserID
+     * @param iRecipeTypes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @param bSortAscending
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesFromRecipeBox", action = "http://www.kraftfoods.com/ws/GetRecipesFromRecipeBox")
     @RequestWrapper(localName = "GetRecipesFromRecipeBox", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesFromRecipeBox")
     @ResponseWrapper(localName = "GetRecipesFromRecipeBoxResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesFromRecipeBoxResponse")
@@ -1355,6 +2034,11 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
 
     /**
      * sSortField can be either of aisle_name, aisle_id or recipe_name
+     * @param iSiteUserID
+     * @param iShoppingListID
+     * @param bSortAscending
+     * @param sSortField
+     * @return 
      */
     @WebMethod(operationName = "GetShoppingListSorted", action = "http://www.kraftfoods.com/ws/GetShoppingListSorted")
     @RequestWrapper(localName = "GetShoppingListSorted", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetShoppingListSorted")
@@ -1371,6 +2055,15 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bSortAscending
     );
 
+    /**
+     *
+     * @param iBrandID
+     * @param iLangID
+     * @param dStartDate
+     * @param dEndDate
+     * @param bStripHTML
+     * @return
+     */
     @WebMethod(operationName = "GetTraditionalRecipesByDates", action = "http://www.kraftfoods.com/ws/GetTraditionalRecipesByDates")
     @RequestWrapper(localName = "GetTraditionalRecipesByDates", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetTraditionalRecipesByDates")
     @ResponseWrapper(localName = "GetTraditionalRecipesByDatesResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetTraditionalRecipesByDatesResponse")
@@ -1388,6 +2081,19 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bStripHTML
     );
 
+    /**
+     *
+     * @param iSiteUserID
+     * @param iRecipeTypes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @param bSortAscending
+     * @param iCategoryID
+     * @param sSubCategories
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesFromRecipeBoxByCategory", action = "http://www.kraftfoods.com/ws/GetRecipesFromRecipeBoxByCategory")
     @RequestWrapper(localName = "GetRecipesFromRecipeBoxByCategory", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesFromRecipeBoxByCategory")
     @ResponseWrapper(localName = "GetRecipesFromRecipeBoxByCategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesFromRecipeBoxByCategoryResponse")
@@ -1413,12 +2119,21 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sSubCategories
     );
 
+    /**
+     *
+     * @return
+     */
     @WebMethod(operationName = "GetCoremetricsSessionID", action = "http://www.kraftfoods.com/ws/GetCoremetricsSessionID")
     @RequestWrapper(localName = "GetCoremetricsSessionID", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCoremetricsSessionID")
     @ResponseWrapper(localName = "GetCoremetricsSessionIDResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCoremetricsSessionIDResponse")
     @WebResult(name = "GetCoremetricsSessionIDResult", targetNamespace = "http://www.kraftfoods.com/ws/")
     public com.kraftfoods.ws.CoremetricsResponse getCoremetricsSessionID();
 
+    /**
+     *
+     * @param iSiteUserID
+     * @return
+     */
     @WebMethod(operationName = "GetShoppingLists", action = "http://www.kraftfoods.com/ws/GetShoppingLists")
     @RequestWrapper(localName = "GetShoppingLists", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetShoppingLists")
     @ResponseWrapper(localName = "GetShoppingListsResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetShoppingListsResponse")
@@ -1428,6 +2143,13 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         int iSiteUserID
     );
 
+    /**
+     *
+     * @param iSiteId
+     * @param iUserId
+     * @param iLanguageId
+     * @return
+     */
     @WebMethod(operationName = "UserOptin", action = "http://www.kraftfoods.com/ws/UserOptin")
     @RequestWrapper(localName = "UserOptin", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.UserOptin")
     @ResponseWrapper(localName = "UserOptinResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.UserOptinResponse")
@@ -1443,6 +2165,9 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
 
     /**
      * Specify sShoppingListItemIDs as a comma-separated list of shopping list item IDs.
+     * @param iShoppingListID
+     * @param sShoppingListItemIDs
+     * @return 
      */
     @WebMethod(operationName = "DeleteItemsFromShoppingList", action = "http://www.kraftfoods.com/ws/DeleteItemsFromShoppingList")
     @RequestWrapper(localName = "DeleteItemsFromShoppingList", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.DeleteItemsFromShoppingList")
@@ -1455,6 +2180,22 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         java.lang.String sShoppingListItemIDs
     );
 
+    /**
+     *
+     * @param iCatID
+     * @param iSubCatID
+     * @param sSortField
+     * @param sSortDirection
+     * @param bIsRecipePhotoRequired
+     * @param bIsReadyIn30Mins
+     * @param bOnlyHealthyRecipes
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @param bIncludeExtraInformation
+     * @return
+     */
     @WebMethod(operationName = "GetRecipesByCategory", action = "http://www.kraftfoods.com/ws/GetRecipesByCategory")
     @RequestWrapper(localName = "GetRecipesByCategory", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByCategory")
     @ResponseWrapper(localName = "GetRecipesByCategoryResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetRecipesByCategoryResponse")
@@ -1486,6 +2227,19 @@ public interface KraftX0020RecipeX0020WebX0020ServiceSoap {
         boolean bIncludeExtraInformation
     );
 
+    /**
+     *
+     * @param iCatID
+     * @param iSubCatID
+     * @param bIsLowBandwidth
+     * @param sSortField
+     * @param sSortDirection
+     * @param iBrandID
+     * @param iLangID
+     * @param iStartRow
+     * @param iEndRow
+     * @return
+     */
     @WebMethod(operationName = "GetCookingVideos", action = "http://www.kraftfoods.com/ws/GetCookingVideos")
     @RequestWrapper(localName = "GetCookingVideos", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCookingVideos")
     @ResponseWrapper(localName = "GetCookingVideosResponse", targetNamespace = "http://www.kraftfoods.com/ws/", className = "com.kraftfoods.ws.GetCookingVideosResponse")

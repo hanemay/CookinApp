@@ -34,8 +34,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeSubCategory {
 
+    /**
+     *
+     */
     @XmlElement(name = "Id")
     protected String id;
+
+    /**
+     *
+     */
     @XmlElement(name = "Name")
     protected String name;
 

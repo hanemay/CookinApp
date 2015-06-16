@@ -40,20 +40,40 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeCategory {
 
+    /**
+     *
+     */
     @XmlElement(name = "CategoryID")
     protected int categoryID;
+
+    /**
+     *
+     */
     @XmlElement(name = "CategoryName")
     protected String categoryName;
+
+    /**
+     *
+     */
     @XmlElement(name = "SubCategoryID")
     protected int subCategoryID;
+
+    /**
+     *
+     */
     @XmlElement(name = "SubCategoryName")
     protected String subCategoryName;
+
+    /**
+     *
+     */
     @XmlElement(name = "CategoryRank")
     protected String categoryRank;
 
     /**
      * Gets the value of the categoryID property.
      * 
+     * @return 
      */
     public int getCategoryID() {
         return categoryID;
@@ -62,6 +82,7 @@ public class RecipeCategory {
     /**
      * Sets the value of the categoryID property.
      * 
+     * @param value
      */
     public void setCategoryID(int value) {
         this.categoryID = value;
@@ -94,6 +115,7 @@ public class RecipeCategory {
     /**
      * Gets the value of the subCategoryID property.
      * 
+     * @return 
      */
     public int getSubCategoryID() {
         return subCategoryID;
@@ -102,6 +124,7 @@ public class RecipeCategory {
     /**
      * Sets the value of the subCategoryID property.
      * 
+     * @param value
      */
     public void setSubCategoryID(int value) {
         this.subCategoryID = value;

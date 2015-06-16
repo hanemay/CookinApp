@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class CookiePairs {
 
+    /**
+     *
+     */
     @XmlElement(name = "CookiePair")
     protected List<CookiePair> cookiePair;
 
@@ -58,6 +61,7 @@ public class CookiePairs {
      * {@link CookiePair }
      * 
      * 
+     * @return 
      */
     public List<CookiePair> getCookiePair() {
         if (cookiePair == null) {

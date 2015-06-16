@@ -41,10 +41,29 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SendEmail")
 public class SendEmail {
 
+    /**
+     *
+     */
     protected String sMessageFrom;
+
+    /**
+     *
+     */
     protected String sMessageTo;
+
+    /**
+     *
+     */
     protected String sMessageSubject;
+
+    /**
+     *
+     */
     protected String sMessageBody;
+
+    /**
+     *
+     */
     protected boolean bIsMessageTypeHTML;
 
     /**
@@ -146,6 +165,7 @@ public class SendEmail {
     /**
      * Gets the value of the bIsMessageTypeHTML property.
      * 
+     * @return 
      */
     public boolean isBIsMessageTypeHTML() {
         return bIsMessageTypeHTML;
@@ -154,6 +174,7 @@ public class SendEmail {
     /**
      * Sets the value of the bIsMessageTypeHTML property.
      * 
+     * @param value
      */
     public void setBIsMessageTypeHTML(boolean value) {
         this.bIsMessageTypeHTML = value;

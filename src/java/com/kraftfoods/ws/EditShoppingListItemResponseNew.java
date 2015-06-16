@@ -34,8 +34,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class EditShoppingListItemResponseNew {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "IsSuccessful")
     protected boolean isSuccessful;
 
@@ -66,6 +73,7 @@ public class EditShoppingListItemResponseNew {
     /**
      * Gets the value of the isSuccessful property.
      * 
+     * @return 
      */
     public boolean isIsSuccessful() {
         return isSuccessful;
@@ -74,6 +82,7 @@ public class EditShoppingListItemResponseNew {
     /**
      * Sets the value of the isSuccessful property.
      * 
+     * @param value
      */
     public void setIsSuccessful(boolean value) {
         this.isSuccessful = value;

@@ -12,11 +12,20 @@ package com.kraftfoods.ws;
 public class Categories extends GetRecipeCategoryResponse{
     GetRecipeCategoryResponse recResp;
     int amountOfCategories;
+
+    /**
+     *
+     */
     public Categories(){
         KraftX0020RecipeX0020WebX0020Service webService = new KraftX0020RecipeX0020WebX0020Service();
         KraftX0020RecipeX0020WebX0020ServiceSoap soapService = webService.getKraftX0020RecipeX0020WebX0020ServiceSoap();
         recResp =  soapService.getRecipeCategories(1, 1);
     }
+
+    /**
+     *
+     * @return
+     */
     public String[] returnCats(){
         amountOfCategories = recResp.totalCount;
         String[] results = new String[amountOfCategories];

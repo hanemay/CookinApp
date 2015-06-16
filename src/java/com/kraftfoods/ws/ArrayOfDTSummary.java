@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfDTSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "DTSummary", nillable = true)
     protected List<DTSummary> dtSummary;
 
@@ -58,6 +61,7 @@ public class ArrayOfDTSummary {
      * {@link DTSummary }
      * 
      * 
+     * @return 
      */
     public List<DTSummary> getDTSummary() {
         if (dtSummary == null) {

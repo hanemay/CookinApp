@@ -39,9 +39,24 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetRatingsPagedByRatingType")
 public class GetRatingsPagedByRatingType {
 
+    /**
+     *
+     */
     protected String sExternalIdentifier;
+
+    /**
+     *
+     */
     protected int iRatingItemTypeID;
+
+    /**
+     *
+     */
     protected int iPageNumber;
+
+    /**
+     *
+     */
     protected int iPageSize;
 
     /**
@@ -71,6 +86,7 @@ public class GetRatingsPagedByRatingType {
     /**
      * Gets the value of the iRatingItemTypeID property.
      * 
+     * @return 
      */
     public int getIRatingItemTypeID() {
         return iRatingItemTypeID;
@@ -79,6 +95,7 @@ public class GetRatingsPagedByRatingType {
     /**
      * Sets the value of the iRatingItemTypeID property.
      * 
+     * @param value
      */
     public void setIRatingItemTypeID(int value) {
         this.iRatingItemTypeID = value;
@@ -87,6 +104,7 @@ public class GetRatingsPagedByRatingType {
     /**
      * Gets the value of the iPageNumber property.
      * 
+     * @return 
      */
     public int getIPageNumber() {
         return iPageNumber;
@@ -95,6 +113,7 @@ public class GetRatingsPagedByRatingType {
     /**
      * Sets the value of the iPageNumber property.
      * 
+     * @param value
      */
     public void setIPageNumber(int value) {
         this.iPageNumber = value;
@@ -103,6 +122,7 @@ public class GetRatingsPagedByRatingType {
     /**
      * Gets the value of the iPageSize property.
      * 
+     * @return 
      */
     public int getIPageSize() {
         return iPageSize;
@@ -111,6 +131,7 @@ public class GetRatingsPagedByRatingType {
     /**
      * Sets the value of the iPageSize property.
      * 
+     * @param value
      */
     public void setIPageSize(int value) {
         this.iPageSize = value;

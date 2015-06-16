@@ -35,12 +35,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "DeleteItemFromShoppingList")
 public class DeleteItemFromShoppingList {
 
+    /**
+     *
+     */
     protected int iShoppingListItemID;
+
+    /**
+     *
+     */
     protected int iShoppingListID;
 
     /**
      * Gets the value of the iShoppingListItemID property.
      * 
+     * @return 
      */
     public int getIShoppingListItemID() {
         return iShoppingListItemID;
@@ -49,6 +57,7 @@ public class DeleteItemFromShoppingList {
     /**
      * Sets the value of the iShoppingListItemID property.
      * 
+     * @param value
      */
     public void setIShoppingListItemID(int value) {
         this.iShoppingListItemID = value;
@@ -57,6 +66,7 @@ public class DeleteItemFromShoppingList {
     /**
      * Gets the value of the iShoppingListID property.
      * 
+     * @return 
      */
     public int getIShoppingListID() {
         return iShoppingListID;
@@ -65,6 +75,7 @@ public class DeleteItemFromShoppingList {
     /**
      * Sets the value of the iShoppingListID property.
      * 
+     * @param value
      */
     public void setIShoppingListID(int value) {
         this.iShoppingListID = value;

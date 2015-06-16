@@ -38,10 +38,21 @@ public class RatingsPagedResponse
     extends StatusResponse
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "TotalCount")
     protected String totalCount;
+
+    /**
+     *
+     */
     @XmlElement(name = "AvgRating")
     protected String avgRating;
+
+    /**
+     *
+     */
     @XmlElement(name = "RatingDetails")
     protected ArrayOfRatingDetail ratingDetails;
 

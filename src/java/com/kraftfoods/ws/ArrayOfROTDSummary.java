@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfROTDSummary {
 
+    /**
+     *
+     */
     @XmlElement(name = "ROTDSummary", nillable = true)
     protected List<ROTDSummary> rotdSummary;
 
@@ -58,6 +61,7 @@ public class ArrayOfROTDSummary {
      * {@link ROTDSummary }
      * 
      * 
+     * @return 
      */
     public List<ROTDSummary> getROTDSummary() {
         if (rotdSummary == null) {

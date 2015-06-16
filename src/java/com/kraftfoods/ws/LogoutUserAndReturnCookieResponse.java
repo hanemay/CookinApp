@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "LogoutUserAndReturnCookieResponse")
 public class LogoutUserAndReturnCookieResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "LogoutUserAndReturnCookieResult")
     protected LogoutResponse logoutUserAndReturnCookieResult;
 

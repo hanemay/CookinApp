@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "IsRecipeInRecipeBoxResponse")
 public class IsRecipeInRecipeBoxResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "IsRecipeInRecipeBoxResult")
     protected RecipeInRecipeBoxResponse isRecipeInRecipeBoxResult;
 

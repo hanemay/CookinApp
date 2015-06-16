@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetNodesByCategoryListResponse")
 public class GetNodesByCategoryListResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetNodesByCategoryListResult")
     protected Object getNodesByCategoryListResult;
 

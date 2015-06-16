@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SendPageViewTrackingDataResponse")
 public class SendPageViewTrackingDataResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "SendPageViewTrackingDataResult")
     protected StatusResponse sendPageViewTrackingDataResult;
 

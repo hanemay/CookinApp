@@ -34,6 +34,9 @@ public class AddItemToShoppingListResponseNew
     extends StatusResponse
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "AddItemToShoppingListResults")
     protected ArrayOfAddItemToShoppingListResult addItemToShoppingListResults;
 

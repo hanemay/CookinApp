@@ -36,8 +36,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "TestJSON")
 public class TestJSON {
 
+    /**
+     *
+     */
     @XmlElement(name = "Parmeter1")
     protected String parmeter1;
+
+    /**
+     *
+     */
     @XmlElement(name = "Parmeter2")
     protected String parmeter2;
 

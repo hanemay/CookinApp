@@ -39,14 +39,30 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetShoppingListSorted")
 public class GetShoppingListSorted {
 
+    /**
+     *
+     */
     protected int iSiteUserID;
+
+    /**
+     *
+     */
     protected int iShoppingListID;
+
+    /**
+     *
+     */
     protected String sSortField;
+
+    /**
+     *
+     */
     protected boolean bSortAscending;
 
     /**
      * Gets the value of the iSiteUserID property.
      * 
+     * @return 
      */
     public int getISiteUserID() {
         return iSiteUserID;
@@ -55,6 +71,7 @@ public class GetShoppingListSorted {
     /**
      * Sets the value of the iSiteUserID property.
      * 
+     * @param value
      */
     public void setISiteUserID(int value) {
         this.iSiteUserID = value;
@@ -63,6 +80,7 @@ public class GetShoppingListSorted {
     /**
      * Gets the value of the iShoppingListID property.
      * 
+     * @return 
      */
     public int getIShoppingListID() {
         return iShoppingListID;
@@ -71,6 +89,7 @@ public class GetShoppingListSorted {
     /**
      * Sets the value of the iShoppingListID property.
      * 
+     * @param value
      */
     public void setIShoppingListID(int value) {
         this.iShoppingListID = value;
@@ -103,6 +122,7 @@ public class GetShoppingListSorted {
     /**
      * Gets the value of the bSortAscending property.
      * 
+     * @return 
      */
     public boolean isBSortAscending() {
         return bSortAscending;
@@ -111,6 +131,7 @@ public class GetShoppingListSorted {
     /**
      * Sets the value of the bSortAscending property.
      * 
+     * @param value
      */
     public void setBSortAscending(boolean value) {
         this.bSortAscending = value;

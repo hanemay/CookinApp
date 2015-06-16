@@ -42,22 +42,46 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RecipeTipDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeID")
     protected int recipeID;
+
+    /**
+     *
+     */
     @XmlElement(name = "TipID")
     protected int tipID;
+
+    /**
+     *
+     */
     @XmlElement(name = "TipType")
     protected String tipType;
+
+    /**
+     *
+     */
     @XmlElement(name = "TipName")
     protected String tipName;
+
+    /**
+     *
+     */
     @XmlElement(name = "TipDescription")
     protected String tipDescription;
+
+    /**
+     *
+     */
     @XmlElement(name = "Sequence")
     protected int sequence;
 
     /**
      * Gets the value of the recipeID property.
      * 
+     * @return 
      */
     public int getRecipeID() {
         return recipeID;
@@ -66,6 +90,7 @@ public class RecipeTipDetail {
     /**
      * Sets the value of the recipeID property.
      * 
+     * @param value
      */
     public void setRecipeID(int value) {
         this.recipeID = value;
@@ -74,6 +99,7 @@ public class RecipeTipDetail {
     /**
      * Gets the value of the tipID property.
      * 
+     * @return 
      */
     public int getTipID() {
         return tipID;
@@ -82,6 +108,7 @@ public class RecipeTipDetail {
     /**
      * Sets the value of the tipID property.
      * 
+     * @param value
      */
     public void setTipID(int value) {
         this.tipID = value;
@@ -162,6 +189,7 @@ public class RecipeTipDetail {
     /**
      * Gets the value of the sequence property.
      * 
+     * @return 
      */
     public int getSequence() {
         return sequence;
@@ -170,6 +198,7 @@ public class RecipeTipDetail {
     /**
      * Sets the value of the sequence property.
      * 
+     * @param value
      */
     public void setSequence(int value) {
         this.sequence = value;

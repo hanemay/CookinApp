@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfRecipeCategory {
 
+    /**
+     *
+     */
     @XmlElement(name = "RecipeCategory", nillable = true)
     protected List<RecipeCategory> recipeCategory;
 
@@ -58,6 +61,7 @@ public class ArrayOfRecipeCategory {
      * {@link RecipeCategory }
      * 
      * 
+     * @return 
      */
     public List<RecipeCategory> getRecipeCategory() {
         if (recipeCategory == null) {

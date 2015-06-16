@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetSiteUserAcctPointsLeftResponse")
 public class GetSiteUserAcctPointsLeftResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetSiteUserAcctPointsLeftResult")
     protected SiteUserAcctPointsLeftResponse getSiteUserAcctPointsLeftResult;
 

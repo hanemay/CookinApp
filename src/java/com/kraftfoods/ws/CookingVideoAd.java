@@ -36,10 +36,21 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class CookingVideoAd {
 
+    /**
+     *
+     */
     @XmlElement(name = "AdType")
     protected String adType;
+
+    /**
+     *
+     */
     @XmlElement(name = "AdName")
     protected String adName;
+
+    /**
+     *
+     */
     @XmlElement(name = "AdURL")
     protected String adURL;
 

@@ -36,10 +36,21 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class GetRecipeSubCategoryResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
+
+    /**
+     *
+     */
     @XmlElement(name = "TotalCount")
     protected int totalCount;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeSubCategories")
     protected ArrayOfRecipeCategory recipeSubCategories;
 
@@ -70,6 +81,7 @@ public class GetRecipeSubCategoryResponse {
     /**
      * Gets the value of the totalCount property.
      * 
+     * @return 
      */
     public int getTotalCount() {
         return totalCount;
@@ -78,6 +90,7 @@ public class GetRecipeSubCategoryResponse {
     /**
      * Sets the value of the totalCount property.
      * 
+     * @param value
      */
     public void setTotalCount(int value) {
         this.totalCount = value;

@@ -50,30 +50,70 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ShoppingListItem {
 
+    /**
+     *
+     */
     @XmlElement(name = "ShoppingListItemID")
     protected int shoppingListItemID;
+
+    /**
+     *
+     */
     @XmlElement(name = "AisleID")
     protected int aisleID;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeBoxRecipeID")
     protected int recipeBoxRecipeID;
+
+    /**
+     *
+     */
     @XmlElement(name = "Name")
     protected String name;
+
+    /**
+     *
+     */
     @XmlElement(name = "Quantity")
     protected String quantity;
+
+    /**
+     *
+     */
     @XmlElement(name = "QuantityNum")
     protected String quantityNum;
+
+    /**
+     *
+     */
     @XmlElement(name = "QuantityUnit")
     protected String quantityUnit;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeName")
     protected String recipeName;
+
+    /**
+     *
+     */
     @XmlElement(name = "AisleName")
     protected String aisleName;
+
+    /**
+     *
+     */
     @XmlElement(name = "RecipeID")
     protected int recipeID;
 
     /**
      * Gets the value of the shoppingListItemID property.
      * 
+     * @return 
      */
     public int getShoppingListItemID() {
         return shoppingListItemID;
@@ -82,6 +122,7 @@ public class ShoppingListItem {
     /**
      * Sets the value of the shoppingListItemID property.
      * 
+     * @param value
      */
     public void setShoppingListItemID(int value) {
         this.shoppingListItemID = value;
@@ -90,6 +131,7 @@ public class ShoppingListItem {
     /**
      * Gets the value of the aisleID property.
      * 
+     * @return 
      */
     public int getAisleID() {
         return aisleID;
@@ -98,6 +140,7 @@ public class ShoppingListItem {
     /**
      * Sets the value of the aisleID property.
      * 
+     * @param value
      */
     public void setAisleID(int value) {
         this.aisleID = value;
@@ -106,6 +149,7 @@ public class ShoppingListItem {
     /**
      * Gets the value of the recipeBoxRecipeID property.
      * 
+     * @return 
      */
     public int getRecipeBoxRecipeID() {
         return recipeBoxRecipeID;
@@ -114,6 +158,7 @@ public class ShoppingListItem {
     /**
      * Sets the value of the recipeBoxRecipeID property.
      * 
+     * @param value
      */
     public void setRecipeBoxRecipeID(int value) {
         this.recipeBoxRecipeID = value;
@@ -266,6 +311,7 @@ public class ShoppingListItem {
     /**
      * Gets the value of the recipeID property.
      * 
+     * @return 
      */
     public int getRecipeID() {
         return recipeID;
@@ -274,6 +320,7 @@ public class ShoppingListItem {
     /**
      * Sets the value of the recipeID property.
      * 
+     * @param value
      */
     public void setRecipeID(int value) {
         this.recipeID = value;

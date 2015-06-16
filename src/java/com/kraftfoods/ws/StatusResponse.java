@@ -43,6 +43,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class StatusResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "Status")
     protected String status;
 

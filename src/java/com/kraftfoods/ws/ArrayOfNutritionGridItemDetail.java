@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfNutritionGridItemDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "NutritionGridItemDetail", nillable = true)
     protected List<NutritionGridItemDetail> nutritionGridItemDetail;
 
@@ -58,6 +61,7 @@ public class ArrayOfNutritionGridItemDetail {
      * {@link NutritionGridItemDetail }
      * 
      * 
+     * @return 
      */
     public List<NutritionGridItemDetail> getNutritionGridItemDetail() {
         if (nutritionGridItemDetail == null) {

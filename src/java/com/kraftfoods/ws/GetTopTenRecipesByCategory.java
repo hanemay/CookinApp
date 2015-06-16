@@ -41,15 +41,35 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetTopTenRecipesByCategory")
 public class GetTopTenRecipesByCategory {
 
+    /**
+     *
+     */
     protected int iBrandID;
+
+    /**
+     *
+     */
     protected int iLangID;
+
+    /**
+     *
+     */
     protected String iCatGroupID;
+
+    /**
+     *
+     */
     protected String sIsHealthyLiving;
+
+    /**
+     *
+     */
     protected String sFilterDays;
 
     /**
      * Gets the value of the iBrandID property.
      * 
+     * @return 
      */
     public int getIBrandID() {
         return iBrandID;
@@ -58,6 +78,7 @@ public class GetTopTenRecipesByCategory {
     /**
      * Sets the value of the iBrandID property.
      * 
+     * @param value
      */
     public void setIBrandID(int value) {
         this.iBrandID = value;
@@ -66,6 +87,7 @@ public class GetTopTenRecipesByCategory {
     /**
      * Gets the value of the iLangID property.
      * 
+     * @return 
      */
     public int getILangID() {
         return iLangID;
@@ -74,6 +96,7 @@ public class GetTopTenRecipesByCategory {
     /**
      * Sets the value of the iLangID property.
      * 
+     * @param value
      */
     public void setILangID(int value) {
         this.iLangID = value;

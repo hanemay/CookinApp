@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetPollsByRelationIDResponse")
 public class GetPollsByRelationIDResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetPollsByRelationIDResult")
     protected PollDetailsResponse getPollsByRelationIDResult;
 

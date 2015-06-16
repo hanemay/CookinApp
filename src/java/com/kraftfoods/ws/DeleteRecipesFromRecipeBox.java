@@ -33,6 +33,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "DeleteRecipesFromRecipeBox")
 public class DeleteRecipesFromRecipeBox {
 
+    /**
+     *
+     */
     protected String sRecipeBoxRecipeIDs;
 
     /**

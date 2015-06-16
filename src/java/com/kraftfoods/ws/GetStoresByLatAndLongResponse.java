@@ -34,6 +34,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "GetStoresByLatAndLongResponse")
 public class GetStoresByLatAndLongResponse {
 
+    /**
+     *
+     */
     @XmlElement(name = "GetStoresByLatAndLongResult")
     protected StoreSummariesResponse getStoresByLatAndLongResult;
 

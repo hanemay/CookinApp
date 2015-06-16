@@ -34,6 +34,9 @@ public class ROTDSummary
     extends RecipeSummary
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "DisplayDateJS")
     protected String displayDateJS;
 

@@ -36,14 +36,22 @@ public class ShoppingListResponse
     extends StatusResponse
 {
 
+    /**
+     *
+     */
     @XmlElement(name = "ShoppingListId")
     protected int shoppingListId;
+
+    /**
+     *
+     */
     @XmlElement(name = "ErrorCode")
     protected int errorCode;
 
     /**
      * Gets the value of the shoppingListId property.
      * 
+     * @return 
      */
     public int getShoppingListId() {
         return shoppingListId;
@@ -52,6 +60,7 @@ public class ShoppingListResponse
     /**
      * Sets the value of the shoppingListId property.
      * 
+     * @param value
      */
     public void setShoppingListId(int value) {
         this.shoppingListId = value;
@@ -60,6 +69,7 @@ public class ShoppingListResponse
     /**
      * Gets the value of the errorCode property.
      * 
+     * @return 
      */
     public int getErrorCode() {
         return errorCode;
@@ -68,6 +78,7 @@ public class ShoppingListResponse
     /**
      * Sets the value of the errorCode property.
      * 
+     * @param value
      */
     public void setErrorCode(int value) {
         this.errorCode = value;

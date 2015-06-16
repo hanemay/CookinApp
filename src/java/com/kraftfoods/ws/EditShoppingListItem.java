@@ -39,14 +39,30 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "EditShoppingListItem")
 public class EditShoppingListItem {
 
+    /**
+     *
+     */
     protected int iListItemId;
+
+    /**
+     *
+     */
     protected String sQuantity;
+
+    /**
+     *
+     */
     protected int iAisleID;
+
+    /**
+     *
+     */
     protected int iShoppingListID;
 
     /**
      * Gets the value of the iListItemId property.
      * 
+     * @return 
      */
     public int getIListItemId() {
         return iListItemId;
@@ -55,6 +71,7 @@ public class EditShoppingListItem {
     /**
      * Sets the value of the iListItemId property.
      * 
+     * @param value
      */
     public void setIListItemId(int value) {
         this.iListItemId = value;
@@ -87,6 +104,7 @@ public class EditShoppingListItem {
     /**
      * Gets the value of the iAisleID property.
      * 
+     * @return 
      */
     public int getIAisleID() {
         return iAisleID;
@@ -95,6 +113,7 @@ public class EditShoppingListItem {
     /**
      * Sets the value of the iAisleID property.
      * 
+     * @param value
      */
     public void setIAisleID(int value) {
         this.iAisleID = value;
@@ -103,6 +122,7 @@ public class EditShoppingListItem {
     /**
      * Gets the value of the iShoppingListID property.
      * 
+     * @return 
      */
     public int getIShoppingListID() {
         return iShoppingListID;
@@ -111,6 +131,7 @@ public class EditShoppingListItem {
     /**
      * Sets the value of the iShoppingListID property.
      * 
+     * @param value
      */
     public void setIShoppingListID(int value) {
         this.iShoppingListID = value;

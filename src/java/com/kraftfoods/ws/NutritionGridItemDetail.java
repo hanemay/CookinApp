@@ -34,8 +34,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class NutritionGridItemDetail {
 
+    /**
+     *
+     */
     @XmlElement(name = "NutritionExchangeItemDesc")
     protected String nutritionExchangeItemDesc;
+
+    /**
+     *
+     */
     @XmlElement(name = "NutritionItemDetails")
     protected ArrayOfNutritionItemDetail nutritionItemDetails;
 
