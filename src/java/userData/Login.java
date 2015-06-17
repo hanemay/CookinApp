@@ -19,11 +19,9 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
           
     String n=request.getParameter("username");  
     String p=request.getParameter("userpass");  
-    ReadXMLFile login = new ReadXMLFile();
-    boolean success = login.ValidateLogin(n, p);
-        
+    ReadXMLFile login = new ReadXMLFile();        
     if(login.ValidateLogin(n, p) == true){  
-        RequestDispatcher rd=request.getRequestDispatcher("CookApp");
+        RequestDispatcher rd=request.getRequestDispatcher("Welcome.html");
         rd.forward(request,response);
     }  
     else{  

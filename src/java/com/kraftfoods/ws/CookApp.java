@@ -7,8 +7,7 @@ package com.kraftfoods.ws;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Enumeration;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "CookApp", urlPatterns = {"/CookApp"})
 public class CookApp extends HttpServlet {
 
-    /**
+/**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
@@ -33,14 +32,13 @@ public class CookApp extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
          throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("text/html");
         Categories recResp = new Categories();
         int getCount = 0;
               // recResp.recipeCategories.getRecipeCategory().get(0).categoryName;
         ArrayOfRecipeClassification tests = new ArrayOfRecipeClassification();
          GetRecipeCategoriesResponse ff = new GetRecipeCategoriesResponse();
        // rc = tests.recipeClassification;
- 
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
@@ -49,18 +47,49 @@ public class CookApp extends HttpServlet {
             out.println("<title>Servlet CookApp</title>" );            
             out.println("</head>");
             out.println("<body>");
+                              Enumeration<String> infomaterials= request.getParameterNames();
+while(infomaterials.hasMoreElements()) {
+   System.out.println(infomaterials.nextElement()); 
+}
+                
+            int amount = 100;
             String[] test = recResp.returnCats();
-           
+            try{
+                amount = Integer.parseInt(request.getParameter("Question3"));
+            }catch(Exception e){
+            
+            }
+            Recipes reccResp = new Recipes(amount);        
+
+            try{
+                if(request.getParameter("isHealthy").equalsIgnoreCase("healthy"))
+                    reccResp.setHealthy(true);
+                }catch(Exception e){}
+                try{
+                if(request.getParameter("isFastFood").equalsIgnoreCase("Fast food"))
+                    reccResp.setUnder30Minutes(true);
+                }catch(Exception e){}
+                try{
+                if(request.getParameter("reqPic").equalsIgnoreCase("Pictures required"))
+                    reccResp.setbIsRecipePhotoRequired(true);
+                }catch(Exception e){}
+                    
             while(recResp.amountOfCategories != getCount){
                 //int currentCatId = recResp.recipeCategories.getRecipeCategory().get(getCount).categoryID;
                 out.print("<p> [CATEGORY]"+test[getCount]+"</p>");
-                 Recipes reccResp = new Recipes(10);
-                 reccResp.Search("ham");
+                
+
+                       
+                
+                   reccResp.Search(recResp,recResp.recResp.getRecipeCategories().getRecipeCategory().get(getCount).categoryID);
                  RecipeSummariesResponse  recSumResp = reccResp.results();
-                   for(int recNames = 0; recNames < reccResp.getMaxAmountItems() -1 ;recNames++) {
-                       out.println("<p>[RECIPE]" +  recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).recipeName+"</p>");
+                   for(int recNames = 0; recNames < reccResp.getMaxAmountItems(); recNames++) {
+                       if(recNames % 2==0)
+                           out.println("<p>");
+                       
+                       out.println("[RECIPE]" +  recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).recipeName+"");
                        out.println("<img src="+recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).photoURL + ">");
-                       out.println("<p>Number of ingrediens needed for this recipe : "+recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getNumberOfIngredients()+"</p>");
+                      // out.println("<p>Number of ingrediens needed for this recipe : "+reccResp.recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getNumberOfIngredients()+"</p>");
                        
                        /*RecipeDetailResponse rec = soapService.getRecipeByRecipeID(recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getRecipeID(), true, 1, 1);
                        for(int ingredientCounter = 0; ingredientCounter < Integer.parseInt(recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getNumberOfIngredients()) -1 ; ingredientCounter++ ){
@@ -87,6 +116,10 @@ public class CookApp extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String[] infomaterials= request.getParameterValues("Question2_0");
+for (String infomaterial:infomaterials) {
+   System.out.println(infomaterial); 
+}
         processRequest(request, response);
     }
 
@@ -101,7 +134,14 @@ public class CookApp extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+       
+                  Enumeration<String> infomaterials= request.getParameterNames();
+while(infomaterials.hasMoreElements()) {
+   System.out.println(infomaterials.nextElement()); 
+}
+           
+processRequest(request, response);
+      
     }
 
     /**
