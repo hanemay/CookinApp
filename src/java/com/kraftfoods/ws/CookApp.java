@@ -40,7 +40,7 @@ public class CookApp extends HttpServlet {
         ArrayOfRecipeClassification tests = new ArrayOfRecipeClassification();
          GetRecipeCategoriesResponse ff = new GetRecipeCategoriesResponse();
        // rc = tests.recipeClassification;
-         
+ 
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
@@ -54,9 +54,10 @@ public class CookApp extends HttpServlet {
             while(recResp.amountOfCategories != getCount){
                 //int currentCatId = recResp.recipeCategories.getRecipeCategory().get(getCount).categoryID;
                 out.print("<p> [CATEGORY]"+test[getCount]+"</p>");
-                 Recipes reccResp = new Recipes(recResp);
+                 Recipes reccResp = new Recipes(10);
+                 reccResp.Search("ham");
                  RecipeSummariesResponse  recSumResp = reccResp.results();
-                   for(int recNames = 0; recNames< recSumResp.totalCount ;recNames++) {
+                   for(int recNames = 0; recNames < reccResp.getMaxAmountItems() -1 ;recNames++) {
                        out.println("<p>[RECIPE]" +  recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).recipeName+"</p>");
                        out.println("<img src="+recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).photoURL + ">");
                        out.println("<p>Number of ingrediens needed for this recipe : "+recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getNumberOfIngredients()+"</p>");

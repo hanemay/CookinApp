@@ -48,65 +48,61 @@ public class ReadXMLFile {
     try {
 	SAXParserFactory factory = SAXParserFactory.newInstance();
 	SAXParser saxParser = factory.newSAXParser();
-	DefaultHandler handler = new DefaultHandler() {
-	boolean bfname = false;
-	boolean blname = false;
-	boolean bemail = false;
-	boolean busername = false;
-        boolean bpassword = false;
-        @Override
-	public void startElement(String uri, String localName,String qName, 
-            Attributes attributes) throws SAXException {
-            if (qName.equalsIgnoreCase("EMAIL")) {
-                    bemail = true;
-            }
-            if (qName.equalsIgnoreCase("USERNAME")) {
-                    busername = true;
-            }
-            if (qName.equalsIgnoreCase("PASSWORD")) {
-                    bpassword = true;
-            }
-	}
-        
-        @Override
-	public void endElement(String uri, String localName,
-		String qName) throws SAXException {
+	DefaultHandler handler;
+           handler = new DefaultHandler() {
+               boolean bfname = false;
+               boolean blname = false;
+               boolean bemail = false;
+               boolean busername = false;
+               boolean bpassword = false;
+               @Override
+               public void startElement(String uri, String localName,String qName,
+                       Attributes attributes) throws SAXException {
+                   if (qName.equalsIgnoreCase("EMAIL")) {
+                       bemail = true;
+                   }
+                   if (qName.equalsIgnoreCase("USERNAME")) {
+                       busername = true;
+                   }
+                   if (qName.equalsIgnoreCase("PASSWORD")) {
+                       bpassword = true;
+                   }
+               }
+               
+               @Override
+               public void endElement(String uri, String localName,
+                       String qName) throws SAXException {
+               }
+               
+               @Override
+               public void characters(char ch[], int start, int length) throws SAXException {
+                   if (bemail) {
+                       System.out.println("email : " + new String(ch, start, length));
+                       bemail = false;
+                   }
+                   
+                   if (busername) {
+                       eUsername = new String(ch, start, length);
+                       busername = false;
+                   }
+                   if (bpassword) {
+                       ePassword = new String(ch, start, length);
+                       bpassword = false;
+                   }
+                   if(username.equalsIgnoreCase(eUsername)){
+                       if(password.equalsIgnoreCase(ePassword)){
+                           success = true;
+                           
+                       }else{
+                           success = false;
+                       }
+                   }
+                   
+               }
+               
+           };
  
-		//System.out.println("End Element :" + qName);
- 
-	}
- 
-	public void characters(char ch[], int start, int length) throws SAXException {
- 
-
- 
-		if (bemail) {
-			System.out.println("email : " + new String(ch, start, length));
-			bemail = false;
-		}
- 
-		if (busername) {
-			eUsername = new String(ch, start, length);
-			busername = false;
-		}
-		if (bpassword) {
-			ePassword = new String(ch, start, length);
-			bpassword = false;
-		}
-                if(username.equalsIgnoreCase(eUsername)){
-                    if(password.equalsIgnoreCase(ePassword)){
-                        success = true;
-                        
-                    }else{
-                        success = false;
-                    }
-                }
- 
-	}
- 
-     };
- 
-       saxParser.parse("userInformation.xml", handler);
+       saxParser.parse("C:\\Users\\hanemay\\Documents\\NetBeansProjects\\CookingApp\\userInformation.xml", handler);
  
      } catch (Exception e) {
        e.printStackTrace();
