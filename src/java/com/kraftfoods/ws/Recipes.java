@@ -34,13 +34,14 @@ public class Recipes extends RecipeSummariesResponse {
     /**
      *
      * @param cat takes a category to list recipes from that category
+     * @param i
      */
-    public void Search(Categories cat){
+    public void Search(Categories cat, int i){
         this.cat = cat;
         StartRecipes();
-        for(int i = 0; i < cat.amountOfCategories; i++){
-            recSumResp = soapService.getRecipesByCategory(i, 0, null, null, this.bIsRecipePhotoRequired, this.under30Minutes, this.healthy, 1, 1, 0, this.maxAmountItems, true);
-        }
+        
+        recSumResp = soapService.getRecipesByCategory(i, 0, null, null, this.bIsRecipePhotoRequired, this.under30Minutes, this.healthy, 1, 1, 0, this.maxAmountItems, true);
+        
     }
     private void StartRecipes(){
         KraftX0020RecipeX0020WebX0020Service webService = new KraftX0020RecipeX0020WebX0020Service();

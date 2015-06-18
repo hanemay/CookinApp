@@ -75,7 +75,8 @@ public class CookAppTest {
                    while(recResp.getTotalCount()!=getCount){
                 int currentCatId = recResp.recipeCategories.getRecipeCategory().get(getCount).categoryID;
                 GetRecipeSubCategoryResponse getSubs = soapService.getRecipeSubCategories(currentCatId);
-                       System.out.println(currentCatId);
+                System.out.println(currentCatId);
+                       
                 System.out.print("<p>"+recResp.recipeCategories.getRecipeCategory().get(getCount).categoryName+ " " +
                 recResp.recipeCategories.getRecipeCategory().get(getCount).getSubCategoryID()+"</p>");
                 System.out.println("COUNT" + getSubs.getTotalCount());
