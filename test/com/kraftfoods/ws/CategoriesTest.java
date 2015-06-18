@@ -59,10 +59,39 @@ public class CategoriesTest {
     public void testReturnCats() {
         System.out.println("returnCats");
         Categories instance = new Categories();
-        String[] expResult = null;
-        String[] result = instance.returnCats();
+        String[] result = new String[1];
+        String[] expResult = new String[1]; 
+        expResult[0] = "Appetizers/Snacks";
+        String[] results = instance.returnCats();
+        result[0] = results[0]; 
         assertArrayEquals(expResult, result);
-        fail("The test case is a prototype.");
+
+    }
+
+    /**
+     * Test of getAmountOfCategories method, of class Categories.
+     */
+    @Test
+    public void testGetAmountOfCategories() {
+        System.out.println("getAmountOfCategories");
+        Categories instance = new Categories();
+        int expResult = 12;
+        instance.setAmountOfCategories(12);
+        int result = instance.getAmountOfCategories();
+        assertEquals(expResult, result);
+ 
+    }
+
+    /**
+     * Test of setAmountOfCategories method, of class Categories.
+     */
+    @Test
+    public void testSetAmountOfCategories() {
+        System.out.println("setAmountOfCategories");
+        int amountOfCategories =12;
+        Categories instance = new Categories();
+        instance.setAmountOfCategories(amountOfCategories);
+        // TODO review the generated test code and remove the default call to fail.
     }
     
 }

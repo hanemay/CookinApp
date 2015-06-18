@@ -12,9 +12,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;  
 import javax.servlet.http.HttpServletResponse;  
   
-  
+/**
+ *
+ * @author hanemay
+ */
 public class Welcome extends HttpServlet {  
-@Override
+
+    /**
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
 public void doPost(HttpServletRequest request, HttpServletResponse response)  
         throws ServletException, IOException {  
   

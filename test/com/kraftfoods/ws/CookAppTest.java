@@ -92,7 +92,7 @@ public class CookAppTest {
        // System.out.println(rc.isEmpty());
         assertEquals(1, 1);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
