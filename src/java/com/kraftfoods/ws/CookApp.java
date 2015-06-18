@@ -41,10 +41,16 @@ public class CookApp extends HttpServlet {
        // rc = tests.recipeClassification;
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+           
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>" );
-            out.println("<title>Servlet CookApp</title>" );            
+            out.println("<LINK href=\"C:/Users/hanemay/Documents/NetBeansProjects/CookingApp/web/style.css\" rel=\"stylesheet\" type=\"text/css\">");
+
+            //out.println("<title>Servlet CookApp</title>" );
+            out.println("<div id=\"header\">\n" +
+"<h1>Kraft Recipes</h1>\n" +
+"</div>");
             out.println("</head>");
             out.println("<body>");
                               Enumeration<String> infomaterials= request.getParameterNames();
@@ -73,22 +79,41 @@ while(infomaterials.hasMoreElements()) {
                 if(request.getParameter("reqPic").equalsIgnoreCase("Pictures required"))
                     reccResp.setbIsRecipePhotoRequired(true);
                 }catch(Exception e){}
-                    
+                    reccResp.setbIsRecipePhotoRequired(true);
             while(recResp.amountOfCategories != getCount){
                 //int currentCatId = recResp.recipeCategories.getRecipeCategory().get(getCount).categoryID;
-                out.print("<p> [CATEGORY]"+test[getCount]+"</p>");
-                
+     
 
                        
                 
                    reccResp.Search(recResp,recResp.recResp.getRecipeCategories().getRecipeCategory().get(getCount).categoryID);
                  RecipeSummariesResponse  recSumResp = reccResp.results();
                    for(int recNames = 0; recNames < reccResp.getMaxAmountItems(); recNames++) {
+                       String url = recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).photoURL;
+                       if(recNames == 0){
+                                      out.println("<div id=\"header\">\n" +
+"<h2>"+test[getCount]+"</h2>\n" +
+"</div>");}
                        if(recNames % 2==0)
-                           out.println("<p>");
-                       
-                       out.println("[RECIPE]" +  recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).recipeName+"");
-                       out.println("<img src="+recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).photoURL + ">");
+                           out.println("<div \"row\">\n" +
+"<div id=\"sectionl\">\n" +
+"<img src=\""+url+"\" style=\"height:254px;width:254px\">\n" +
+"<p>\n" +
+"<p>Number of ingrediens needed for this recipe :<p> "+reccResp.recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getNumberOfIngredients()+"</p>\n" +
+"</p>");
+                       else{
+                           out.println("</div>\n" +
+"<div id=\"sectionr\">\n" +
+"<img src=\""+url+"\" style=\"height:254px;width:254px\">\n" +
+"<p>\n" +
+"<p>Number of ingrediens needed for this recipe :<p> "+reccResp.recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getNumberOfIngredients()+"</p>\n" +
+"</p>\n" +
+"</div>\n" +
+"<div>");}
+                                              
+
+                       //out.println("[RECIPE]" +  recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).recipeName+"");
+                       //out.println("<img src="+recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).photoURL + ">");
                       // out.println("<p>Number of ingrediens needed for this recipe : "+reccResp.recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getNumberOfIngredients()+"</p>");
                        
                        /*RecipeDetailResponse rec = soapService.getRecipeByRecipeID(recSumResp.getRecipeSummaries().getRecipeSummary().get(recNames).getRecipeID(), true, 1, 1);
@@ -99,8 +124,44 @@ while(infomaterials.hasMoreElements()) {
                 getCount ++;
             }
             
-            out.println("<h1>Servlet CookApp at " + request.getContextPath() + "</h1>");
             out.println("</body>");
+            out.println(" <style>\n" +
+"#header {\n" +
+"    background-color:green;\n" +
+"    color:white;\n" +
+"    text-align:center;\n" +
+"    padding:5px;\n" +
+"}\n" +
+"#nav {\n" +
+"    line-height:30px;\n" +
+"    background-color:#eeeeee;\n" +
+"    \n" +
+"    width:100px;\n" +
+"    float:left;\n" +
+"    padding:5px;\n" +
+"}\n" +
+"#row {\n" +
+"    display:inline-block;\n" +
+"}\n" +
+"#sectionl {\n" +
+"    width:250px;\n" +
+"    float:left;\n" +
+"    padding:10px;\n" +
+"}\n" +
+"#sectionr {\n" +
+"    width:250px;\n" +
+"    float:right;\n" +
+"    padding:10px;\n" +
+"}\n" +
+"\n" +
+"#footer {\n" +
+"    background-color:green;\n" +
+"    color:white;\n" +
+"    clear:both;\n" +
+"    text-align:center;\n" +
+"    padding:5px;\n" +
+"}\n" +
+"</style> ");
             out.println("</html>");
         }
     }
@@ -116,10 +177,7 @@ while(infomaterials.hasMoreElements()) {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String[] infomaterials= request.getParameterValues("Question2_0");
-for (String infomaterial:infomaterials) {
-   System.out.println(infomaterial); 
-}
+
         processRequest(request, response);
     }
 
