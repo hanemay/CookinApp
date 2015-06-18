@@ -22,6 +22,14 @@ public class Categories extends GetRecipeCategoryResponse{
         recResp =  soapService.getRecipeCategories(1, 1);
     }
 
+    public int getAmountOfCategories() {
+        return amountOfCategories;
+    }
+
+    public void setAmountOfCategories(int amountOfCategories) {
+        this.amountOfCategories = amountOfCategories;
+    }
+
     /**
      *
      * @return

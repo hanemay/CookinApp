@@ -39,7 +39,6 @@ public class Recipes extends RecipeSummariesResponse {
     public void Search(Categories cat, int i){
         this.cat = cat;
         StartRecipes();
-        
         recSumResp = soapService.getRecipesByCategory(i, 0, null, null, this.bIsRecipePhotoRequired, this.under30Minutes, this.healthy, 1, 1, 0, this.maxAmountItems, true);
         
     }

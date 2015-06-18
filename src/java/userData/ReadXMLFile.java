@@ -102,7 +102,7 @@ public class ReadXMLFile {
                
            };
  
-       saxParser.parse("C:\\Users\\hanemay\\Documents\\NetBeansProjects\\CookingApp\\userInformation.xml", handler);
+       saxParser.parse("userInformation.xml", handler);
  
      } catch (Exception e) {
        e.printStackTrace();

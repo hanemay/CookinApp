@@ -38,6 +38,22 @@
         </init-param>
         <load-on-startup>2</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>userData.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CookApp</servlet-name>
+        <servlet-class>com.kraftfoods.ws.CookApp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>com.cookAppInterface.Welcome</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Results</servlet-name>
+        <servlet-class>com.cookAppInterface.Results</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
@@ -46,8 +62,21 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
-        <servlet-name>action</servlet-name>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/Welcome</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Results</servlet-name>
+        <url-pattern>/Results</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>CookApp</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
     <session-config>
@@ -59,4 +88,6 @@
         <welcome-file>faces/index.xhtml</welcome-file>
         <welcome-file>redirect.jsp</welcome-file>
     </welcome-file-list>
+    
+     
 </web-app>
