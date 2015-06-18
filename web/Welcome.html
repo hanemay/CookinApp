@@ -1,82 +1,142 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<!DOCTYPE html> 
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css" type="text/css"/>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+    <title>Welcome</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<header align = "center">
+	<h1>Welocme</h1>
+</header>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">    
+			<div id="formblock11" class="ccm-block-type-form">
+   				<form action="CookApp.do" method="post">
+				   <div class="fields">
+					   <div class="form-group field field-text">
+						 <label class="control-label" for="Question1"> 
+						 	Food                    				
+						 </label>
+						 <input name="Question1" id="Question1" class="form-control" value="" type="text">
+						</div>
+						 <div class="form-group field field-checkboxlist">
+						 
+							 <label class="control-label">
+								 Find recipes                                            
+							     <span class="text-muted small" style="font-weight: normal">
+							     	Required
+							     </span> 
+						     </label>
+							 <div class="checkboxList">
+							     <div class="checkbox">
+							     	<label>
+							     		<input type="checkbox" name="isHealthy" value="healthy"> 
+							     		<span>
+							     			Healthy
+							     		</span>
+							     	</label>
+							     </div>
+							     <div class="checkbox">
+							    	<label>
+							    		<input name="isFastFood" value="Fast food" type="checkbox"> 
+							    			<span>
+							    				Fast food 
+							    			</span>
+							    		</label>
+							     </div>
+							     <div class="checkbox">
+							    	<label>
+							    		<input name="reqPic" value="Pictures required" type="checkbox"> 
+							    		<span>
+							    			Pictures required
+							    		</span>
+							    	</label>
+							     </div>
 
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    
-        
-
-<div class="container"><div class="row"><div class="col-sm-12">    
-<div id="formblock11" class="ccm-block-type-form">
- <form action="CookApp.do" method="post">
-
-	
-
-	<div class="fields">
-		
-					<div class="form-group field field-text">
-				<label class="control-label" for="Question1">
-					Food                    				</label>
-				<input name="Question1" id="Question1" class="form-control" value="" type="text">			</div>
-					<div class="form-group field field-checkboxlist">
-				<label class="control-label">
-					Find recipes                                            <span class="text-muted small" style="font-weight: normal">Required</span>
-                    				</label>
-				<div class="checkboxList">
-  <div class="checkbox"><label><input type="checkbox" name="isHealthy" value="healthy"> <span>Healthy</span></label></div>
-  <div class="checkbox"><label><input name="isFastFood" value="Fast food" type="checkbox"> <span>Fast food</span></label></div>
-  <div class="checkbox"><label><input name="reqPic" value="Pictures required" type="checkbox"> <span>Pictures required</span></label></div>
-
-                                </div>			</div>
-							<label class="control-label" for="Question3">
-					How many recipes would you like to be displayed?                                            <span class="text-muted small" style="font-weight: normal">Required</span>
-                    				</label>
-				<select class="form-control" name="Question3" id="Question3"><option value="" selected="selected">----</option><option>10</option><option>20</option><option>30</option><option>40</option><option>50</option><option>60</option><option>70</option><option>80</option><option>90</option><option>100</option><option>500</option><option>1000</option><option selected="selected"></option></select>			</div>
-	
-	</div><!-- .fields -->
-	
-	
-	<div class="form-actions">
-		<input name="Submit" class="btn btn-primary" value="Submit" type="submit">
+						                                
+						     </div>			
+					    </div> 
+						 <label class="control-label" for="Question3">
+								How many recipes would you like to be displayed?                                            
+								<span class="text-muted small" style="font-weight: normal">
+									Required
+								</span>
+					     </label>
+						 <select class="form-control" name="Question3" id="Question3">
+							 	<option value="" selected="selected">
+							 		----
+							 	</option>
+							 	<option>
+							 		10
+							 	</option>
+							 	<option>
+							 		20
+							 	</option>
+							 	<option>
+							 		30
+							 	</option>
+							 	<option>
+							 		40
+							 	</option>
+							 	<option>
+							 		50
+							 	</option>
+							 	<option>
+							 		60
+							 	</option>
+							 	<option>
+							 		70
+							 	</option>
+							 	<option>
+							 		80
+							 	</option>
+							 	<option>
+							 		90
+							 	</option>
+							 	<option>
+							 		100
+							 	</option>
+							 	<option>
+							 		500
+							 	</option>
+							 	<option>
+							 		1000
+							 	</option>
+							 	<option selected="selected">
+							 	</option>
+						 </select>			
+						</div> 
+				   </div><!-- .fields -->
+					
+					
+					<div class="form-actions">
+						<input name="Submit" class="btn btn-primary" value="Submit" type="submit">
+					</div>
+					<input name="qsID" value="1434527152" type="hidden">
+					<input name="pURI" value="" type="hidden"> 
+				</form>
+			</div><!-- .formblock --> 
+		</div>
 	</div>
-	<input name="qsID" value="1434527152" type="hidden">
-	<input name="pURI" value="" type="hidden">
-	
-</form>
-</div><!-- .formblock -->
+</div>
 
-</div></div></div>
-
-<div class="container"><div class="row"><div class="col-sm-12">    
-<div id="formblock17" class="ccm-block-type-form">
-<form enctype="multipart/form-data" class="form-stacked" id="miniSurveyView17" method="post" action="http://net-pc.dk/index.php/submit_form/17#formblock17">
-
-	
-
-	<div class="fields">
-		
-					<div class="form-group field field-select">
-				
-	</div><!-- .fields -->
-	
-	
-	
-
-	<input name="qsID" value="1434529272" type="hidden">
-	<input name="pURI" value="" type="hidden">
-	
-</form>
-</div><!-- .formblock -->
-
-</div></div></div>
-    
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">   
+			<div id="formblock17" class="ccm-block-type-form"> 
+				<form enctype="multipart/form-data" class="form-stacked" id="miniSurveyView17" method="post" action="http://net-pc.dk/index.php/submit_form/17#formblock17"> 
+					<div class="fields">
+					<div class="form-group field field-select"></div> 
+					</div><!-- .fields -->  
+					<input name="qsID" value="1434529272" type="hidden">
+					<input name="pURI" value="" type="hidden"> 
+				</form>
+			</div><!-- .formblock --> 
+		</div>
+	</div>
+</div>
+<body>
 </html>
