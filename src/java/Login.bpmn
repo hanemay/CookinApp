@@ -59,9 +59,14 @@
         rd.include(request,response);
     }</bpmn:conditionExpression>
         </bpmn:sequenceFlow>
+        <bpmn:userTask implementation="##unspecified" isForCompensation="false" startQuantity="1" completionQuantity="1" id="_1434701315746">
+            <bpmn:extensionElements>
+                <jbpmn:ShapeDesign>{"outer":{"background":{"startColor":"RGB(255,255,255)","endColor":"RGB(226,232,236)"},"border":{"color":"RGB(108,142,183)","width":2.5}},"inner":{"background":{"startColor":"RGB(255,255,255)","endColor":"RGB(255,248,159)"},"border":{"color":"RGB(30,69,123)","width":1.0}}}</jbpmn:ShapeDesign>
+            </bpmn:extensionElements>
+        </bpmn:userTask>
     </bpmn:process>
-    <bpmndi:BPMNDiagram>
-        <bpmndi:BPMNPlane bpmnElement="_143453563695876" id="_143453563695877_p">
+    <bpmndi:BPMNDiagram id="_14347011972214">
+        <bpmndi:BPMNPlane id="_14347011972215">
             <bpmndi:BPMNShape bpmnElement="_1434535657324" id="_1434535657324_gui">
                 <omgdc:Bounds x="65.0" y="131.0" width="42.0" height="42.0"/>
                 <bpmndi:BPMNLabel>
@@ -87,15 +92,15 @@
                 </bpmndi:BPMNLabel>
             </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="_1434538691913" id="_1434538691913_gui">
-                <omgdc:Bounds x="197.0" y="346.0" width="80.0" height="64.0"/>
+                <omgdc:Bounds x="199.0" y="344.0" width="80.0" height="64.0"/>
                 <bpmndi:BPMNLabel>
-                    <omgdc:Bounds x="213.0" y="382.0" width="52.0" height="17.0"/>
+                    <omgdc:Bounds x="215.0" y="380.0" width="52.0" height="17.0"/>
                 </bpmndi:BPMNLabel>
             </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="_1434538707278" id="_1434538707278_gui">
-                <omgdc:Bounds x="216.0" y="469.0" width="42.0" height="42.0"/>
+                <omgdc:Bounds x="218.0" y="488.0" width="42.0" height="42.0"/>
                 <bpmndi:BPMNLabel>
-                    <omgdc:Bounds x="218.0" y="515.0" width="36.0" height="19.0"/>
+                    <omgdc:Bounds x="220.0" y="534.0" width="36.0" height="19.0"/>
                 </bpmndi:BPMNLabel>
             </bpmndi:BPMNShape>
             <bpmndi:BPMNEdge bpmnElement="_1434538721133" id="_1434538721133_gui">
@@ -107,7 +112,7 @@
                 <omgdi:waypoint x="316.0" y="154.0"/>
                 <omgdi:waypoint x="404.0" y="154.0"/>
                 <bpmndi:BPMNLabel>
-                    <omgdc:Bounds x="318.0" y="137.0" width="45.0" height="17.0"/>
+                    <omgdc:Bounds x="618.0" y="245.0" width="45.0" height="17.0"/>
                 </bpmndi:BPMNLabel>
             </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="_1434538727885" id="_1434538727885_gui">
@@ -116,14 +121,14 @@
             </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="_1434538735270" id="_1434538735270_gui">
                 <omgdi:waypoint x="422.0" y="327.0"/>
-                <omgdi:waypoint x="276.0" y="367.0"/>
+                <omgdi:waypoint x="278.0" y="365.0"/>
                 <bpmndi:BPMNLabel>
-                    <omgdc:Bounds x="307.0" y="325.0" width="54.0" height="17.0"/>
+                    <omgdc:Bounds x="636.0" y="635.0" width="54.0" height="17.0"/>
                 </bpmndi:BPMNLabel>
             </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="_1434538738670" id="_1434538738670_gui">
-                <omgdi:waypoint x="237.0" y="408.0"/>
-                <omgdi:waypoint x="237.0" y="469.0"/>
+                <omgdi:waypoint x="239.0" y="405.0"/>
+                <omgdi:waypoint x="239.0" y="488.0"/>
             </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="_1434538742527" id="_1434538742527_gui">
                 <omgdi:waypoint x="465.0" y="324.0"/>
@@ -131,9 +136,12 @@
                 <omgdi:waypoint x="585.0" y="156.0"/>
                 <omgdi:waypoint x="481.0" y="156.0"/>
                 <bpmndi:BPMNLabel>
-                    <omgdc:Bounds x="588.0" y="230.0" width="26.0" height="17.0"/>
+                    <omgdc:Bounds x="1173.0" y="466.0" width="26.0" height="17.0"/>
                 </bpmndi:BPMNLabel>
             </bpmndi:BPMNEdge>
+            <bpmndi:BPMNShape bpmnElement="_1434701315746" id="_1434701315746_gui">
+                <omgdc:Bounds x="315.0" y="428.0" width="80.0" height="64.0"/>
+            </bpmndi:BPMNShape>
         </bpmndi:BPMNPlane>
     </bpmndi:BPMNDiagram>
 </bpmn:definitions>
